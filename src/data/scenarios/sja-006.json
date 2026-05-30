@@ -1,0 +1,65 @@
+{
+  "id": "sja-006",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / minor wound care",
+  "title": "Cut finger at a craft festival",
+  "setting": "Craft festival. An adult cut a finger on a craft knife. Small wound bleeding slightly. In some pain but moving the finger and talking normally.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, stable observations, a minor superficial wound with slight bleeding and preserved function. Not sick: simple wound care and safety-netting on scene.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "21/min",
+      "pulseRate": "72 bpm",
+      "painScore": "7/10",
+      "temperature": "37.3°C"
+    },
+    "cfa": { "avpu": "Alert" },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "96%",
+      "bloodGlucose": "4.1 mmol/L",
+      "bloodPressure": "95/65 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "A craft knife is somewhere nearby",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Clear and open",
+      "breathing": "Fast at first, settles when talking",
+      "circulation": "Minor bleeding from finger"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "No concerns"
+    }
+  },
+  "history": {
+    "complaint": "Small cut on the finger",
+    "history": "Cut moments ago, reports severe pain",
+    "pmh": "Nothing relevant",
+    "drugs": "Nothing relevant",
+    "injuries": "Nothing else",
+    "additional": "Nothing relevant"
+  },
+  "followUp": {
+    "question": "What is your management?",
+    "options": [
+      { "text": "Clean the wound, apply a dressing with direct pressure, check movement and circulation", "correct": true },
+      { "text": "Call 999 for an emergency ambulance", "correct": false },
+      { "text": "Apply a tourniquet to the finger", "correct": false },
+      { "text": "Leave it open and uncovered to air-dry", "correct": false }
+    ],
+    "explanation": "Minor wounds are cleaned, dressed and managed with brief direct pressure, then check the finger still moves and is well perfused. This is not a 999 situation, and a tourniquet is reserved for life-threatening limb haemorrhage.",
+    "levelExplanation": {
+      "er": "Advise on tetanus status and safety-net for signs of infection before discharge."
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["er"],
+    "erNotes": "Reassure: high reported pain with a minor wound is common. Treat the wound, not the pain score in isolation."
+  }
+}

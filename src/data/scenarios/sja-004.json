@@ -1,0 +1,65 @@
+{
+  "id": "sja-004",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / epistaxis management",
+  "title": "Nosebleed at a sports tournament",
+  "setting": "Sports tournament. 16M hit in the nose during a game. Active nosebleed, dizzy, tender and swollen nose, difficulty breathing through it.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, talking, airway patent (mouth-breathing), stable observations. A traumatic nosebleed that responds to simple first aid. Not sick: manageable on scene with safety-netting.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "18/min",
+      "pulseRate": "78 bpm",
+      "painScore": "4/10",
+      "temperature": "37.5°C"
+    },
+    "cfa": { "avpu": "Alert" },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "92%",
+      "bloodGlucose": "5.3 mmol/L",
+      "bloodPressure": "91/61 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Sports events ongoing nearby",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Breathing through mouth, not nose",
+      "breathing": "Adequate",
+      "circulation": "Bleeding from nose"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, recently exerting"
+    }
+  },
+  "history": {
+    "complaint": "Nosebleed after a knock",
+    "history": "Struck during play",
+    "pmh": "No relevant history",
+    "drugs": "Allergic to latex gloves",
+    "injuries": "Nothing of note",
+    "additional": "Nose looks slightly deformed"
+  },
+  "followUp": {
+    "question": "How do you manage the nosebleed?",
+    "options": [
+      { "text": "Sit up, lean forward, pinch the soft part of the nose for 10 minutes", "correct": true },
+      { "text": "Tilt the head back and pinch the bridge of the nose", "correct": false },
+      { "text": "Pack the nostril tightly with cotton wool and lie him flat", "correct": false },
+      { "text": "Do nothing; nosebleeds always stop on their own", "correct": false }
+    ],
+    "explanation": "Sit up, lean forward so blood drains away from the airway, and pinch the soft part of the nose for 10 minutes. Tilting back lets blood track into the airway and stomach. Note the latex allergy when selecting gloves. Deformity and a knock warrant onward assessment for possible fracture.",
+    "levelExplanation": {
+      "cfa": "If bleeding does not stop after 30 minutes of pressure, seek further medical help."
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Avoid latex gloves. Advise onward review for the possible nasal fracture."
+  }
+}

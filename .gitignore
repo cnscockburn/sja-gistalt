@@ -7,6 +7,8 @@ node_modules/
 .expo/
 dist/
 web-build/
+.export-test/
+expo-env.d.ts
 *.jks
 *.p8
 *.p12
@@ -38,6 +40,10 @@ ios/.xcode.env.local
 # OS
 .DS_Store
 Thumbs.db
+
+# Vendored tooling (impeccable skill library)
+.agents/
+.claude/settings.local.json
 
 # IDE
 .vscode/

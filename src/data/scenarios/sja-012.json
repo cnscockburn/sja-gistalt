@@ -1,0 +1,98 @@
+{
+  "id": "sja-012",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Anaphylaxis 2021",
+  "title": "Allergic reaction at a food festival",
+  "setting": "Food festival. 28F ate a satay skewer, now flushed with widespread hives, lip swelling, a wheeze and feeling faint. Carries an adrenaline auto-injector.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Sudden onset hives with airway (lip swelling), breathing (wheeze) and circulation (faint, low BP) involvement after a known trigger. This is anaphylaxis: a life-threatening emergency. Sick, needs adrenaline now.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "26/min",
+      "pulseRate": "118 bpm",
+      "painScore": "2/10",
+      "temperature": "37.0°C"
+    },
+    "cfa": { "avpu": "Alert" },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "93%",
+      "bloodGlucose": "5.4 mmol/L",
+      "bloodPressure": "92/58 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Food stalls and crowds",
+      "response": "Alert but anxious",
+      "catHaem": "None",
+      "airway": "Lip and tongue swelling, voice changing",
+      "breathing": "Fast with an audible wheeze",
+      "circulation": "Flushed, feels faint"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Widespread hives over torso and arms"
+    }
+  },
+  "history": {
+    "complaint": "Sudden allergic reaction after eating",
+    "history": "Ate a peanut satay skewer 10 minutes ago",
+    "pmh": "Known nut allergy",
+    "drugs": "Carries an adrenaline auto-injector",
+    "injuries": "None",
+    "additional": "Reaction is getting worse quickly"
+  },
+  "followUp": {
+    "cfa": {
+      "question": "What is your immediate management?",
+      "options": [
+        { "text": "Help her use her adrenaline auto-injector, call 999 and sit her up to ease breathing", "correct": true },
+        { "text": "Lay her flat and give a glass of water to dilute the allergen", "correct": false },
+        { "text": "Wait to see whether the hives settle before acting", "correct": false },
+        { "text": "Give her antihistamine tablets instead of adrenaline", "correct": false }
+      ],
+      "explanation": "Adrenaline is the first-line treatment for anaphylaxis: help her use her own auto-injector into the outer thigh and call 999 immediately. If breathing is the main problem, sitting up helps. Antihistamines do not treat the life-threatening features and must not delay adrenaline."
+    },
+    "er": {
+      "question": "What is your immediate management?",
+      "options": [
+        { "text": "Give IM adrenaline into the outer thigh, call 999, position for the worst symptom and give oxygen", "correct": true },
+        { "text": "Give oxygen and antihistamine and hold adrenaline unless she deteriorates", "correct": false },
+        { "text": "Lay her flat with legs raised and reassess in 10 minutes before treating", "correct": false },
+        { "text": "Encourage her to walk to the first aid tent for treatment", "correct": false }
+      ],
+      "explanation": "IM adrenaline into the outer thigh is the priority and must not be delayed. Call 999, give high-flow oxygen, and position by the worst symptom (sit up for breathing, lie flat with legs raised if faint/hypotensive). Walking or standing an anaphylaxis patient can cause fatal collapse."
+    }
+  },
+  "evolvingStage": {
+    "narrative": "Five minutes after the first dose she is still wheezing, more breathless and increasingly drowsy. The ambulance is several minutes away.",
+    "updatedObservations": {
+      "respirationRate": "30/min",
+      "pulseOximetry": "89%",
+      "bloodPressure": "84/50 mmHg",
+      "acvpu": "Voice",
+      "avpu": "Voice"
+    },
+    "followUp": {
+      "question": "There is no improvement after 5 minutes. What now?",
+      "options": [
+        { "text": "Give a second adrenaline dose, lie her flat with legs raised and chase the ambulance", "correct": true },
+        { "text": "Wait for the first dose to work; a second dose is unsafe", "correct": false },
+        { "text": "Sit her fully upright and give a sugary drink", "correct": false },
+        { "text": "Stop treatment until the paramedics arrive", "correct": false }
+      ],
+      "explanation": "If there is no improvement after 5 minutes, a second dose of adrenaline is indicated. With hypotension and faintness, lie her flat and raise the legs to support circulation, and expedite the ambulance.",
+      "levelExplanation": {
+        "cfa": "Use a second auto-injector if one is available and 5 minutes have passed without improvement."
+      }
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Adrenaline first, fast. Position by symptom and never stand or walk the patient.",
+    "erNotes": "Anticipate a biphasic reaction; all anaphylaxis patients need hospital assessment even if they improve."
+  }
+}

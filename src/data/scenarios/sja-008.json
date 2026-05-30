@@ -1,0 +1,66 @@
+{
+  "id": "sja-008",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Adult Basic Life Support 2021",
+  "title": "Collapse at a football tournament",
+  "setting": "First aid cover at a football tournament. A player, 56M, collapsed on the pitch. Lying still, not moving, pale with a grey, bluish tinge to the lips.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive and not breathing normally after a sudden collapse. This is cardiac arrest, the most time-critical emergency. Unequivocally sick: start CPR and use an AED immediately.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "0/min",
+      "pulseRate": "0 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "36°C"
+    },
+    "cfa": { "avpu": "Unresponsive" },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Fixed and dilated",
+      "pulseOximetry": "Unrecordable",
+      "bloodGlucose": "5.1 mmol/L",
+      "bloodPressure": "Unrecordable"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Unresponsive",
+      "catHaem": "None",
+      "airway": "Can be opened, patient cannot maintain own airway",
+      "breathing": "Not breathing normally",
+      "circulation": "No bleeding; circulation not effective"
+    },
+    "er": {
+      "disability": "Unresponsive",
+      "exposure": "On the pitch"
+    }
+  },
+  "history": {
+    "complaint": "Sudden collapse",
+    "history": "Collapsed suddenly while playing, no warning",
+    "pmh": "None known",
+    "drugs": "None known",
+    "injuries": "No visible injuries",
+    "additional": "None known"
+  },
+  "followUp": {
+    "question": "What is your immediate action?",
+    "options": [
+      { "text": "Start chest compressions, send for an AED and call 999", "correct": true },
+      { "text": "Place him in the recovery position and wait", "correct": false },
+      { "text": "Give two rescue breaths only and reassess in a minute", "correct": false },
+      { "text": "Sit him up and offer a sip of water", "correct": false }
+    ],
+    "explanation": "Unresponsive and not breathing normally means cardiac arrest. Begin chest compressions at once, get someone to fetch the AED and call 999. The recovery position is for unresponsive patients who ARE breathing normally.",
+    "levelExplanation": {
+      "cfa": "Push hard and fast in the centre of the chest (about 5-6 cm, 100-120/min) and apply the AED as soon as it arrives.",
+      "er": "Deliver high-quality CPR with minimal interruptions, attach the AED and manage the airway with your available adjuncts."
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Early CPR and early defibrillation give the best chance of survival. Do not delay compressions."
+  }
+}

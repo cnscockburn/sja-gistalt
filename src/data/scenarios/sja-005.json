@@ -1,0 +1,84 @@
+{
+  "id": "sja-005",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / shock and major bleeding; Resus Council UK",
+  "title": "Heavy nosebleed at an air show",
+  "setting": "Air show. 12M, nosebleed for 20 minutes that won't stop. Pale, sweaty and dizzy, going wobbly. Blood flowing down his face.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Prolonged bleeding with pallor, sweating, dizziness, a falling conscious level and a low blood pressure (83/51). These are signs of developing shock. This patient is sick and needs escalation.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "13/min",
+      "pulseRate": "71 bpm",
+      "painScore": "3/10",
+      "temperature": "37.3°C"
+    },
+    "cfa": { "avpu": "Voice" },
+    "er": {
+      "acvpu": "Voice",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "98%",
+      "bloodGlucose": "3.8 mmol/L",
+      "bloodPressure": "83/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None relevant",
+      "response": "Responding to voice, level dropping",
+      "catHaem": "Not relevant",
+      "airway": "Breathing through mouth",
+      "breathing": "Getting slower",
+      "circulation": "Heavy bleeding from nose"
+    },
+    "er": {
+      "disability": "Response level dropping",
+      "exposure": "Outdoors"
+    }
+  },
+  "history": {
+    "complaint": "Nosebleed that will not stop",
+    "history": "Never had a nosebleed before",
+    "pmh": "Chickenpox a year ago",
+    "drugs": "Nothing relevant",
+    "injuries": "Nothing relevant",
+    "additional": "Has gone very pale and wobbly"
+  },
+  "followUp": {
+    "question": "What is your priority management now?",
+    "options": [
+      { "text": "Call 999, keep pinching the nose, sit forward, treat for shock and monitor", "correct": true },
+      { "text": "Lie him flat with legs raised and tilt his head back", "correct": false },
+      { "text": "Give a sugary drink and continue waiting", "correct": false },
+      { "text": "Reassure and send him back to his school group", "correct": false }
+    ],
+    "explanation": "Signs of shock with ongoing bleeding require an emergency ambulance. Maintain direct pressure on the nose, keep him leaning forward to protect the airway, keep him warm and monitor closely. Tilting the head back risks aspiration; he must not be discharged.",
+    "levelExplanation": {
+      "er": "Give high-flow oxygen if available, keep him warm and reassess obs frequently while awaiting transport."
+    }
+  },
+  "evolvingStage": {
+    "narrative": "While you wait for the ambulance he becomes harder to rouse and only groans to a firm shoulder squeeze. The bleeding continues.",
+    "updatedObservations": {
+      "acvpu": "Pain",
+      "avpu": "Pain",
+      "respirationRate": "10/min",
+      "bloodPressure": "78/44 mmHg"
+    },
+    "followUp": {
+      "question": "His conscious level has dropped. What do you do?",
+      "options": [
+        { "text": "Protect the airway, place in the recovery position, expedite the ambulance and monitor breathing", "correct": true },
+        { "text": "Sit him upright in a chair and keep pinching the nose", "correct": false },
+        { "text": "Give an oral glucose gel because his blood sugar was low", "correct": false },
+        { "text": "Stop monitoring; nothing more can be done until the crew arrives", "correct": false }
+      ],
+      "explanation": "A falling conscious level threatens the airway. Position to protect it (recovery position), chase the ambulance and monitor breathing continuously. Nothing should go in the mouth of a patient who cannot protect their own airway."
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Recognise shock early, call 999 without delay and hand over a clear timeline of blood loss."
+  }
+}
