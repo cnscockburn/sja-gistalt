@@ -4,9 +4,9 @@ import type { SessionScore } from '@/types/game';
 
 function band(percent: number): string {
   if (percent >= 90) return 'Excellent gestalt';
-  if (percent >= 75) return 'Strong';
-  if (percent >= 50) return 'Solid, keep sharpening';
-  return 'Keep practising';
+  if (percent >= 75) return 'Strong clinical eye';
+  if (percent >= 50) return 'Solid — keep sharpening';
+  return 'Building pattern recognition';
 }
 
 export function ScoreHeader({ score }: { score: SessionScore }) {
@@ -25,15 +25,13 @@ export function ScoreHeader({ score }: { score: SessionScore }) {
 }
 
 const styles = StyleSheet.create({
-  wrap: { gap: space.sm, paddingVertical: space.lg },
+  wrap: { gap: space.xs, paddingVertical: space.lg },
   band: {
-    ...type.label,
-    textTransform: 'uppercase',
-    letterSpacing: 0.6,
+    ...type.h2,
     color: colors.brandDark,
   },
-  percent: { fontFamily: font.mono, fontSize: 56, fontWeight: '700', color: colors.ink },
-  fraction: { ...type.body, color: colors.inkSoft },
+  percent: { fontFamily: font.mono, fontSize: 36, fontWeight: '700', color: colors.ink },
+  fraction: { ...type.caption, color: colors.inkSoft },
   track: {
     height: 8,
     borderRadius: radius.pill,

@@ -122,7 +122,11 @@ export default function GameScreen() {
       ? availableMarksForScenario(scenario, session.mode, level)
       : undefined;
 
-  const followupContinue = hasEvolving ? 'Continue' : isLast ? 'See results' : 'Next patient';
+  const followupContinue = hasEvolving
+    ? 'Patient update →'
+    : isLast
+      ? 'See results'
+      : 'Next patient';
   const evolvingContinue = isLast ? 'See results' : 'Next patient';
 
   return (
@@ -234,9 +238,7 @@ const styles = StyleSheet.create({
   // paddingBottom for body and qContent is applied inline using insets.bottom (safe area aware).
   qContent: { gap: space.lg, paddingVertical: space.md },
   phaseLabel: {
-    ...type.label,
-    textTransform: 'uppercase',
-    letterSpacing: 0.6,
+    ...type.h2,
     color: colors.brandDark,
   },
   narrative: { ...type.body, color: colors.ink, lineHeight: 23 },

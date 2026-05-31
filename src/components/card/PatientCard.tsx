@@ -72,5 +72,5 @@ const styles = StyleSheet.create({
     borderRadius: radius.md,
     backgroundColor: colors.bg,
   },
-  setting: { ...type.body, color: colors.ink, lineHeight: 22 },
+  setting: { ...type.title, color: colors.ink, lineHeight: 24 },
 });

@@ -95,9 +95,12 @@ export default function PracticeHome() {
       ]}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.wordmark} accessibilityRole="header">
-        GESTALT
-      </Text>
+      <View style={styles.brand}>
+        <Text style={styles.wordmark} accessibilityRole="header">
+          GESTALT
+        </Text>
+        <Text style={styles.kicker}>Clinical situation awareness training</Text>
+      </View>
       <UnofficialBanner />
 
       {resumable && (
@@ -195,7 +198,9 @@ export default function PracticeHome() {
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: colors.bg },
   content: { paddingHorizontal: space.xl, gap: space.xl },
+  brand: { gap: space.xs },
   wordmark: { ...type.display, color: colors.ink, letterSpacing: 4 },
+  kicker: { ...type.label, color: colors.inkSoft, letterSpacing: 0.3 },
   resume: {
     flexDirection: 'row',
     alignItems: 'center',

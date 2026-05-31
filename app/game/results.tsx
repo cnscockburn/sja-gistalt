@@ -105,7 +105,7 @@ export default function Results() {
       </View>
 
       <View style={styles.actions}>
-        <Button label="Play again" onPress={onPlayAgain} />
+        <Button label="New session" onPress={onPlayAgain} />
         <Button label="Back to home" variant="secondary" onPress={goHome} />
       </View>
     </ScrollView>
