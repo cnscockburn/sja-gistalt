@@ -25,7 +25,7 @@ const TONE = {
   },
   warn: {
     box: { backgroundColor: colors.amberNote },
-    text: { color: '#8A6312' },
+    text: { color: colors.onAmberNote },
   },
 } as const;
 

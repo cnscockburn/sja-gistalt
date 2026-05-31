@@ -5,7 +5,7 @@ import { colors, radius, space, type } from '@/constants/theme';
 export function UnofficialBanner() {
   return (
     <View style={styles.wrap}>
-      <Ionicons name="information-circle-outline" size={16} color="#8A6312" />
+      <Ionicons name="information-circle-outline" size={16} color={colors.onAmberNote} />
       <Text style={styles.text}>
         Independent practice tool. Not an official St John Ambulance product.
       </Text>
@@ -23,5 +23,5 @@ const styles = StyleSheet.create({
     paddingHorizontal: space.md,
     paddingVertical: space.sm,
   },
-  text: { ...type.caption, fontSize: 12, color: '#8A6312', flex: 1 },
+  text: { ...type.caption, fontSize: 12, color: colors.onAmberNote, flex: 1 },
 });

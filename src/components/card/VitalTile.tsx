@@ -8,7 +8,7 @@ interface VitalTileProps {
 
 export function VitalTile({ label, value }: VitalTileProps) {
   return (
-    <View style={styles.tile}>
+    <View style={styles.tile} accessible={true} accessibilityLabel={`${label}: ${value}`}>
       <Text style={styles.label}>{label}</Text>
       <Text style={styles.value} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.7}>
         {value}
@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
   tile: {
     flexGrow: 1,
     flexBasis: '30%',
+    // Cap growth so a 7-tile ER grid (3+3+1) doesn't stretch the orphan to full width.
+    maxWidth: '33%',
     backgroundColor: colors.bg,
     borderRadius: radius.sm,
     paddingVertical: space.sm,

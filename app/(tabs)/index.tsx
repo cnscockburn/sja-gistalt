@@ -95,11 +95,18 @@ export default function PracticeHome() {
       ]}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.wordmark}>GESTALT</Text>
+      <Text style={styles.wordmark} accessibilityRole="header">
+        GESTALT
+      </Text>
       <UnofficialBanner />
 
       {resumable && (
-        <Pressable style={styles.resume} onPress={onResume}>
+        <Pressable
+          style={styles.resume}
+          onPress={onResume}
+          accessibilityRole="button"
+          accessibilityLabel={`Resume session — ${LEVEL_LABELS[resumable.level]}, card ${resumable.currentIndex + 1} of ${resumable.deck.length}`}
+        >
           <View style={styles.resumeText}>
             <Text style={styles.resumeTitle}>Resume session</Text>
             <Text style={styles.resumeSub}>
@@ -107,7 +114,13 @@ export default function PracticeHome() {
               {resumable.deck.length}
             </Text>
           </View>
-          <Pressable hitSlop={12} onPress={onDiscardResume}>
+          <Pressable
+            hitSlop={12}
+            onPress={onDiscardResume}
+            accessibilityRole="button"
+            accessibilityLabel="Discard saved session"
+            style={styles.discardBtn}
+          >
             <Ionicons name="close" size={20} color={colors.inkSoft} />
           </Pressable>
         </Pressable>
@@ -192,6 +205,7 @@ const styles = StyleSheet.create({
     padding: space.lg,
   },
   resumeText: { flex: 1, gap: 2 },
+  discardBtn: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
   resumeTitle: { ...type.title, color: colors.brandDark },
   resumeSub: { ...type.caption, color: colors.brandDark },
   section: { gap: space.sm },

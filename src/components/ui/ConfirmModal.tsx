@@ -35,10 +35,16 @@ export function ConfirmModal({
       statusBarTranslucent
       onRequestClose={onCancel}
     >
-      {/* Tap outside the card to dismiss */}
-      <Pressable style={styles.overlay} onPress={onCancel}>
-        {/* Plain View — not a Pressable — so the a11y tree has no unlabelled interactive element */}
-        <View style={styles.card}>
+      {/* Tap outside the card to dismiss. Hidden from a11y tree — the Cancel button
+          inside the card is the accessible dismissal path for screen reader users. */}
+      <Pressable
+        style={styles.overlay}
+        onPress={onCancel}
+        accessibilityElementsHidden
+        importantForAccessibility="no-hide-descendants"
+      >
+        {/* accessibilityViewIsModal restricts TalkBack exploration to descendants only (Android). */}
+        <View style={styles.card} accessibilityViewIsModal={true}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.message}>{message}</Text>
 

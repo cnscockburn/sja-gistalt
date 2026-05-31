@@ -32,6 +32,8 @@ export const colors = {
   accent: '#E8B23A',
   /** Warm amber background for informational / partial-correct surfaces. */
   amberNote: '#FBF1DE',
+  /** Text and icon color on amberNote surfaces. */
+  onAmberNote: '#8A6312',
   onBrand: '#F6F5F1',
   onSick: '#FBF1EF',
 } as const;
@@ -75,5 +77,13 @@ export const elevation = {
     shadowRadius: 16,
     shadowOffset: { width: 0, height: 6 },
     elevation: 4,
+  },
+  /** Subtle lift for selected segments and similar low-elevation surfaces. */
+  subtle: {
+    shadowColor: '#1A1E1B',
+    shadowOpacity: 0.06,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
   },
 } as const;

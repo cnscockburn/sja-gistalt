@@ -41,12 +41,24 @@ export default function Results() {
     return scoreSession(session.deck, session.answers, session.mode, session.level);
   }, [session]);
 
-  if (!session || !score) return null;
-
-  const byId = new Map(session.deck.map((s) => [s.id, s]));
+  // Memoize lookup maps before the early-return guard so hook call order is stable.
+  const byId = useMemo(
+    () =>
+      session
+        ? new Map(session.deck.map((s) => [s.id, s]))
+        : new Map<string, NonNullable<typeof session>['deck'][number]>(),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [session?.deck]
+  );
   // Build a lookup from the already-computed breakdown so each ScenarioResultCard
   // receives its pre-computed score instead of calling scoreScenario again.
-  const scoreById = new Map(score.breakdown.map((s) => [s.scenarioId, s]));
+  const scoreById = useMemo(
+    () => (score ? new Map(score.breakdown.map((s) => [s.scenarioId, s])) : new Map()),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [score?.breakdown]
+  );
+
+  if (!session || !score) return null;
 
   const onPlayAgain = async () => {
     const deck = await buildDeck(session.level, stackSize);

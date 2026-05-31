@@ -116,6 +116,7 @@ export default function GameScreen() {
   // Available marks for the current scenario shown in the header.
   // Omit in swipe-only mode — there are no follow-ups, so showing "1pt" per card
   // would mislead users into expecting a scoring breakdown that doesn't exist.
+  // availableMarksForScenario is two property lookups — cheap enough to compute inline.
   const availableMarks =
     session.mode === 'normal'
       ? availableMarksForScenario(scenario, session.mode, level)
@@ -141,7 +142,9 @@ export default function GameScreen() {
         <Pressable
           hitSlop={12}
           onPress={() => setLeaveModalVisible(true)}
+          accessibilityRole="button"
           accessibilityLabel="Leave session"
+          style={styles.backBtn}
         >
           <Ionicons name="chevron-back" size={26} color={colors.ink} />
         </Pressable>
@@ -154,7 +157,7 @@ export default function GameScreen() {
       </View>
 
       {status === 'viewing-card' && (
-        <View style={styles.body}>
+        <View style={[styles.body, { paddingBottom: insets.bottom + space.md }]}>
           <View style={styles.cardArea}>
             <SwipeableCard
               key={scenario.id}
@@ -169,7 +172,10 @@ export default function GameScreen() {
 
       {status === 'followup-mcq' && followUp && (
         <ScrollView
-          contentContainerStyle={styles.qContent}
+          contentContainerStyle={[
+            styles.qContent,
+            { paddingBottom: insets.bottom + space.xxxl },
+          ]}
           showsVerticalScrollIndicator={false}
         >
           <Text style={styles.phaseLabel}>Follow-up</Text>
@@ -186,7 +192,10 @@ export default function GameScreen() {
 
       {status === 'evolving-presentation' && scenario.evolvingStage && evolvingQuestion && (
         <ScrollView
-          contentContainerStyle={styles.qContent}
+          contentContainerStyle={[
+            styles.qContent,
+            { paddingBottom: insets.bottom + space.xxxl },
+          ]}
           showsVerticalScrollIndicator={false}
         >
           <Text style={styles.phaseLabel}>The picture changes</Text>
@@ -219,9 +228,11 @@ const styles = StyleSheet.create({
     gap: space.md,
     paddingBottom: space.md,
   },
-  body: { flex: 1, gap: space.md, paddingBottom: space.lg },
+  backBtn: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
+  body: { flex: 1, gap: space.md },
   cardArea: { flex: 1 },
-  qContent: { gap: space.lg, paddingVertical: space.md, paddingBottom: space.xxxl },
+  // paddingBottom for body and qContent is applied inline using insets.bottom (safe area aware).
+  qContent: { gap: space.lg, paddingVertical: space.md },
   phaseLabel: {
     ...type.label,
     textTransform: 'uppercase',

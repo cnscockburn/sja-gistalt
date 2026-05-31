@@ -18,9 +18,13 @@ export function MCQOption({ index, text, state, disabled, onPress }: MCQOptionPr
   const showCorrect = state === 'selectedCorrect' || state === 'revealCorrect';
   const showWrong = state === 'selectedWrong';
 
+  const outcomeSuffix = showCorrect ? ', correct' : showWrong ? ', wrong' : '';
+
   return (
     <Pressable
       accessibilityRole="button"
+      accessibilityLabel={`Option ${LETTERS[index]}: ${text}${outcomeSuffix}`}
+      accessibilityState={{ disabled, checked: showCorrect || showWrong }}
       disabled={disabled}
       onPress={onPress}
       style={({ pressed }) => [

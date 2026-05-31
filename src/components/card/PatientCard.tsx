@@ -33,6 +33,9 @@ export function PatientCard({ scenario, level, scrollEnabled = true }: PatientCa
             contentFit="contain"
             transition={150}
             accessibilityIgnoresInvertColors
+            // Decorative — the scenario.setting text immediately below carries
+            // the same contextual information for screen reader users.
+            accessible={false}
           />
         ) : null}
 

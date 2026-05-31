@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { colors, radius, space, type } from '@/constants/theme';
+import { colors, elevation, radius, space, type } from '@/constants/theme';
 
 export interface SegmentOption<T extends string | number> {
   label: string;
@@ -18,14 +18,14 @@ export function Segmented<T extends string | number>({
   onChange,
 }: SegmentedProps<T>) {
   return (
-    <View style={styles.track}>
+    <View style={styles.track} accessibilityRole="radiogroup">
       {options.map((opt) => {
         const selected = opt.value === value;
         return (
           <Pressable
             key={String(opt.value)}
-            accessibilityRole="button"
-            accessibilityState={{ selected }}
+            accessibilityRole="radio"
+            accessibilityState={{ checked: selected }}
             onPress={() => onChange(opt.value)}
             style={[styles.segment, selected && styles.segmentSelected]}
           >
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: colors.line,
     borderRadius: radius.md,
-    padding: 4,
-    gap: 4,
+    padding: space.xs,
+    gap: space.xs,
   },
   segment: {
     flex: 1,
@@ -54,13 +54,7 @@ const styles = StyleSheet.create({
   },
   segmentSelected: {
     backgroundColor: colors.surfaceRaised,
-    ...{
-      shadowColor: '#1A1E1B',
-      shadowOpacity: 0.06,
-      shadowRadius: 6,
-      shadowOffset: { width: 0, height: 2 },
-      elevation: 2,
-    },
+    ...elevation.subtle,
   },
   label: { ...type.label, color: colors.inkSoft, paddingHorizontal: space.sm },
   labelSelected: { color: colors.ink },

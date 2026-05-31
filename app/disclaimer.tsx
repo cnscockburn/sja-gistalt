@@ -23,10 +23,14 @@ export default function Disclaimer() {
       ]}
     >
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text style={styles.wordmark}>GESTALT</Text>
-        <Text style={styles.kicker}>Education & practice tool</Text>
+        <Text style={styles.wordmark} accessibilityRole="header">
+          GESTALT
+        </Text>
+        <Text style={styles.kicker}>Education &amp; practice tool</Text>
 
-        <Text style={styles.heading}>Before you start</Text>
+        <Text style={styles.heading} accessibilityRole="header">
+          Before you start
+        </Text>
         <Text style={styles.body}>
           This is an independent education and practice tool. It is not affiliated with,
           endorsed by, or officially released by St John Ambulance.
