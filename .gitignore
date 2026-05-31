@@ -37,6 +37,14 @@ ios/.xcode.env.local
 .env.local
 .env.*.local
 
+# Temp / scratch files
+*.txt.tmp
+.e.txt
+tree_report.txt
+
+# Source PDFs (reference only, not part of the app)
+src/data/scenarios/*.pdf
+
 # OS
 .DS_Store
 Thumbs.db
