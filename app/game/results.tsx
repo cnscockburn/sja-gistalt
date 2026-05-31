@@ -27,7 +27,10 @@ export default function Results() {
 
   // Count completed sessions so the home screen can collapse the
   // "How it works" reminder for returning users after the first session.
+  // Guard on session to avoid incrementing when the screen is mounted without
+  // a real completed session (direct navigation, Android back-stack replay).
   useEffect(() => {
+    if (!session) return;
     incrementCompletedSessions();
     // Only fire once per results mount, not on re-renders.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -41,6 +44,9 @@ export default function Results() {
   if (!session || !score) return null;
 
   const byId = new Map(session.deck.map((s) => [s.id, s]));
+  // Build a lookup from the already-computed breakdown so each ScenarioResultCard
+  // receives its pre-computed score instead of calling scoreScenario again.
+  const scoreById = new Map(score.breakdown.map((s) => [s.scenarioId, s]));
 
   const onPlayAgain = async () => {
     const deck = await buildDeck(session.level, stackSize);
@@ -80,6 +86,7 @@ export default function Results() {
               answer={answer}
               level={session.level}
               mode={session.mode}
+              score={scoreById.get(answer.scenarioId)}
             />
           );
         })}

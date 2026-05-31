@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import {
   LayoutAnimation,
   Platform,
@@ -23,6 +23,13 @@ interface DisclosureProps {
 
 export function Disclosure({ title, children, defaultOpen = false }: DisclosureProps) {
   const [open, setOpen] = useState(defaultOpen);
+
+  // Sync the open state when defaultOpen changes after mount — necessary when the
+  // parent component stays mounted (e.g. a tab screen) and the controlling value
+  // changes in the background (e.g. completedSessionCount incrementing via another route).
+  useEffect(() => {
+    setOpen(defaultOpen);
+  }, [defaultOpen]);
 
   const toggle = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);

@@ -7,6 +7,7 @@ import { colors, radius, space, type } from '@/constants/theme';
 import type { Level } from '@/types/level';
 import { LEVEL_SHORT } from '@/types/level';
 import { resolveFollowUp } from '@/types/scenario';
+import { availableMarksForScenario } from '@/utils/scoring';
 import { Pill } from '@/components/ui/Pill';
 import { ProgressBar } from '@/components/game/ProgressBar';
 import { SwipeableCard } from '@/components/game/SwipeableCard';
@@ -124,8 +125,12 @@ export default function GameScreen() {
   const hasEvolving = !!evolvingQuestion;
 
   // Available marks for the current scenario shown in the header.
+  // Omit in swipe-only mode — there are no follow-ups, so showing "1pt" per card
+  // would mislead users into expecting a scoring breakdown that doesn't exist.
   const availableMarks =
-    session.mode === 'normal' ? 1 + (followUp ? 1 : 0) + (hasEvolving ? 1 : 0) : 1;
+    session.mode === 'normal'
+      ? availableMarksForScenario(scenario, session.mode, level)
+      : undefined;
 
   const followupContinue = hasEvolving ? 'Continue' : isLast ? 'See results' : 'Next patient';
   const evolvingContinue = isLast ? 'See results' : 'Next patient';

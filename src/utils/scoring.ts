@@ -6,6 +6,26 @@ const pct = (earned: number, available: number) =>
   available === 0 ? 0 : Math.round((earned / available) * 100);
 
 /**
+ * Returns the total marks available for a scenario without needing an AnswerRecord.
+ * Use this to show the per-scenario marks budget before the user has answered.
+ *  - verdict: always 1
+ *  - follow-up: +1 if normal mode and a follow-up resolves for this level
+ *  - evolving: +1 if normal mode and an evolving follow-up resolves for this level
+ */
+export function availableMarksForScenario(
+  scenario: Scenario,
+  mode: GameMode,
+  level: Level
+): number {
+  if (mode !== 'normal') return 1;
+  return (
+    1 +
+    (resolveFollowUp(scenario.followUp, level) ? 1 : 0) +
+    (scenario.evolvingStage && resolveFollowUp(scenario.evolvingStage.followUp, level) ? 1 : 0)
+  );
+}
+
+/**
  * Marks available for a scenario depend on mode and level:
  *  - verdict: always 1
  *  - follow-up: +1 if normal mode and a follow-up resolves for this level

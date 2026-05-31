@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, space, type } from '@/constants/theme';
 import type { Level } from '@/types/level';
-import type { AnswerRecord, GameMode } from '@/types/game';
+import type { AnswerRecord, GameMode, ScenarioScore } from '@/types/game';
 import { resolveFollowUp, type Scenario, type Verdict } from '@/types/scenario';
 import { scoreScenario } from '@/utils/scoring';
 
@@ -11,6 +11,8 @@ interface Props {
   answer: AnswerRecord;
   level: Level;
   mode: GameMode;
+  /** Pre-computed score from the session breakdown. Falls back to scoreScenario if omitted. */
+  score?: ScenarioScore;
 }
 
 const verdictLabel = (v: Verdict) => (v === 'sick' ? 'Sick' : 'Not sick');
@@ -27,7 +29,13 @@ function Mark({ correct }: { correct: boolean }) {
   );
 }
 
-export function ScenarioResultCard({ scenario, answer, level, mode }: Props) {
+export function ScenarioResultCard({
+  scenario,
+  answer,
+  level,
+  mode,
+  score: scoreProp,
+}: Props) {
   const followUp = resolveFollowUp(scenario.followUp, level);
   const evolving = scenario.evolvingStage
     ? resolveFollowUp(scenario.evolvingStage.followUp, level)
@@ -36,7 +44,9 @@ export function ScenarioResultCard({ scenario, answer, level, mode }: Props) {
   const showEvolving = mode === 'normal' && !!evolving;
   const notes = level === 'cfa' ? scenario.levelFlags.cfaNotes : scenario.levelFlags.erNotes;
 
-  const { earned, available } = scoreScenario(scenario, answer, mode, level);
+  // Use the pre-computed score from the parent's session breakdown when available,
+  // so the results screen doesn't call scoreScenario 30× on every re-render.
+  const { earned, available } = scoreProp ?? scoreScenario(scenario, answer, mode, level);
   const cardTint =
     earned === available ? styles.cardCorrect : earned === 0 ? styles.cardWrong : null;
 

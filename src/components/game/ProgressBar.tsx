@@ -17,7 +17,7 @@ export function ProgressBar({ current, total, availableMarks }: ProgressBarProps
       </View>
       <Text style={styles.count}>
         {current}/{total}
-        {availableMarks != null && (
+        {availableMarks != null && availableMarks > 0 && (
           <Text style={styles.marks}>{`  ·  ${availableMarks}pt`}</Text>
         )}
       </Text>
