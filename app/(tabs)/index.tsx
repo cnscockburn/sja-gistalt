@@ -21,8 +21,10 @@ const MODE_HINT: Record<GameMode, string> = {
 };
 
 const RECALL_HINT: Record<RecallMode, string> = {
-  hidden: 'Patient card disappears after your verdict — tests recall as well as reasoning.',
-  accessible: 'A "Review case" panel is available during follow-up questions.',
+  hidden:
+    'Patient card is gone after your verdict. A "Review case" panel is still available as a tap-to-open reference if you need it.',
+  accessible:
+    '"Review case" opens by default during follow-ups, showing the setting and key vitals.',
 };
 
 export default function PracticeHome() {

@@ -1,4 +1,8 @@
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+// ConfirmModal uses a transparent Modal with two layers:
+//   1. A full-screen Pressable overlay (dismisses on tap-outside)
+//   2. A plain View card (not Pressable) so screen readers don't encounter
+//      an unlabelled interactive element inside the modal.
 import { colors, radius, space, type } from '@/constants/theme';
 
 interface ConfirmModalProps {
@@ -31,10 +35,10 @@ export function ConfirmModal({
       statusBarTranslucent
       onRequestClose={onCancel}
     >
-      {/* Tap outside to dismiss */}
+      {/* Tap outside the card to dismiss */}
       <Pressable style={styles.overlay} onPress={onCancel}>
-        {/* Stop propagation so tapping the card doesn't dismiss */}
-        <Pressable style={styles.card} onPress={() => {}}>
+        {/* Plain View — not a Pressable — so the a11y tree has no unlabelled interactive element */}
+        <View style={styles.card}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.message}>{message}</Text>
 
@@ -65,7 +69,7 @@ export function ConfirmModal({
               </Text>
             </Pressable>
           </View>
-        </Pressable>
+        </View>
       </Pressable>
     </Modal>
   );
@@ -74,7 +78,7 @@ export function ConfirmModal({
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(26, 30, 27, 0.55)',
+    backgroundColor: 'rgba(26, 30, 27, 0.55)', // colors.ink (#1A1E1B) at 55% opacity
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: space.xl,

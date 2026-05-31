@@ -90,7 +90,11 @@ export function QuestionPanel({
 
       {answered && (
         <View style={styles.explain}>
-          <Text style={styles.explainLabel}>Why</Text>
+          <Text style={styles.explainLabel}>
+            {selected !== null && shuffledOptions[selected].correct
+              ? 'Why this is correct'
+              : 'Why'}
+          </Text>
           <Text style={styles.explainText}>{question.explanation}</Text>
           {levelNote ? <Text style={styles.levelNote}>{levelNote}</Text> : null}
         </View>

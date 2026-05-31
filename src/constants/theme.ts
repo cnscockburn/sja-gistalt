@@ -30,6 +30,8 @@ export const colors = {
   wrongSoft: '#F6E6E3',
 
   accent: '#E8B23A',
+  /** Warm amber background for informational / partial-correct surfaces. */
+  amberNote: '#FBF1DE',
   onBrand: '#F6F5F1',
   onSick: '#FBF1EF',
 } as const;

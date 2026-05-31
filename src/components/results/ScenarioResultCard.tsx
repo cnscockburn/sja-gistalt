@@ -48,7 +48,11 @@ export function ScenarioResultCard({
   // so the results screen doesn't call scoreScenario 30× on every re-render.
   const { earned, available } = scoreProp ?? scoreScenario(scenario, answer, mode, level);
   const cardTint =
-    earned === available ? styles.cardCorrect : earned === 0 ? styles.cardWrong : null;
+    earned === available
+      ? styles.cardCorrect
+      : earned === 0
+        ? styles.cardWrong
+        : styles.cardPartial; // some marks earned — correct gestalt, wrong management
 
   return (
     <View style={[styles.card, cardTint]}>
@@ -106,6 +110,10 @@ const styles = StyleSheet.create({
   cardWrong: {
     backgroundColor: colors.wrongSoft,
     borderColor: colors.wrong,
+  },
+  cardPartial: {
+    backgroundColor: colors.amberNote,
+    borderColor: colors.accent,
   },
   title: { ...type.title, color: colors.ink, marginBottom: space.xs },
   line: { flexDirection: 'row', alignItems: 'center', gap: space.sm },

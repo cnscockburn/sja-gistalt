@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { radius, space, type } from '@/constants/theme';
+import { colors, radius, space, type } from '@/constants/theme';
 
 export function UnofficialBanner() {
   return (
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: space.sm,
-    backgroundColor: '#FBF1DE',
+    backgroundColor: colors.amberNote,
     borderRadius: radius.sm,
     paddingHorizontal: space.md,
     paddingVertical: space.sm,
