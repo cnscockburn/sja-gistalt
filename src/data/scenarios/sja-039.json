@@ -1,0 +1,77 @@
+{
+  "id": "sja-039",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / diabetic emergency (hypoglycaemia)",
+  "title": "Hypoglycaemia at a charity event",
+  "setting": "Charity event. 40M behaving oddly, grumpy, argumentative, unsteady on feet, pale, sweaty. Known Type 1 diabetic.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Diabetic patient with blood glucose of 3.2 mmol/L, altered mental status (grumpy, confused), and autonomic symptoms (sweaty, pale). Sick: needs immediate glucose treatment.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "14/min",
+      "pulseRate": "95 bpm",
+      "painScore": "1/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert but confused and irritable",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "91%",
+      "bloodGlucose": "3.2 mmol/L",
+      "bloodPressure": "85/58 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Spectators and equipment nearby",
+      "response": "Responding but very confused and argumentative",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "Extremely pale, cold, and clammy skin"
+    },
+    "er": {
+      "disability": "Confused, unsteady on feet",
+      "exposure": "Outdoors, hot sun"
+    }
+  },
+  "history": {
+    "complaint": "Staggering and behaving oddly",
+    "history": "Missed lunch because he was covering a stall, had breakfast early at 6am",
+    "pmh": "Type 1 diabetes",
+    "drugs": "Insulin",
+    "injuries": "None",
+    "additional": "Friend reports he is normally very friendly, not aggressive"
+  },
+  "followUp": {
+    "question": "What is the first-line treatment for this patient while he is still able to swallow?",
+    "options": [
+      {
+        "text": "Give 15-20g of fast-acting sugar (sugary drink, sweets, or gel) and reassess in 15 minutes",
+        "correct": true
+      },
+      {
+        "text": "Administer his regular dose of insulin to stabilize his blood sugar",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back, elevate his legs, and give him water",
+        "correct": false
+      },
+      {
+        "text": "Tell him to rest quietly in a dark room until the event ends",
+        "correct": false
+      }
+    ],
+    "explanation": "Symptomatic low blood sugar requires immediate oral fast-acting sugar. Giving insulin is highly dangerous. Water does not raise blood sugar. Rest without treatment will lead to unconsciousness."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Give sugary food/drink immediately if conscious. If unresponsive, recovery position and 999.",
+    "erNotes": "Measure BGL. Treat with oral glucose. If unresponsive, administer glucagon IM (if trained) or call 999 and protect airway. Monitor vitals closely."
+  }
+}

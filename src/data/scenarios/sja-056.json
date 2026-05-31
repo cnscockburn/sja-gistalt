@@ -1,0 +1,77 @@
+{
+  "id": "sja-056",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / psychiatric crisis",
+  "title": "Distressed schizophrenic patient refusing care",
+  "setting": "City centre sports event. 38M distressed, schizophrenic, believes men are chasing him, refusing to let responders touch him, breathing heavily.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe psychiatric crisis with paranoia, distress, rapid breathing, and refusal of necessary care. Sick: call for additional support and protect.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "18/min",
+      "pulseRate": "91 bpm",
+      "painScore": "1/10",
+      "temperature": "37.4\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "99%",
+      "bloodGlucose": "3.8 mmol/L",
+      "bloodPressure": "83/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Distressed and unpredictable patient behavior",
+      "response": "Alert, highly distressed, refusing contact",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Rapid and shallow",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Paranoid, on edge",
+      "exposure": "Indoors, reception area"
+    }
+  },
+  "history": {
+    "complaint": "Severe distress and paranoia",
+    "history": "Believes a group of men are chasing him, ran into the arena for help, refusing medical contact",
+    "pmh": "Schizophrenia",
+    "drugs": "Antipsychotic medications prescribed (struggling to control symptoms today)",
+    "injuries": "None",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is your best initial management approach for this paranoid patient?",
+    "options": [
+      {
+        "text": "Maintain a safe distance, speak in a calm, non-confrontational voice, respect his space, and call for mental health/police support",
+        "correct": true
+      },
+      {
+        "text": "Physically restrain him immediately to perform a full vital check",
+        "correct": false
+      },
+      {
+        "text": "Tell him his fears are ridiculous and he must calm down immediately",
+        "correct": false
+      },
+      {
+        "text": "Leave him alone in the reception and ignore him",
+        "correct": false
+      }
+    ],
+    "explanation": "Psychiatric crisis. Maintain a safe distance, do not crowd or physically touch without consent. Speak in a calm, clear, non-confrontational manner. Call for mental health team or police support if safety is a concern. Never mock or physically restrain a non-violent patient."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Keep safe distance, talk calmly. Coordinate with stewards and call for mental health support.",
+    "erNotes": "Severe psychiatric crisis. Assess capacity, maintain non-confrontational approach. Check BGL if possible (mimics). Request police/mental health team if patient is a danger to himself or others."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "sja-037",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / stroke (FAST)",
+  "title": "Suspected stroke on the high street",
+  "setting": "Friday night high street. Elderly person sitting on a bench, looking disoriented, slurring speech, face drooping, left arm weakness.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Positive FAST test (Face drooped, Arm weakness, Speech slurred). This is a suspected stroke, a time-critical neurological emergency. Sick: requires immediate 999 escalation.",
+  "observations": {
+    "shared": {
+      "fastTest": "Positive (Face, Arm, Speech)",
+      "respirationRate": "12/min",
+      "pulseRate": "100 bpm",
+      "painScore": "1/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Uneven and not reactive",
+      "pulseOximetry": "86%",
+      "bloodGlucose": "7.9 mmol/L",
+      "bloodPressure": "150/90 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Friday night crowds and traffic",
+      "response": "Alert and responsive but confused",
+      "catHaem": "None",
+      "airway": "Open and clear, mild drooling",
+      "breathing": "Normal",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Left-sided weakness, disoriented",
+      "exposure": "Outdoors, high street bench"
+    }
+  },
+  "history": {
+    "complaint": "Slurred speech and arm weakness",
+    "history": "Shopping in local high street, felt 'out of sorts' and sat down on bench 15 minutes ago",
+    "pmh": "High blood pressure and cholesterol",
+    "drugs": "Simvastatin, Ramipril",
+    "injuries": "None",
+    "additional": "Dribbling slightly, which he finds very embarrassing"
+  },
+  "followUp": {
+    "question": "What is the correct priority management for this suspected stroke?",
+    "options": [
+      {
+        "text": "Call 999 immediately, note the exact time of onset, keep the patient calm, and protect the airway",
+        "correct": true
+      },
+      {
+        "text": "Give him his ramipril tablet to lower his high blood pressure",
+        "correct": false
+      },
+      {
+        "text": "Give him a sugary drink to treat a potential hypoglycaemic episode",
+        "correct": false
+      },
+      {
+        "text": "Encourage him to stand up and walk to the nearest clinic",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected stroke is a medical emergency. Call 999 immediately and record exact onset time. Do not give anything by mouth due to swallowing risk. Do not administer prescription drugs. Never allow walking."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "FAST test positive. Call 999 immediately, keep calm, protect airway.",
+    "erNotes": "Suspected acute stroke. Monitor airway. Check BGL to rule out hypoglycaemia. Administer oxygen if SpO\u2082 <94%. Prepare for rapid transport."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "sja-036",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Acute Coronary Syndromes 2021",
+  "title": "Cardiac chest pain in the stadium toilets",
+  "setting": "Stadium toilets. Elderly patient feeling unwell, pale, cold, clammy, complaining of severe indigestion/chest pain that won't go away.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe central chest pain, respiratory distress, and profound cardiogenic shock (BP 70/40, pulse 120 bpm). Sick: call 999 immediately and treat.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "25/min",
+      "pulseRate": "120 bpm",
+      "painScore": "9/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "85%",
+      "bloodGlucose": "8.5 mmol/L",
+      "bloodPressure": "70/40 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Confined space in public toilets",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Fast and shallow",
+      "circulation": "Very weak pulse, skin is pale, cold, and clammy"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Indoors, public toilet floor"
+    }
+  },
+  "history": {
+    "complaint": "Indigestion and chest pain",
+    "history": "Suffering from severe indigestion all day, became dizzy and collapsed/sat down in toilets",
+    "pmh": "None",
+    "drugs": "Allergic to penicillin",
+    "injuries": "None",
+    "additional": "Friend found him and called for first aid"
+  },
+  "followUp": {
+    "question": "What is your immediate priority action for this patient?",
+    "options": [
+      {
+        "text": "Call 999 immediately, sit him in the 'W' position, administer 300mg chewable aspirin, and monitor closely",
+        "correct": true
+      },
+      {
+        "text": "Give him a glass of water and tell him to lie flat on the floor",
+        "correct": false
+      },
+      {
+        "text": "Administer GTN spray repeatedly and tell him to walk to the exit",
+        "correct": false
+      },
+      {
+        "text": "Give him an antacid tablet for his indigestion and leave him to rest",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected heart attack is a critical emergency. Call 999 immediately. Sit him in the 'W' position to ease breathing and cardiac strain. Administer 300mg chewable aspirin. Never lay flat (worsens breathing) or allow walking. Indigestion is a common mimic of myocardial infarction."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Recognize cardiac symptoms, call 999. Place in W-position, administer aspirin 300mg chewable. Keep at rest.",
+    "erNotes": "Suspected myocardial infarction with cardiogenic shock (BP 70/40). Give high-flow oxygen, give aspirin 300mg. Monitor vitals, prepare AED, and expedite ambulance."
+  }
+}

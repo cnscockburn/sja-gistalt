@@ -1,0 +1,77 @@
+{
+  "id": "sja-013",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / stroke (FAST)",
+  "title": "Suspected stroke at a care home",
+  "setting": "Local care home. 74M resident is sitting in a chair, slurring his words. Drooped face on one side and cannot lift his left arm.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Positive FAST test (Face drooped, Arm weakness, Speech slurred). This is a suspected stroke, a time-critical neurological emergency. Sick: requires immediate 999 escalation.",
+  "observations": {
+    "shared": {
+      "fastTest": "Positive (Face, Arm, Speech)",
+      "respirationRate": "14/min",
+      "pulseRate": "100 bpm",
+      "painScore": "1/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Uneven and not reactive",
+      "pulseOximetry": "86%",
+      "bloodGlucose": "8.1 mmol/L",
+      "bloodPressure": "150/90 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Alert but confused and slurring speech",
+      "catHaem": "None",
+      "airway": "Open and clear, mild drooling",
+      "breathing": "Adequate, slightly slow",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Left-sided weakness, disoriented",
+      "exposure": "Indoors, warm bedroom"
+    }
+  },
+  "history": {
+    "complaint": "Slurred speech and arm weakness",
+    "history": "Symptom onset 15 minutes ago while sitting at a table",
+    "pmh": "High blood pressure, Type 2 diabetes",
+    "drugs": "Ramipril, Metformin, Simvastatin",
+    "injuries": "None",
+    "additional": "Staff are extremely concerned as he was talking normally minutes ago"
+  },
+  "followUp": {
+    "question": "What is your immediate priority management for this suspected stroke?",
+    "options": [
+      {
+        "text": "Call 999 immediately, note exact onset time, keep calm, and protect the airway",
+        "correct": true
+      },
+      {
+        "text": "Give him a sugary drink to treat a potential hypoglycaemic episode",
+        "correct": false
+      },
+      {
+        "text": "Give him his ramipril tablet to lower his high blood pressure",
+        "correct": false
+      },
+      {
+        "text": "Encourage him to lie flat and sleep, checking on him in an hour",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected stroke is a medical emergency. Call 999 immediately and record exact onset time for thrombolysis. Do not give anything by mouth due to swallowing risk. Sleep is dangerous as it delays time-sensitive care."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Perform FAST test, call 999 immediately, and record time of onset.",
+    "erNotes": "Suspected acute stroke. Monitor airway (risk of aspiration), check blood glucose to rule out hypoglycaemia (mimics stroke), provide oxygen if indicated, and prepare for rapid transport."
+  }
+}

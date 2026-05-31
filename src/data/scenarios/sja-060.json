@@ -1,0 +1,77 @@
+{
+  "id": "sja-060",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / flail chest and rib fractures",
+  "title": "Flail chest injury during a rugby match",
+  "setting": "Rugby tournament. Player tackled, fell under ruck, did not get up. Extreme right-sided chest pain, breathlessness, visible paradoxical movement on right side.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe flail chest with paradoxical chest wall movement, extreme pain, dyspnea, and borderline low BP (90/52). Sick: call 999 immediately and manage.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "24/min",
+      "pulseRate": "105 bpm",
+      "painScore": "10/10",
+      "temperature": "36.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert but in Pain (moving to unresponsive)",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "95%",
+      "bloodGlucose": "5.5 mmol/L",
+      "bloodPressure": "90/52 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None, play stopped, field cleared",
+      "response": "Alert but in pain, becoming unresponsive",
+      "catHaem": "None",
+      "airway": "Clear and open",
+      "breathing": "Laboured, rapid and shallow; paradoxical chest movement",
+      "circulation": "Irregular pulse, pale skin"
+    },
+    "er": {
+      "disability": "Hypoxic, severe pain",
+      "exposure": "Outdoors, grass field, cool wind"
+    }
+  },
+  "history": {
+    "complaint": "Severe pain in right side, chest injury",
+    "history": "Tackled by two players, fell under the ensuing ruck 5 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies known",
+    "injuries": "Suspect multiple rib fractures and flail chest on the right side",
+    "additional": "Player becomes extremely distressed if allowed to view the injury"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for a flail chest injury?",
+    "options": [
+      {
+        "text": "Call 999, support the patient in a semi-sitting position, leaning towards the injured side, and hold arm on injured side in a sling",
+        "correct": true
+      },
+      {
+        "text": "Bind the chest tightly with heavy elastic bandages to stop paradoxical movement",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back and tell him to hold his breath",
+        "correct": false
+      },
+      {
+        "text": "Perform chest compressions immediately to keep the lungs inflated",
+        "correct": false
+      }
+    ],
+    "explanation": "Flail chest requires an immediate 999 call. Support the patient in a semi-sitting position, leaning *towards* the injured side to maximize expansion of the uninjured lung. Hold the arm on the injured side in a sling to support the chest wall. Never bind the chest tightly as it restricts ventilation."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Support in semi-sitting position leaning to injured side, apply sling. Reassure.",
+    "erNotes": "Suspected flail chest / multiple rib fractures. Give high-flow oxygen. Monitor SpO\u2082 and BP. If he goes unresponsive, safely log-roll to recovery position on the *injured* side to protect the uninjured lung."
+  }
+}

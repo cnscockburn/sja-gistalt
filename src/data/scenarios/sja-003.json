@@ -1,0 +1,77 @@
+{
+  "id": "sja-003",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / soft-tissue injury (RICE)",
+  "title": "Wrist strain at a country show",
+  "setting": "Busy country show. 34M contractor strained his wrist while lifting a heavy load of fencing. Sitting down, holding his wrist in pain.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, airway clear, breathing and circulation normal. Isolated soft-tissue wrist strain with no systemic red flags. Injured but not sick: treat on scene.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "15/min",
+      "pulseRate": "75 bpm",
+      "painScore": "4/10",
+      "temperature": "36.7\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "95%",
+      "bloodGlucose": "4.0 mmol/L",
+      "bloodPressure": "118/80 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Heavy load and spectators nearby",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "No visible issues"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Undercover, warm environment"
+    }
+  },
+  "history": {
+    "complaint": "Strained wrist lifting fencing",
+    "history": "Felt a sharp pull in the wrist while lifting 10 minutes ago",
+    "pmh": "Gout",
+    "drugs": "None noted",
+    "injuries": "Light bruising and swelling on the wrist, painful to move",
+    "additional": "None noted"
+  },
+  "followUp": {
+    "question": "How should this wrist strain be initially managed?",
+    "options": [
+      {
+        "text": "Rest the wrist, apply a cold compress, support with a bandage, and elevate",
+        "correct": true
+      },
+      {
+        "text": "Pull the fingers firmly to try and snap the joint back into place",
+        "correct": false
+      },
+      {
+        "text": "Call 999 for a priority emergency response",
+        "correct": false
+      },
+      {
+        "text": "Massage the wrist vigorously to increase blood circulation",
+        "correct": false
+      }
+    ],
+    "explanation": "Initial management of strains is RICE. Reassure the patient and support the wrist. Rigorous manipulation or massage is dangerous and may worsen tissue damage. 999 is inappropriate for minor isolated injuries."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Support wrist in a comfortable position and apply cold compress. Advise resting the hand.",
+    "erNotes": "Differentiate from fracture (no bony tenderness or deformity). Support and advise onward care if function does not recover."
+  }
+}

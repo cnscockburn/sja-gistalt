@@ -1,0 +1,77 @@
+{
+  "id": "sja-055",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / panic attack and grounding",
+  "title": "Hyperventilation triggered by blood sight",
+  "setting": "Camping festival. 26F soldier with history of PTSD has hyperventilated and panicked at the sight of her friend's open hand bleed.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Anxiety/PTSD episode triggered by blood sight, severe hyperventilation, and altered mental status. Sick: manage, reassure, and monitor.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "24/min",
+      "pulseRate": "91 bpm",
+      "painScore": "1/10",
+      "temperature": "37.4\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "99%",
+      "bloodGlucose": "3.8 mmol/L",
+      "bloodPressure": "83/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Blood from friend's hand (being treated by colleague)",
+      "response": "Alert but panicked, disoriented",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Rapid and deep (hyperventilating)",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, festival ground"
+    }
+  },
+  "history": {
+    "complaint": "Severe hyperventilation and panic",
+    "history": "Saw friend's hand cut open, triggered a severe panic attack 5 minutes ago",
+    "pmh": "PTSD",
+    "drugs": "None",
+    "injuries": "None",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is the appropriate first aid management for this hyperventilating patient?",
+    "options": [
+      {
+        "text": "Move her away from the sight of blood, sit her down, encourage slow controlled breathing, and reassure her",
+        "correct": true
+      },
+      {
+        "text": "Force her to breathe into a paper bag to stop hyperventilation",
+        "correct": false
+      },
+      {
+        "text": "Call 999 for an emergency ambulance immediately",
+        "correct": false
+      },
+      {
+        "text": "Slap her face to snap her out of the panic attack",
+        "correct": false
+      }
+    ],
+    "explanation": "Move the patient away from the trigger (blood sight). Sit her down, encourage slow, controlled breathing, and provide calm reassurance. Paper bags are dangerous. 999 is not indicated for a simple resolved panic attack."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Move away from blood, sit down. Reassure and guide breathing.",
+    "erNotes": "Ground the patient, check BGL, monitor SpO\u2082 and BP. Provide high-flow oxygen only if indicated (though usually hyperventilation has SpO\u2082 99-100%)."
+  }
+}

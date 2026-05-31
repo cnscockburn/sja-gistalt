@@ -1,0 +1,77 @@
+{
+  "id": "sja-044",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / fractures",
+  "title": "Suspected broken ankle at a football stadium",
+  "setting": "Football stadium catering area. Fan fell over seats while celebrating, suspected broken ankle, pain 8/10, friends think he is fine.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Suspected broken ankle, pain 8/10, pale/sweating, and hypotension (90/65). Sick: immediate immobilization and 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "20/min",
+      "pulseRate": "87 bpm",
+      "painScore": "8/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "88%",
+      "bloodGlucose": "12 mmol/L",
+      "bloodPressure": "90/65 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Stadium stairs and crowd",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Faster than normal",
+      "circulation": "Skin is pale, cold, and sweaty"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, cool wind"
+    }
+  },
+  "history": {
+    "complaint": "Potentially broken ankle",
+    "history": "Tripped over and twisted ankle in stadium seats while celebrating a goal 10 minutes ago",
+    "pmh": "Broke other ankle a year ago",
+    "drugs": "Allergic to penicillin, took antihistamine for hay fever today",
+    "injuries": "Broken right ankle, swelling, non-weight bearing",
+    "additional": "Ate a pie 45 minutes prior"
+  },
+  "followUp": {
+    "question": "What is the priority first aid intervention for this suspected broken ankle?",
+    "options": [
+      {
+        "text": "Call 999, support and immobilize the ankle in a comfortable position, and do not allow weight-bearing",
+        "correct": true
+      },
+      {
+        "text": "Encourage him to stand and walk to proof it is not broken",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet above the ankle to reduce the pain",
+        "correct": false
+      },
+      {
+        "text": "Let his friend take him to A&E by walking him to the car",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected broken ankle. Call 999 immediately. Support and immobilize the ankle in a comfortable position. Never allow weight-bearing or walking as it can worsen bone displacement."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Support ankle, keep at rest. Reassure patient.",
+    "erNotes": "ACS protocol. Administer oxygen if SpO\u2082 <94%. Splint ankle in position of comfort. Monitor vitals closely, prepare AED in case of arrest."
+  }
+}

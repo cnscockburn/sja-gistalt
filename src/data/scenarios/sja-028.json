@@ -1,0 +1,77 @@
+{
+  "id": "sja-028",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Adult Basic Life Support 2021",
+  "title": "Unresponsive poisoning at an evening carnival",
+  "setting": "Carnival procession. You find a patient collapsed on the grass. Scattered beer cans/bottles are on the ground, and she has vomited. Responding only with groans.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive, groaning only, compromised airway from vomit, hypothermia (35\u00b0C), and respiratory depression. Sick: protect airway and call 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "25/min",
+      "pulseRate": "61 bpm",
+      "painScore": "0/10",
+      "temperature": "35.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Voice"
+    },
+    "er": {
+      "acvpu": "Voice",
+      "pupilSize": "Even but unreactive",
+      "pulseOximetry": "92%",
+      "bloodGlucose": "3.2 mmol/L",
+      "bloodPressure": "83/54 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Broken glass bottles and vomit on the floor",
+      "response": "Responding to voice only with groans, level of consciousness dropping",
+      "catHaem": "None",
+      "airway": "Open but threatened by vomit",
+      "breathing": "Rapid and shallow",
+      "circulation": "Bradycardic, extremely cold and pale skin"
+    },
+    "er": {
+      "disability": "Drowsy, hypothermic",
+      "exposure": "Outdoors, cold winter/night evening carnival"
+    }
+  },
+  "history": {
+    "complaint": "Unresponsive and vomiting",
+    "history": "Found collapsed on the ground by stewards. History of heavy drinking.",
+    "pmh": "None reported",
+    "drugs": "None reported",
+    "injuries": "None visible",
+    "additional": "Found lying in a puddle of vomit on the damp ground"
+  },
+  "followUp": {
+    "question": "What is the priority first aid intervention for this patient?",
+    "options": [
+      {
+        "text": "Clear the airway of vomit, place in the recovery position, cover with a space blanket, and call 999",
+        "correct": true
+      },
+      {
+        "text": "Attempt to induce further vomiting by placing a finger down her throat",
+        "correct": false
+      },
+      {
+        "text": "Administer oral glucose gel to treat suspected low blood sugar",
+        "correct": false
+      },
+      {
+        "text": "Force her to sit upright on a chair and keep her moving",
+        "correct": false
+      }
+    ],
+    "explanation": "Positioning in the recovery position is critical to prevent aspiration of vomit. Covering her with a blanket treats her hypothermia (35.0\u00b0C). Inducing vomiting is dangerous and causes airway obstruction. Do not give anything by mouth to an unresponsive patient."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Protect the airway in the recovery position. Keep her warm using blankets. Call 999 immediately.",
+    "erNotes": "Unresponsive breathing patient with hypothermia. Maintain recovery position, clear airway, give high-flow oxygen, check BGL, actively rewarm, and transfer rapidly."
+  }
+}

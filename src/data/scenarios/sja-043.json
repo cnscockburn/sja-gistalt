@@ -1,0 +1,77 @@
+{
+  "id": "sja-043",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / fractures and hypothermia",
+  "title": "Lower leg fracture at a protest",
+  "setting": "City centre protest on a cold December day. Female caught her leg between train and platform earlier, now in severe pain, cold, showing signs of hypothermia.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Lower leg fracture with severe pain, hypothermia (34.4\u00b0C), and hypotension (85/57). Sick: call 999 immediately, immobilize, and actively warm.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "16/min",
+      "pulseRate": "67 bpm",
+      "painScore": "7/10",
+      "temperature": "34.4\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Slightly large, equal and reactive",
+      "pulseOximetry": "93%",
+      "bloodGlucose": "7.0 mmol/L",
+      "bloodPressure": "85/57 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Protest crowds and cold weather",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Slightly slow",
+      "circulation": "Skin is pale, cold, and shivering"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Cold December day, sitting outside"
+    }
+  },
+  "history": {
+    "complaint": "Tenderness in the lower leg",
+    "history": "Caught and twisted leg between train and platform earlier, walked awkwardly to protest, collapsed in pain",
+    "pmh": "Hard of hearing",
+    "drugs": "Takes daily ear drops",
+    "injuries": "Fractured lower leg, swelling and tenderness, non-weight bearing",
+    "additional": "Sitting outside in the cold for 20 minutes, shivering"
+  },
+  "followUp": {
+    "question": "What is the priority first aid intervention for this patient?",
+    "options": [
+      {
+        "text": "Call 999 immediately, cover her with warm blankets to treat hypothermia, and immobilize the leg",
+        "correct": true
+      },
+      {
+        "text": "Encourage her to complete the march to keep her warm",
+        "correct": false
+      },
+      {
+        "text": "Apply a cold ice pack to her leg and do not cover her",
+        "correct": false
+      },
+      {
+        "text": "Force her to stand and walk to the nearest first aid tent",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected lower leg fracture with moderate hypothermia (34.4\u00b0C). Call 999 immediately. Cover her with warm blankets and shield from the wind to treat hypothermia. Immobilize the leg. Never apply ice to a hypothermic patient or make them walk."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Keep her warm with blankets. Support the leg and avoid movement.",
+    "erNotes": "Suspected lower leg fracture and moderate hypothermia. Monitor airway. Apply splint. Warm actively with blankets/space blankets. Administer oxygen if SpO\u2082 <94%. Transport priority."
+  }
+}

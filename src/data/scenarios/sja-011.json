@@ -1,0 +1,77 @@
+{
+  "id": "sja-011",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021",
+  "title": "Child cardiac arrest at a school sports day",
+  "setting": "School sports day. 9-year-old child collapsed during a race. Lying still on the track, pale, unresponsive, and not breathing.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive and not breathing normally. Paediatric cardiac arrest is a critical life-threatening emergency. Unequivocally sick: start CPR beginning with rescue breaths.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "0/min",
+      "pulseRate": "0 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Fixed and dilated",
+      "pulseOximetry": "Unrecordable",
+      "bloodGlucose": "4.3 mmol/L",
+      "bloodPressure": "Unrecordable"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Spectators and runners ongoing near track",
+      "response": "Unresponsive",
+      "catHaem": "None",
+      "airway": "Open, requires manual maintenance",
+      "breathing": "None",
+      "circulation": "No effective pulse"
+    },
+    "er": {
+      "disability": "Unresponsive",
+      "exposure": "Outdoors, hot sun"
+    }
+  },
+  "history": {
+    "complaint": "Sudden collapse during race",
+    "history": "Reported feeling unwell before the race, collapsed 200m in",
+    "pmh": "None",
+    "drugs": "None known",
+    "injuries": "No visible injuries",
+    "additional": "Teacher is on scene and is a trained paediatric first aider"
+  },
+  "followUp": {
+    "question": "What is the correct resuscitation sequence for this 9-year-old child?",
+    "options": [
+      {
+        "text": "Give 5 initial rescue breaths, then 15 compressions to 2 breaths, and fetch the AED",
+        "correct": true
+      },
+      {
+        "text": "Perform adult CPR (30 compressions to 2 breaths) starting with compressions",
+        "correct": false
+      },
+      {
+        "text": "Place in the recovery position and splash cold water on the face",
+        "correct": false
+      },
+      {
+        "text": "Check for a pulse for 2 minutes before starting any intervention",
+        "correct": false
+      }
+    ],
+    "explanation": "Paediatric arrest is usually hypoxic, so resuscitation begins with 5 initial rescue breaths followed by a 15:2 ratio of compressions to breaths. Adult BLS ratio of 30:2 is secondary if paediatric protocol is not known."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Start paediatric CPR immediately. Paediatric sequence is 5 breaths, then 15:2.",
+    "erNotes": "Prioritize airway and ventilations with high-flow oxygen, attach paediatric pads to AED if available (or adult pads if >8 years old), and coordinate with the teacher on scene."
+  }
+}

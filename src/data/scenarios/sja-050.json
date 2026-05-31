@@ -1,0 +1,77 @@
+{
+  "id": "sja-050",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / spinal injury and helmet removal",
+  "title": "Helmet removal after motorcyclist seizure",
+  "setting": "Motorcycle rally. Rider had a seizure while riding, crashed at low speed. Unresponsive, wearing full-face helmet, gurgling/snoring breathing.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive patient with a compromised airway (gurgling due to helmet/position), wearing a helmet, and high risk of spinal injury. Sick: immediate airway protection.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "8/min",
+      "pulseRate": "62 bpm",
+      "painScore": "Unable to ascertain",
+      "temperature": "Unable to ascertain"
+    },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "92%",
+      "bloodGlucose": "4.2 mmol/L",
+      "bloodPressure": "100/65 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Motorcycle still running, potential traffic",
+      "response": "Initially unresponsive",
+      "catHaem": "None",
+      "airway": "Compromised, gurgling due to helmet and position",
+      "breathing": "Slow, shallow and noisy",
+      "circulation": "Pale skin, fast pulse"
+    },
+    "er": {
+      "disability": "Disoriented following seizure",
+      "exposure": "Outdoors, grass verge, mild abrasions"
+    }
+  },
+  "history": {
+    "complaint": "Seizure and crash",
+    "history": "Had a seizure while riding, lost control and crashed into grass verge 5 minutes ago",
+    "pmh": "Epilepsy diagnosed 5 years ago",
+    "drugs": "Prescribed anticonvulsant medication (forgot to take today)",
+    "injuries": "Shoulder abrasion, complaining of pain",
+    "additional": "Full motorcyclist gear"
+  },
+  "followUp": {
+    "question": "What is the priority management step for this patient?",
+    "options": [
+      {
+        "text": "Stabilize the head and spine, call 999, and safely remove the helmet using a two-person technique to manage the compromised airway",
+        "correct": true
+      },
+      {
+        "text": "Pull the helmet off immediately to relieve pressure on the neck",
+        "correct": false
+      },
+      {
+        "text": "Encourage him to stand up and walk to the nearest first aid tent",
+        "correct": false
+      },
+      {
+        "text": "Do nothing; wait for the ambulance crew to arrive before touching the patient",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected spinal injury. Stabilize the head and spine in a neutral position. Call 999 immediately. Only remove the helmet if breathing is threatened or if the airway is compromised (e.g. vomiting), using a safe two-person technique. Never pull the helmet off immediately or allow walking."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Stabilize head and spine. Reassure patient, keep warm.",
+    "erNotes": "Suspected spinal injury. Maintain neutral alignment. Check BGL, monitor vitals. If patient goes unresponsive and vomits, safely remove helmet using two-person technique, clear airway, and place in recovery position using log-roll."
+  }
+}

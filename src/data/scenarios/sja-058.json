@@ -1,0 +1,77 @@
+{
+  "id": "sja-058",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / major trauma and bleeding",
+  "title": "Severe abdominal trauma backstage at a concert",
+  "setting": "Outdoor concert backstage scaffolding. Young male found collapsed with a severe abdominal injury, bleeding heavily, pale, cold, clammy.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe abdominal injury with large open wound, heavy bleeding, and signs of decompensated shock (pulse 98 bpm, BP 82/52). Sick: call 999, control bleed, and elevate.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "20/min",
+      "pulseRate": "98 bpm",
+      "painScore": "10/10",
+      "temperature": "36.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Voice"
+    },
+    "er": {
+      "acvpu": "Confused (moving to unresponsive)",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "89%",
+      "bloodGlucose": "5.4 mmol/L",
+      "bloodPressure": "82/52 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Scaffolding, crowds, equipment backstage",
+      "response": "Confused, but gradually becoming unresponsive",
+      "catHaem": "Yes - Abdomen",
+      "airway": "Clear and open",
+      "breathing": "Laboured, rapid and shallow",
+      "circulation": "Weak radial pulse, pale extremities"
+    },
+    "er": {
+      "disability": "Confused, level of response dropping",
+      "exposure": "Exposed to sun, dehydrated"
+    }
+  },
+  "history": {
+    "complaint": "Large open wound to abdomen",
+    "history": "Knocked and fell onto a protruding sharp scaffolding pipe 10 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies known",
+    "injuries": "Large open wound to abdomen, heavy bleeding",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is the priority first aid intervention for this severe abdominal trauma?",
+    "options": [
+      {
+        "text": "Call 999, apply firm pressure dressings over the wound, lie him flat with knees slightly bent, and keep warm",
+        "correct": true
+      },
+      {
+        "text": "Wash the exposed organs under warm tap water and try to push them back",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet tightly around his abdomen to stop the bleeding",
+        "correct": false
+      },
+      {
+        "text": "Force him to walk to the first aid post to get proper equipment",
+        "correct": false
+      }
+    ],
+    "explanation": "Severe abdominal trauma. Call 999 immediately. Apply a firm pressure dressing over the wound. Lie the patient flat with knees slightly bent (reduces abdominal wall tension). Keep warm to treat shock. Never push organs back or use a tourniquet on the abdomen. Never allow walking."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Apply pressure dressing, lie flat with knees bent, keep warm.",
+    "erNotes": "Severe abdominal trauma with hemorrhagic shock (BP 82/52). Control bleed, administer oxygen, keep warm, check BGL, and transfer priority."
+  }
+}

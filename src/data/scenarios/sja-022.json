@@ -1,0 +1,77 @@
+{
+  "id": "sja-022",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / asthma attack; BTS/SIGN Asthma guidelines",
+  "title": "Severe asthma attack at a car boot sale",
+  "setting": "Rotary club car boot sale. A patient walks up to your first aid shed, gasping for breath, unable to speak. Their child is crying in distress.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe respiratory distress (breathing rate 23/min, oxygen saturation 92%, unable to speak in sentences, chest tightness). Sick: immediate reliever inhaler and 999 needed.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "23/min",
+      "pulseRate": "71 bpm",
+      "painScore": "4/10",
+      "temperature": "37.1\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "92%",
+      "bloodGlucose": "8.0 mmol/L",
+      "bloodPressure": "135/85 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Car boot traffic and crowds nearby",
+      "response": "Alert and responsive but gasping",
+      "catHaem": "None",
+      "airway": "Open, audible wheeze",
+      "breathing": "Rapid, shallow, labored",
+      "circulation": "Skin is warm and sweaty"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Cold, damp wind near a wooden shed"
+    }
+  },
+  "history": {
+    "complaint": "Struggling to breathe",
+    "history": "Walking around car boot, triggered by cigarette smoke. Inhalers are in their car 100 metres away.",
+    "pmh": "Known asthma, had a recent severe attack last week",
+    "drugs": "Blue (salbutamol) and brown (preventer) inhalers in car",
+    "injuries": "None",
+    "additional": "Parent is embarrassed and is more concerned for their crying child than themselves"
+  },
+  "followUp": {
+    "question": "What is the priority management step for this severe asthma attack?",
+    "options": [
+      {
+        "text": "Sit the patient upright, send their child to fetch the blue inhaler from the car, and call 999",
+        "correct": true
+      },
+      {
+        "text": "Lay the patient flat, elevate their legs, and wait for them to catch their breath",
+        "correct": false
+      },
+      {
+        "text": "Tell the patient to walk to their car to get their medication",
+        "correct": false
+      },
+      {
+        "text": "Administer 300mg chewable aspirin immediately to relieve chest tightness",
+        "correct": false
+      }
+    ],
+    "explanation": "Sit the patient upright to help expand the lungs. Send their child to the car to retrieve their blue reliever inhaler. Call 999 because the patient is showing severe symptoms (unable to speak, respiratory distress). Walking is dangerous and laying flat severely worsens dyspnea. Aspirin has no role in asthma."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Reassure the patient and child. Help them sit upright. Avoid making them walk.",
+    "erNotes": "Provide high-flow oxygen, assist with salbutamol via spacer once retrieved, or administer salbutamol nebulizer if available. Sit upright, monitor SpO\u2082 and heart rate frequently while awaiting ambulance."
+  }
+}

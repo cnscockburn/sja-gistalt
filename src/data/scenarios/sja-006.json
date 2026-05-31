@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / minor wound care",
   "title": "Cut finger at a craft festival",
+  "image": "sja-006.jpg",
   "setting": "Craft festival. An adult cut a finger on a craft knife. Small wound bleeding slightly. In some pain but moving the finger and talking normally.",
   "correctVerdict": "not-sick",
   "verdictExplanation": "Alert, stable observations, a minor superficial wound with slight bleeding and preserved function. Not sick: simple wound care and safety-netting on scene.",
@@ -48,7 +49,10 @@
   "followUp": {
     "question": "What is your management?",
     "options": [
-      { "text": "Clean the wound, apply a dressing with direct pressure, check movement and circulation", "correct": true },
+      {
+        "text": "Clean the wound, apply a dressing with direct pressure, check movement and circulation",
+        "correct": true
+      },
       { "text": "Call 999 for an emergency ambulance", "correct": false },
       { "text": "Apply a tourniquet to the finger", "correct": false },
       { "text": "Leave it open and uncovered to air-dry", "correct": false }

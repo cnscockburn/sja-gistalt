@@ -70,9 +70,7 @@ export function QuestionPanel({
         </View>
       )}
 
-      {answered && (
-        <Button label={continueLabel} onPress={() => onComplete(selected)} />
-      )}
+      {answered && <Button label={continueLabel} onPress={() => onComplete(selected)} />}
     </View>
   );
 }

@@ -1,0 +1,77 @@
+{
+  "id": "sja-045",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / moving and handling",
+  "title": "Patient transfer from treatment centre",
+  "setting": "Walking event. Patient with an injured ankle needs to be transferred via wheelchair across rough ground to hospital transport.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, responsive, stable observations. Safe transfer of a stable patient using a wheelchair. Not sick: follow safe moving and handling guidelines.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "14/min",
+      "pulseRate": "92 bpm",
+      "painScore": "6/10",
+      "temperature": "37\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "96%",
+      "bloodGlucose": "4.8 mmol/L",
+      "bloodPressure": "115/78 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Outdoor rough ground, rocky tracks and grass",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Cannot place weight on right foot",
+      "exposure": "Outdoors, countryside"
+    }
+  },
+  "history": {
+    "complaint": "Ankle pain requires transfer to transport",
+    "history": "Rolled their ankle whilst out country walking 30 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies",
+    "injuries": "Right ankle sprain, swelling",
+    "additional": "Anxious about transfer"
+  },
+  "followUp": {
+    "question": "What is the correct protocol for transferring a patient into a wheelchair?",
+    "options": [
+      {
+        "text": "Explain the transfer, gain consent, ensure wheelchair brakes are locked, and assist patient to stand and pivot",
+        "correct": true
+      },
+      {
+        "text": "Lift the patient in a full-body carry without telling them",
+        "correct": false
+      },
+      {
+        "text": "Tell the patient to jump into the wheelchair while it is moving",
+        "correct": false
+      },
+      {
+        "text": "Move the patient without locking the wheelchair brakes to save time",
+        "correct": false
+      }
+    ],
+    "explanation": "Safe wheelchair transfer. Explain the procedure and gain consent. Position the wheelchair on a flat surface and lock the brakes. Assist the patient to stand and pivot, ensuring footplates are out of the way during transfer."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Explain the transfer, lock brakes, assist patient. Reassure during transfer.",
+    "erNotes": "Ensure wheelchair is clean. Explain procedure, gain consent. Lock brakes. Assist to transfer, secure footplates and lap belt."
+  }
+}

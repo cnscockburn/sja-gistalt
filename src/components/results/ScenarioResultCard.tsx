@@ -39,7 +39,9 @@ export function ScenarioResultCard({ scenario, answer, level, mode }: Props) {
         <Mark correct={answer.verdictCorrect} />
         <Text style={styles.lineText}>
           You said {verdictLabel(answer.verdictGiven)}
-          {answer.verdictCorrect ? '' : `  ·  correct: ${verdictLabel(scenario.correctVerdict)}`}
+          {answer.verdictCorrect
+            ? ''
+            : `  ·  correct: ${verdictLabel(scenario.correctVerdict)}`}
         </Text>
       </View>
       <Text style={styles.explain}>{scenario.verdictExplanation}</Text>

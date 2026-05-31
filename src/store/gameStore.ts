@@ -13,8 +13,7 @@ interface GameState {
   reset: () => void;
 }
 
-const makeId = () =>
-  `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+const makeId = () => `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 
 const currentScenario = (s: GameSession): Scenario | undefined => s.deck[s.currentIndex];
 

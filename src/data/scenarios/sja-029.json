@@ -1,0 +1,77 @@
+{
+  "id": "sja-029",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Anaphylaxis 2021",
+  "title": "Severe bee sting anaphylaxis at a park fun day",
+  "setting": "Park fun day. 8M fainted and collapsed after a bee sting. Sat down, clutching his chest, gasping for air, face swollen with visible hives on skin.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Sudden onset of systemic reaction after a known trigger: airway (face/lip swelling), breathing (wheeze, rate 8/min), and circulation (hypotension 77/58, fainted). Sick: adrenaline now.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "8/min",
+      "pulseRate": "120 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert but deteriorating"
+    },
+    "er": {
+      "acvpu": "Alert but deteriorating",
+      "pupilSize": "Large, equal and reactive",
+      "pulseOximetry": "87%",
+      "bloodGlucose": "8.1 mmol/L",
+      "bloodPressure": "77/58 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Bee swarm (none noted now)",
+      "response": "Alert but highly distressed, level of response dropping",
+      "catHaem": "None",
+      "airway": "Swollen lips, tongue, and face",
+      "breathing": "Severely reduced, slow, and gasping (8/min)",
+      "circulation": "Widespread red hives over skin, tachycardic"
+    },
+    "er": {
+      "disability": "Deteriorating response, hypoxic",
+      "exposure": "Outdoors, hot sun, wearing summer clothing"
+    }
+  },
+  "history": {
+    "complaint": "Bee sting and severe breathing difficulty",
+    "history": "Stung by a bee 10 minutes ago while playing in the park, developed rapid hives and swelling",
+    "pmh": "Known severe allergy to bee stings",
+    "drugs": "Carries a training auto-injector (has one auto-injector in the car, none on person)",
+    "injuries": "Sting site on forearm",
+    "additional": "Friends ran to get help"
+  },
+  "followUp": {
+    "question": "What is the correct first-line treatment for this severe allergic reaction?",
+    "options": [
+      {
+        "text": "Call 999 immediately, sit him upright to ease breathing, and administer IM adrenaline if available",
+        "correct": true
+      },
+      {
+        "text": "Give him antihistamine tablets and wait 30 minutes to see if the hives resolve",
+        "correct": false
+      },
+      {
+        "text": "Lay him flat on his back and give him cold water to drink",
+        "correct": false
+      },
+      {
+        "text": "Apply a cold compress to the sting site and do not give adrenaline",
+        "correct": false
+      }
+    ],
+    "explanation": "Anaphylaxis is a life-threatening emergency. Adrenaline IM is the first-line and most critical treatment. Call 999 immediately. Sit him upright to assist breathing. Antihistamines must never delay adrenaline. Do not give oral fluids."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Sit upright if breathing is the main issue. Help administer his auto-injector if located.",
+    "erNotes": "Anaphylaxis with airway and circulation involvement. Administer IM Adrenaline (0.15mg for child 6-12 years) into the anterolateral thigh. Give high-flow oxygen, monitor SpO\u2082 and BP closely, and prepare for a second dose if no improvement in 5 minutes."
+  }
+}

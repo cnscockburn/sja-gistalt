@@ -29,9 +29,7 @@ export function Segmented<T extends string | number>({
             onPress={() => onChange(opt.value)}
             style={[styles.segment, selected && styles.segmentSelected]}
           >
-            <Text style={[styles.label, selected && styles.labelSelected]}>
-              {opt.label}
-            </Text>
+            <Text style={[styles.label, selected && styles.labelSelected]}>{opt.label}</Text>
           </Pressable>
         );
       })}

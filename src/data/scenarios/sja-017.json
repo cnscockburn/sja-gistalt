@@ -1,0 +1,77 @@
+{
+  "id": "sja-017",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / seizures (epilepsy)",
+  "title": "Postictal unresponsive patient at a stadium",
+  "setting": "Stadium corridor. 45M collapsed after a generalized convulsive seizure which ended 2 minutes ago. Lying on his back, unresponsive but breathing normally.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive postictal patient who is currently unable to maintain his own airway (snoring breathing and saliva in the mouth). Sick: requires immediate airway protection.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "20/min",
+      "pulseRate": "90 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "89%",
+      "bloodGlucose": "5.2 mmol/L",
+      "bloodPressure": "126/84 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Hard concrete floor, spectators crowding around",
+      "response": "Unresponsive to voice and physical stimulus",
+      "catHaem": "None",
+      "airway": "Compromised by position and saliva, snoring sounds",
+      "breathing": "Labored but adequate rate",
+      "circulation": "Strong pulse, skin is warm and sweaty"
+    },
+    "er": {
+      "disability": "Unresponsive, postictal",
+      "exposure": "Indoors, wearing protective clothing"
+    }
+  },
+  "history": {
+    "complaint": "Seizure and collapse",
+    "history": "Crashed his bike at low speed, then suffered a 2-minute convulsive seizure which has now stopped",
+    "pmh": "Known epilepsy",
+    "drugs": "Anticonvulsant medication (forgot to take his dose today)",
+    "injuries": "Slight bruising on his shoulder, no major visible bleeding",
+    "additional": "Wears a medical-alert bracelet confirming epilepsy"
+  },
+  "followUp": {
+    "question": "What is your immediate priority management for this patient?",
+    "options": [
+      {
+        "text": "Place him in the recovery position immediately to clear the airway and protect from aspiration",
+        "correct": true
+      },
+      {
+        "text": "Hold his head completely still, suspecting a spinal injury, and do not move him",
+        "correct": false
+      },
+      {
+        "text": "Insert a finger into his mouth to clear saliva and pull his tongue forward",
+        "correct": false
+      },
+      {
+        "text": "Attempt to wake him up by shaking him and splashing water on his face",
+        "correct": false
+      }
+    ],
+    "explanation": "An unresponsive patient who is breathing normally must be placed in the recovery position to keep the airway open and let saliva drain. Airway protection takes absolute precedence over potential spinal injury. Never put fingers in a patient's mouth or attempt forceful arousal."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Place in the recovery position to protect the airway. Monitor breathing continuously. Call 999 if the seizure was prolonged, recurred, or if it is his first seizure.",
+    "erNotes": "Suspected postictal phase. Maintain airway in the recovery position. Administer high-flow oxygen due to low SpO2 (89%), check BGL, and conduct a secondary survey for injuries sustained during the fall."
+  }
+}

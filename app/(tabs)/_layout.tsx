@@ -19,9 +19,7 @@ export default function TabsLayout() {
         name="index"
         options={{
           title: 'Practice',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="pulse" size={size} color={color} />
-          ),
+          tabBarIcon: ({ color, size }) => <Ionicons name="pulse" size={size} color={color} />,
         }}
       />
       <Tabs.Screen

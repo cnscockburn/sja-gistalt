@@ -1,0 +1,77 @@
+{
+  "id": "sja-053",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / burn care",
+  "title": "Scalding hot chocolate burns at football stadium",
+  "setting": "Football stadium terrace. Fan spilled scalding hot chocolate over hands and arms. Red skin, in severe pain.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, responsive, stable observations. A minor superficial scald on hands/arms with no airway compromise. Not sick: simple burn management.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "20/min",
+      "pulseRate": "90 bpm",
+      "painScore": "7/10",
+      "temperature": "37.3\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "92%",
+      "bloodGlucose": "5.5 mmol/L",
+      "bloodPressure": "95/65 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Stadium stairs and crowd",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "Skin is pale, cold, and sweaty"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, cool wind"
+    }
+  },
+  "history": {
+    "complaint": "Burns to hands",
+    "history": "Tripped over seats while carrying hot chocolate, spilled over hands 5 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies",
+    "injuries": "Superficial scalds on right hand and forearm",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for this minor burn?",
+    "options": [
+      {
+        "text": "Cool the burn under clean, cool running water for 20 minutes, then cover with a clean dressing (e.g. cling film)",
+        "correct": true
+      },
+      {
+        "text": "Apply butter, toothpaste, or burn cream immediately to soothe the skin",
+        "correct": false
+      },
+      {
+        "text": "Burst any blisters that form and scrub the wound to keep it clean",
+        "correct": false
+      },
+      {
+        "text": "Call 999 immediately for a critical paediatric emergency",
+        "correct": false
+      }
+    ],
+    "explanation": "All burns must be cooled under clean, cool running water for a full 20 minutes. Cover with cling film or a sterile non-adherent dressing. Never apply butter, toothpaste, or fats (they trap heat). Never burst blisters. 999 is not indicated for stable, minor superficial burns."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Cool the burn under running water for 20 minutes. Reassure, dress loosely.",
+    "erNotes": "Cool the burn for 20 minutes. Assess depth. Cover loosely with non-adherent dressing or cling film. Discharge with advice if pain controlled."
+  }
+}

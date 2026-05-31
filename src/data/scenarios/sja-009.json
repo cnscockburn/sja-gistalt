@@ -1,0 +1,77 @@
+{
+  "id": "sja-009",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Adult Basic Life Support 2021",
+  "title": "Adult cardiac arrest from electrocution",
+  "setting": "Amateur dramatic theatre show. 24M lighting crew member collapsed after receiving an electric shock from a faulty appliance. Lying still, unresponsive.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive and not breathing normally after a sudden collapse. This is cardiac arrest, a critical life-threatening emergency. Unequivocally sick: start CPR and use an AED.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "0/min",
+      "pulseRate": "0 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "36.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Fixed and dilated",
+      "pulseOximetry": "Unrecordable",
+      "bloodGlucose": "12.1 mmol/L",
+      "bloodPressure": "Unrecordable"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Faulty appliance (electricity source has been isolated and safe to approach)",
+      "response": "Unresponsive",
+      "catHaem": "None",
+      "airway": "Open, requires manual maintenance",
+      "breathing": "None",
+      "circulation": "No effective pulse, electrical burns on entry/exit sites"
+    },
+    "er": {
+      "disability": "Unresponsive",
+      "exposure": "Indoors, backstage area"
+    }
+  },
+  "history": {
+    "complaint": "Electric shock and collapse",
+    "history": "Shocked by faulty stage light, collapsed immediately",
+    "pmh": "Asthma (reported by colleagues)",
+    "drugs": "Ventolin inhaler (in bag)",
+    "injuries": "Electrical burn entry wound to hand and exit wound to knee",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is your immediate priority action after ensuring safety?",
+    "options": [
+      {
+        "text": "Start chest compressions, call 999, and attach the AED as soon as available",
+        "correct": true
+      },
+      {
+        "text": "Treat the electrical burn wounds on the hand and knee with cold water",
+        "correct": false
+      },
+      {
+        "text": "Place in the recovery position and monitor his asthma",
+        "correct": false
+      },
+      {
+        "text": "Give 2 rescue breaths only and wait for the ambulance",
+        "correct": false
+      }
+    ],
+    "explanation": "Cardiac arrest from electrocution requires immediate CPR and defibrillation. Burn care is secondary to preserving life. The recovery position is only for responsive or breathing patients."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Ensure the electrical source is safe and isolated before touching the patient. Start CPR 30:2 immediately.",
+    "erNotes": "Deliver high-quality CPR, manage the airway with basic airway adjuncts and high-flow oxygen, attach AED, and treat burns after resuscitation starts."
+  }
+}

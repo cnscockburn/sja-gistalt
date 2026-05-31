@@ -1,0 +1,77 @@
+{
+  "id": "sja-052",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / poisoning",
+  "title": "Accidental fertilizer poisoning at a flower show",
+  "setting": "Garden centre flower show. Contestant accidentally swallowed liquid fertilizer instead of tea. Panicked, nauseous, severe abdominal pain.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Accidental chemical ingestion with severe pain, nausea, panic, compromised airway, and borderline low BP (73/51). Sick: 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "25/min",
+      "pulseRate": "81 bpm",
+      "painScore": "4/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Uneven and not reactive",
+      "pulseOximetry": "87%",
+      "bloodGlucose": "12.8 mmol/L",
+      "bloodPressure": "73/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "The location of the poison",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "They may have a slight burn in their airway from the poison",
+      "breathing": "Panicked breathing",
+      "circulation": "No circulation issues"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "No concerns"
+    }
+  },
+  "history": {
+    "complaint": "Swallowed a poison accidentally",
+    "history": "Swallowed liquid fertilizer instead of tea 10 minutes ago",
+    "pmh": "None of note",
+    "drugs": "None of note",
+    "injuries": "None of note",
+    "additional": "None of note"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for this chemical ingestion?",
+    "options": [
+      {
+        "text": "Call 999 immediately, identify the chemical, rinse the mouth with water, and do not induce vomiting",
+        "correct": true
+      },
+      {
+        "text": "Force the patient to drink large quantities of soapy water to neutralize the poison",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back and tell him to sleep",
+        "correct": false
+      },
+      {
+        "text": "Give him a thick slice of bread to absorb the poison",
+        "correct": false
+      }
+    ],
+    "explanation": "Chemical ingestion requires an immediate 999 call. Identify the poison and note the package details. Rinse the mouth with water. Never induce vomiting as it can cause corrosive burns in the airway. Never lay flat."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999 immediately. Identify chemical, rinse mouth, do not induce vomiting.",
+    "erNotes": "Corrosive chemical ingestion. Assess airway for swelling/burns. Give oxygen if indicated. Keep warm, check BGL, and prepare for rapid transfer."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "sja-057",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021 (Choking)",
+  "title": "Infant choking at a community festival",
+  "setting": "Eid in the park event. A frantic parent runs in holding an 8-month-old infant who is choking on a plastic button. Red face, unable to cry.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe complete paediatric airway obstruction in an infant (unable to cry, cough, or breathe). Choking is a critical life-threatening emergency. Sick: deliver infant choking treatment.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "0/min",
+      "pulseRate": "110 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Voice"
+    },
+    "er": {
+      "acvpu": "Voice",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "85%",
+      "bloodGlucose": "5.3 mmol/L",
+      "bloodPressure": "95/62 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Responding only to touch with panicked movements",
+      "catHaem": "None",
+      "airway": "Completely obstructed by a button",
+      "breathing": "None",
+      "circulation": "Skin is red and puffy, cyanosis around lips"
+    },
+    "er": {
+      "disability": "Hypoxic, responding to voice",
+      "exposure": "Outdoors, mild weather"
+    }
+  },
+  "history": {
+    "complaint": "Infant choking",
+    "history": "Tripped and managed to get a button off his jacket, choked on it 2 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies known",
+    "injuries": "None",
+    "additional": "teddy Mardon, 8 months old"
+  },
+  "followUp": {
+    "question": "What is the correct treatment sequence for an infant with severe choking?",
+    "options": [
+      {
+        "text": "Give up to 5 back blows (head down, supported on lap), then up to 5 chest thrusts; repeat",
+        "correct": true
+      },
+      {
+        "text": "Give up to 5 back blows followed by up to 5 abdominal thrusts",
+        "correct": false
+      },
+      {
+        "text": "Perform a blind finger sweep to hook the button out immediately",
+        "correct": false
+      },
+      {
+        "text": "Perform adult CPR (30 chest compressions) starting with compressions",
+        "correct": false
+      }
+    ],
+    "explanation": "Infant choking. Give up to 5 back blows (head down, supported on your thigh/forearm). If unsuccessful, give up to 5 chest thrusts (using two fingers on the chest). Never perform abdominal thrusts in infants (under 1 year) due to risk of liver damage. Finger sweeps are contraindicated."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999 immediately. Deliver 5 back blows, then 5 chest thrusts. Reassure parents.",
+    "erNotes": "Manage infant choking. If infant loses consciousness, immediately guide to floor, call 999, and start CPR (beginning with 5 rescue breaths, check mouth before breathing)."
+  }
+}

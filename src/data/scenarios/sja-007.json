@@ -1,0 +1,77 @@
+{
+  "id": "sja-007",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / minor wound care",
+  "title": "Minor graze at a park event",
+  "setting": "Park event. 22F fainted briefly, now alert, with a small graze on her arm from falling off a bicycle at low speed. Walking and talking normally.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, fully responsive, stable observations. A minor superficial graze with negligible bleeding and no systemic symptoms. Not sick: simple wound care.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "19/min",
+      "pulseRate": "79 bpm",
+      "painScore": "2/10",
+      "temperature": "37.1\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "98%",
+      "bloodGlucose": "3.9 mmol/L",
+      "bloodPressure": "102/62 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Cyclists ongoing nearby",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "Minor graze on left forearm, slight bleeding"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, warm weather"
+    }
+  },
+  "history": {
+    "complaint": "Small graze on the arm",
+    "history": "Slipped off bike on a gravel path moments ago, fainted briefly but recovered immediately",
+    "pmh": "Angina",
+    "drugs": "GTN spray (has not needed to use it today)",
+    "injuries": "Superficial graze on left forearm",
+    "additional": "Had a minor heart attack a year ago but currently completely pain-free and well"
+  },
+  "followUp": {
+    "question": "What is the correct protocol for managing this minor graze?",
+    "options": [
+      {
+        "text": "Clean the wound with water or alcohol-free wipes, dry, and apply a plaster",
+        "correct": true
+      },
+      {
+        "text": "Apply a tourniquet above the elbow to prevent infection",
+        "correct": false
+      },
+      {
+        "text": "Administer the patient's GTN spray immediately as a precaution",
+        "correct": false
+      },
+      {
+        "text": "Call 999 due to the patient's cardiac history",
+        "correct": false
+      }
+    ],
+    "explanation": "Superficial grazes require simple cleaning and dressing to prevent infection. Tourniquets are for life-threatening haemorrhage. GTN is only for cardiac chest pain. 999 is not indicated as she is stable and symptom-free."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Clean and dress the graze. Ask about tetanus status.",
+    "erNotes": "Reassure, check tetanus status, advise on wound hygiene, and safety-net for signs of infection."
+  }
+}

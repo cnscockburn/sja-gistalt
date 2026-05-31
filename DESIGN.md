@@ -1,4 +1,5 @@
 # SJA Gestalt — Design System
+
 > Register: **product** (UI serves the task). Companion to SPEC.md.
 
 ## Scene & theme
@@ -15,22 +16,22 @@ Base is Restrained (warm-tinted neutrals + one accent). The sick/not-sick decisi
 
 Neutrals are tinted toward the brand green hue (very low chroma) so nothing is pure `#fff`/`#000`. Values are authored as hex because React Native StyleSheet does not reliably parse OKLCH at runtime; each was chosen against an OKLCH target.
 
-| Role | Hex | Notes |
-|---|---|---|
-| `bg` | `#F6F5F1` | Warm bone, not clinical white |
-| `surface` | `#FFFFFFF`→`#FCFBF8` | Card surface, faintly warm |
-| `ink` | `#1A1E1B` | Near-black, green-tinted |
-| `inkSoft` | `#5A615B` | Secondary text |
-| `line` | `#E2E0D8` | Hairline borders |
-| `brand` | `#0B5E3B` | Deep pine green — primary actions, selection, wordmark |
-| `brandSoft` | `#E6F0EA` | Selected/active tint |
-| `sick` | `#B23A2E` | Terracotta-clay red (alarm), not fire-engine |
-| `sickSoft` | `#F6E6E3` | |
-| `notSick` | `#0B5E3B` | Brand green doubles as the calm verdict |
-| `notSickSoft`| `#E6F0EA` | |
-| `correct` | `#0B5E3B` | Debrief |
-| `wrong` | `#B23A2E` | Debrief |
-| `accent` | `#E8B23A` | SJA-adjacent yellow, used only as a thin status accent (≤10%) |
+| Role          | Hex                  | Notes                                                         |
+| ------------- | -------------------- | ------------------------------------------------------------- |
+| `bg`          | `#F6F5F1`            | Warm bone, not clinical white                                 |
+| `surface`     | `#FFFFFFF`→`#FCFBF8` | Card surface, faintly warm                                    |
+| `ink`         | `#1A1E1B`            | Near-black, green-tinted                                      |
+| `inkSoft`     | `#5A615B`            | Secondary text                                                |
+| `line`        | `#E2E0D8`            | Hairline borders                                              |
+| `brand`       | `#0B5E3B`            | Deep pine green — primary actions, selection, wordmark        |
+| `brandSoft`   | `#E6F0EA`            | Selected/active tint                                          |
+| `sick`        | `#B23A2E`            | Terracotta-clay red (alarm), not fire-engine                  |
+| `sickSoft`    | `#F6E6E3`            |                                                               |
+| `notSick`     | `#0B5E3B`            | Brand green doubles as the calm verdict                       |
+| `notSickSoft` | `#E6F0EA`            |                                                               |
+| `correct`     | `#0B5E3B`            | Debrief                                                       |
+| `wrong`       | `#B23A2E`            | Debrief                                                       |
+| `accent`      | `#E8B23A`            | SJA-adjacent yellow, used only as a thin status accent (≤10%) |
 
 Verdict colors never carry meaning alone: each pairs with an icon, a text label, and a fixed screen position (NOT SICK left, SICK right).
 

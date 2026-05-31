@@ -31,7 +31,7 @@ If the output is already in this session's conversation history, don't re-run. E
 
 If PRODUCT.md is missing, empty, or placeholder (`[TODO]` markers, <200 chars): run `/impeccable teach`, then resume the user's original task with the fresh context. If the original task was `/impeccable craft`, resume into `/impeccable shape` before any implementation work.
 
-If DESIGN.md is missing: nudge once per session (*"Run `/impeccable document` for more on-brand output"*), then proceed.
+If DESIGN.md is missing: nudge once per session (_"Run `/impeccable document` for more on-brand output"_), then proceed.
 
 ### 2. Register
 
@@ -109,31 +109,31 @@ If someone could look at this interface and say "AI made that" without doubt, it
 
 ## Commands
 
-| Command | Category | Description | Reference |
-|---|---|---|---|
-| `craft [feature]` | Build | Shape, then build a feature end-to-end | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/craft.md` |
-| `shape [feature]` | Build | Plan UX/UI before writing code | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/shape.md` |
-| `teach` | Build | Set up PRODUCT.md and DESIGN.md context | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/teach.md` |
-| `document` | Build | Generate DESIGN.md from existing project code | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/document.md` |
-| `extract [target]` | Build | Pull reusable tokens and components into design system | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/extract.md` |
-| `critique [target]` | Evaluate | UX design review with heuristic scoring | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/critique.md` |
-| `audit [target]` | Evaluate | Technical quality checks (a11y, perf, responsive) | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/audit.md` |
-| `polish [target]` | Refine | Final quality pass before shipping | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/polish.md` |
-| `bolder [target]` | Refine | Amplify safe or bland designs | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/bolder.md` |
-| `quieter [target]` | Refine | Tone down aggressive or overstimulating designs | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/quieter.md` |
-| `distill [target]` | Refine | Strip to essence, remove complexity | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/distill.md` |
-| `harden [target]` | Refine | Production-ready: errors, i18n, edge cases | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/harden.md` |
-| `onboard [target]` | Refine | Design first-run flows, empty states, activation | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/onboard.md` |
-| `animate [target]` | Enhance | Add purposeful animations and motion | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/animate.md` |
-| `colorize [target]` | Enhance | Add strategic color to monochromatic UIs | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/colorize.md` |
-| `typeset [target]` | Enhance | Improve typography hierarchy and fonts | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/typeset.md` |
-| `layout [target]` | Enhance | Fix spacing, rhythm, and visual hierarchy | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/layout.md` |
-| `delight [target]` | Enhance | Add personality and memorable touches | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/delight.md` |
-| `overdrive [target]` | Enhance | Push past conventional limits | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/overdrive.md` |
-| `clarify [target]` | Fix | Improve UX copy, labels, and error messages | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/clarify.md` |
-| `adapt [target]` | Fix | Adapt for different devices and screen sizes | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/adapt.md` |
-| `optimize [target]` | Fix | Diagnose and fix UI performance | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/optimize.md` |
-| `live` | Iterate | Visual variant mode: pick elements in the browser, generate alternatives | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/live.md` |
+| Command              | Category | Description                                                              | Reference                                                                       |
+| -------------------- | -------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| `craft [feature]`    | Build    | Shape, then build a feature end-to-end                                   | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/craft.md`     |
+| `shape [feature]`    | Build    | Plan UX/UI before writing code                                           | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/shape.md`     |
+| `teach`              | Build    | Set up PRODUCT.md and DESIGN.md context                                  | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/teach.md`     |
+| `document`           | Build    | Generate DESIGN.md from existing project code                            | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/document.md`  |
+| `extract [target]`   | Build    | Pull reusable tokens and components into design system                   | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/extract.md`   |
+| `critique [target]`  | Evaluate | UX design review with heuristic scoring                                  | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/critique.md`  |
+| `audit [target]`     | Evaluate | Technical quality checks (a11y, perf, responsive)                        | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/audit.md`     |
+| `polish [target]`    | Refine   | Final quality pass before shipping                                       | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/polish.md`    |
+| `bolder [target]`    | Refine   | Amplify safe or bland designs                                            | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/bolder.md`    |
+| `quieter [target]`   | Refine   | Tone down aggressive or overstimulating designs                          | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/quieter.md`   |
+| `distill [target]`   | Refine   | Strip to essence, remove complexity                                      | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/distill.md`   |
+| `harden [target]`    | Refine   | Production-ready: errors, i18n, edge cases                               | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/harden.md`    |
+| `onboard [target]`   | Refine   | Design first-run flows, empty states, activation                         | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/onboard.md`   |
+| `animate [target]`   | Enhance  | Add purposeful animations and motion                                     | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/animate.md`   |
+| `colorize [target]`  | Enhance  | Add strategic color to monochromatic UIs                                 | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/colorize.md`  |
+| `typeset [target]`   | Enhance  | Improve typography hierarchy and fonts                                   | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/typeset.md`   |
+| `layout [target]`    | Enhance  | Fix spacing, rhythm, and visual hierarchy                                | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/layout.md`    |
+| `delight [target]`   | Enhance  | Add personality and memorable touches                                    | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/delight.md`   |
+| `overdrive [target]` | Enhance  | Push past conventional limits                                            | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/overdrive.md` |
+| `clarify [target]`   | Fix      | Improve UX copy, labels, and error messages                              | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/clarify.md`   |
+| `adapt [target]`     | Fix      | Adapt for different devices and screen sizes                             | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/adapt.md`     |
+| `optimize [target]`  | Fix      | Diagnose and fix UI performance                                          | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/optimize.md`  |
+| `live`               | Iterate  | Visual variant mode: pick elements in the browser, generate alternatives | `C:/Users/cnsco/Git/pdf-tools/.agents/skills/impeccable/reference/live.md`      |
 
 Plus two management commands: `pin <command>` and `unpin <command>`, detailed below.
 

@@ -1,0 +1,77 @@
+{
+  "id": "sja-032",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / burn care and shock",
+  "title": "Severe cooking oil scalds in a food van",
+  "setting": "Christmas light switch-on. A 28M food van worker was splashed with boiling cooking oil. Severe partial thickness burns over both hands, arms, and neck.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Boiling oil burns covering a large surface area (hands, arms, neck) with severe pain, borderline low BP (85/58), and high risk of shock/airway swelling. Sick: 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "19/min",
+      "pulseRate": "92 bpm",
+      "painScore": "7/10",
+      "temperature": "37.3\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "97%",
+      "bloodGlucose": "6.3 mmol/L",
+      "bloodPressure": "85/58 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Hot surfaces inside the van",
+      "response": "Alert and responsive, in extreme distress",
+      "catHaem": "None",
+      "airway": "Open, threatened by neck/face burns",
+      "breathing": "Slightly rapid and shallow",
+      "circulation": "Red, blistered skin over hands, arms, and neck; elevated pulse"
+    },
+    "er": {
+      "disability": "Alert and responsive, severe pain",
+      "exposure": "Outdoors, cold winter night"
+    }
+  },
+  "history": {
+    "complaint": "Severe boiling oil burns",
+    "history": "Splashed with boiling oil from a deep fryer 5 minutes ago inside a fish and chip van",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies",
+    "injuries": "Partial thickness blistered burns over hands, bilateral forearms, and lower neck",
+    "additional": "Van is hot and humid, nearest tap is 100m away"
+  },
+  "followUp": {
+    "question": "What is your immediate management for these severe scalds?",
+    "options": [
+      {
+        "text": "Call 999, cool the affected areas with cool running water for 20 minutes, remove jewelry, and cover loosely",
+        "correct": true
+      },
+      {
+        "text": "Apply ice packs directly to the burns to cool them as fast as possible",
+        "correct": false
+      },
+      {
+        "text": "Apply a thick layer of antiseptic cream and wrap tightly in a heavy elastic bandage",
+        "correct": false
+      },
+      {
+        "text": "Do nothing; oil burns do not need water as oil and water do not mix",
+        "correct": false
+      }
+    ],
+    "explanation": "Severe large-area burns require an immediate 999 call. Cool with clean, cool running water for 20 minutes. Remove rings/watches before swelling begins. Cover burns loosely with cling film or sterile dressings. Never use ice (causes tissue frostbite) or greasy creams."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999 immediately. Cool under running water. Remove jewelry. Reassure the patient.",
+    "erNotes": "Large partial thickness scalds (>10% TBSA risk). Cool for 20 minutes, remove jewelry, administer high-flow oxygen, check BGL, assess airway for inhalation/neck swelling, keep patient warm during cooling (risk of hypothermia), and expedite priority transfer."
+  }
+}

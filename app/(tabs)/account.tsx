@@ -1,7 +1,7 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Constants from 'expo-constants';
-import { colors, radius, space, type } from '@/constants/theme';
+import { colors, space, type } from '@/constants/theme';
 import { LEVEL_LABELS, type Level } from '@/types/level';
 import { Segmented } from '@/components/ui/Segmented';
 import { UnofficialBanner } from '@/components/ui/UnofficialBanner';
@@ -42,9 +42,10 @@ export default function Account() {
         <Text style={styles.sectionLabel}>About</Text>
         <UnofficialBanner />
         <Text style={styles.body}>
-          An independent education and practice tool for training clinical gestalt. Not affiliated
-          with, endorsed by, or released by St John Ambulance. Content follows UK Resuscitation
-          Council and St John Ambulance guidelines and does not replace formal training.
+          An independent education and practice tool for training clinical gestalt. Not
+          affiliated with, endorsed by, or released by St John Ambulance. Content follows UK
+          Resuscitation Council and St John Ambulance guidelines and does not replace formal
+          training.
         </Text>
         <Text style={styles.version}>Version {Constants.expoConfig?.version ?? '1.0.0'}</Text>
       </View>
@@ -57,7 +58,12 @@ const styles = StyleSheet.create({
   content: { paddingHorizontal: space.xl, gap: space.xl },
   heading: { ...type.display, fontSize: 28, color: colors.ink },
   section: { gap: space.sm },
-  sectionLabel: { ...type.label, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 0.5 },
+  sectionLabel: {
+    ...type.label,
+    color: colors.inkSoft,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
   hint: { ...type.caption, color: colors.inkFaint, lineHeight: 19 },
   body: { ...type.body, color: colors.inkSoft, lineHeight: 22 },
   version: { ...type.caption, color: colors.inkFaint, marginTop: space.xs },

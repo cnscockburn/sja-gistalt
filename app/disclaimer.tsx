@@ -16,23 +16,29 @@ export default function Disclaimer() {
   };
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top + space.xl, paddingBottom: insets.bottom + space.lg }]}>
+    <View
+      style={[
+        styles.screen,
+        { paddingTop: insets.top + space.xl, paddingBottom: insets.bottom + space.lg },
+      ]}
+    >
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         <Text style={styles.wordmark}>GESTALT</Text>
         <Text style={styles.kicker}>Education & practice tool</Text>
 
         <Text style={styles.heading}>Before you start</Text>
         <Text style={styles.body}>
-          This is an independent education and practice tool. It is not affiliated with, endorsed by,
-          or officially released by St John Ambulance.
+          This is an independent education and practice tool. It is not affiliated with,
+          endorsed by, or officially released by St John Ambulance.
         </Text>
         <Text style={styles.body}>
-          Content is based on UK Resuscitation Council and St John Ambulance guidelines, but it does
-          not replace formal first aid training and must not be used as clinical decision support in a
-          real emergency.
+          Content is based on UK Resuscitation Council and St John Ambulance guidelines, but it
+          does not replace formal first aid training and must not be used as clinical decision
+          support in a real emergency.
         </Text>
         <Text style={styles.body}>
-          Always follow your organisation's protocols and the guidance of your training provider.
+          Always follow your organisation&apos;s protocols and the guidance of your training
+          provider.
         </Text>
       </ScrollView>
       <Button label="I understand, continue" onPress={onContinue} />

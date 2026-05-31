@@ -1,0 +1,110 @@
+{
+  "id": "sja-016",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / heat exhaustion and heatstroke",
+  "title": "Heat exhaustion at an outdoor festival",
+  "setting": "Hot sunny outdoor music festival. 32F sitting under a tree, complaining of a throbbing headache, feeling extremely dizzy, nauseous, and sweating heavily.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, sweating heavily, normal neurological status, and slightly elevated temperature (38.2\u00b0C). This is heat exhaustion (not heatstroke, which features hot/dry skin and confusion). Not sick: manage on scene.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "20/min",
+      "pulseRate": "92 bpm",
+      "painScore": "5/10",
+      "temperature": "38.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "97%",
+      "bloodGlucose": "5.5 mmol/L",
+      "bloodPressure": "105/68 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Direct sunlight and extreme heat",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Slightly rapid",
+      "circulation": "Skin is flushed, hot, and sweating heavily"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Exposed to sun and hot ambient temperature"
+    }
+  },
+  "history": {
+    "complaint": "Headache, dizziness, and nausea",
+    "history": "Standing in the sun watching bands for 4 hours, very little water intake",
+    "pmh": "None of note",
+    "drugs": "Oral contraceptives",
+    "injuries": "None",
+    "additional": "Friends noticed she was looking very red and sluggish"
+  },
+  "followUp": {
+    "question": "What is the primary first aid management for this patient?",
+    "options": [
+      {
+        "text": "Move her to a cool shaded area, lie her down with legs raised, remove excess clothing, and give sips of water",
+        "correct": true
+      },
+      {
+        "text": "Call 999 for an emergency ambulance immediately",
+        "correct": false
+      },
+      {
+        "text": "Encourage her to drink a hot beverage to induce further sweating",
+        "correct": false
+      },
+      {
+        "text": "Administer an aspirin tablet and send her back to the crowd",
+        "correct": false
+      }
+    ],
+    "explanation": "Management of heat exhaustion involves cooling the patient down: move to shade, lie flat with elevated legs to support circulation (as she is dizzy/hypotensive), remove excess clothing, and hydrate with water or rehydration drinks. 999 is only needed if she deteriorates or shows heatstroke signs."
+  },
+  "evolvingStage": {
+    "narrative": "Despite resting in the shade and sips of water for 15 minutes, she becomes increasingly confused, agitated, and mutters incoherently. Her skin is now hot, flushed, and completely dry to the touch.",
+    "updatedObservations": {
+      "avpu": "Voice",
+      "acvpu": "Voice",
+      "respirationRate": "25/min",
+      "pulseRate": "115 bpm",
+      "temperature": "39.6\u00b0C",
+      "bloodPressure": "90/55 mmHg"
+    },
+    "followUp": {
+      "question": "Her presentation has changed. What does this indicate and what is your action?",
+      "options": [
+        {
+          "text": "Suspected heatstroke; call 999, cool her rapidly by wrapping in wet sheets or spraying with water, and monitor airway",
+          "correct": true
+        },
+        {
+          "text": "Continued heat exhaustion; continue giving sips of water and reassure her",
+          "correct": false
+        },
+        {
+          "text": "A panic attack; encourage her to breathe into a paper bag",
+          "correct": false
+        },
+        {
+          "text": "Hypoglycaemia; administer a glucose gel immediately",
+          "correct": false
+        }
+      ],
+      "explanation": "Confusion and hot, dry skin (no longer sweating) at a high body temperature indicate heatstroke, a medical emergency. Call 999 immediately. Cool her actively and rapidly while protecting her airway. Do not give oral fluids as her consciousness is impaired."
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Move to shade, cool her down, give water. Watch closely for heatstroke (confusion, hot dry skin).",
+    "erNotes": "Monitor temperature. Heatstroke is an emergency requiring rapid cooling (evaporative cooling, ice packs to axillae/groin) and rapid transport. Avoid paracetamol/aspirin as they are ineffective in environmental hyperthermia."
+  }
+}

@@ -55,9 +55,7 @@ export type LevelAwareFollowUp =
 
 export interface EvolvingStage {
   narrative: string;
-  updatedObservations?: Partial<
-    ObservationsShared & ObservationsCFA & ObservationsER
-  >;
+  updatedObservations?: Partial<ObservationsShared & ObservationsCFA & ObservationsER>;
   followUp: LevelAwareFollowUp;
 }
 

@@ -1,0 +1,77 @@
+{
+  "id": "sja-025",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Adult Basic Life Support 2021 (Choking)",
+  "title": "Elderly choking episode at a care home fun day",
+  "setting": "Care home fun day. An elderly resident (Joyce) shouts for help. Her daughter (Grace, 52F) is clutching her throat, unable to speak, gasp, or cough.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe complete airway obstruction (unable to speak, cough, or breathe). Choking is a critical life-threatening emergency. Sick: deliver immediate back blows and abdominal thrusts.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "0/min",
+      "pulseRate": "110 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "37.5\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Voice"
+    },
+    "er": {
+      "acvpu": "Voice",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "93%",
+      "bloodGlucose": "10.9 mmol/L",
+      "bloodPressure": "95/62 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Hot coffee cup on the table",
+      "response": "Responding to voice with wild, panicked gestures",
+      "catHaem": "None",
+      "airway": "Completely obstructed by a biscuit",
+      "breathing": "None",
+      "circulation": "Tachycardic, face is puffy and deeply flushed/cyanosed"
+    },
+    "er": {
+      "disability": "Hypoxic, responding to voice",
+      "exposure": "Indoors, crowded common room"
+    }
+  },
+  "history": {
+    "complaint": "Severe choking",
+    "history": "Choked on a hard gingersnap biscuit while eating and talking with her mother",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies",
+    "injuries": "None visible",
+    "additional": "Mother Joyce is crying and hysterical, shouting 'She's choking!'"
+  },
+  "followUp": {
+    "question": "What is your immediate action to relieve this severe choking?",
+    "options": [
+      {
+        "text": "Lean her forward and deliver up to 5 sharp back blows; if unsuccessful, give up to 5 abdominal thrusts",
+        "correct": true
+      },
+      {
+        "text": "Perform a blind finger sweep to hook the biscuit out of her throat",
+        "correct": false
+      },
+      {
+        "text": "Administer 2 rescue breaths and start chest compressions immediately",
+        "correct": false
+      },
+      {
+        "text": "Encourage her to sit down and drink a glass of hot water",
+        "correct": false
+      }
+    ],
+    "explanation": "Conscious severe choking is treated with up to 5 back blows followed by up to 5 abdominal thrusts. Finger sweeps are dangerous as they can push the object further down. CPR is only for unresponsive patients. Choking patients must never be given fluids."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Position her leaning forward. Deliver firm slaps between the shoulder blades. If unsuccessful, perform abdominal thrusts. Call 999 if the airway remains blocked.",
+    "erNotes": "Manage severe choking. If she loses consciousness, support her to the floor, call 999, and immediately begin CPR starting with chest compressions (visualizing the airway before ventilation)."
+  }
+}

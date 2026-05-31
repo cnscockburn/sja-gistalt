@@ -1,0 +1,77 @@
+{
+  "id": "sja-018",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Adult Basic Life Support 2021 (Choking)",
+  "title": "Severe choking at a rugby stadium stands",
+  "setting": "Top of stadium stands. 62M lifelong rugby fan collapsed/staggered, clutching his throat, unable to speak, breathe, or cough. Face is red and puffy.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe, complete airway obstruction (unable to speak, breathe, or cough). This is a time-critical life-threatening emergency. Unequivocally sick: deliver choking treatment.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "0/min",
+      "pulseRate": "110 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Voice"
+    },
+    "er": {
+      "acvpu": "Voice",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "85%",
+      "bloodGlucose": "12.1 mmol/L",
+      "bloodPressure": "91/62 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Height and steepness of the stadium stairs",
+      "response": "Responding only to voice/touch with wild panic",
+      "catHaem": "None",
+      "airway": "Completely obstructed by a piece of pie",
+      "breathing": "None",
+      "circulation": "Tachycardic, face is cyanosed and puffy"
+    },
+    "er": {
+      "disability": "Responding to voice, hypoxic",
+      "exposure": "Outdoors, cold stadium stands"
+    }
+  },
+  "history": {
+    "complaint": "Severe choking",
+    "history": "Inhaled a piece of meat pie while celebrating a try moments ago",
+    "pmh": "Unexplained falls",
+    "drugs": "Cod liver oil tablets",
+    "injuries": "None visible",
+    "additional": "His son is on scene, extremely panicked"
+  },
+  "followUp": {
+    "question": "What is the correct treatment sequence for a conscious adult with severe choking?",
+    "options": [
+      {
+        "text": "Give up to 5 sharp back blows; if unsuccessful, give up to 5 abdominal thrusts; repeat",
+        "correct": true
+      },
+      {
+        "text": "Start cardiopulmonary resuscitation (CPR) with 30 chest compressions immediately",
+        "correct": false
+      },
+      {
+        "text": "Encourage him to drink water to push the obstruction down",
+        "correct": false
+      },
+      {
+        "text": "Perform a blind finger sweep inside his mouth to hook the object out",
+        "correct": false
+      }
+    ],
+    "explanation": "Severe choking is managed with up to 5 back blows followed by up to 5 abdominal thrusts. CPR is only started if the patient becomes unconscious. Giving fluids or blind finger sweeps are highly dangerous and worsen obstruction."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Lean him forward. Give 5 back blows between shoulder blades. If failed, 5 abdominal thrusts. Call 999 if the object doesn't clear rapidly.",
+    "erNotes": "Deliver back blows and abdominal thrusts. If the patient becomes unresponsive, immediately support him to the ground, call 999/expedite, and start CPR (beginning with 30 chest compressions, checking the mouth before breaths)."
+  }
+}

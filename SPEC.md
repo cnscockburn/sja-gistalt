@@ -1,4 +1,5 @@
 # SJA Gestalt — Product Specification
+
 > Version 0.2 — Living document. Update this as decisions are made.
 
 ---
@@ -13,10 +14,10 @@ This app is **not affiliated with, endorsed by, or officially released by St Joh
 
 ## 1. Target Users
 
-| Level | Description | Scope |
-|---|---|---|
-| **Community First Aider (CFA)** | Basic first aid training, community events | DR**C**ABC, AVPU, basic vitals, call for help |
-| **Emergency Responder (ER)** | Higher clinical training (IREC qualified) | DR**C**ABCDE, ACVPU, full vitals inc. SpO₂/BGL/BP, wider interventions |
+| Level                           | Description                                | Scope                                                                  |
+| ------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------- |
+| **Community First Aider (CFA)** | Basic first aid training, community events | DR**C**ABC, AVPU, basic vitals, call for help                          |
+| **Emergency Responder (ER)**    | Higher clinical training (IREC qualified)  | DR**C**ABCDE, ACVPU, full vitals inc. SpO₂/BGL/BP, wider interventions |
 
 Both levels use the same scenario library. The app filters and adapts content based on the selected level.
 
@@ -50,11 +51,11 @@ Scores are expressed as **percentage of available marks** — never raw points �
 
 ### Marks per scenario
 
-| Element | Marks | Present in |
-|---|---|---|
-| Correct sick/not-sick verdict | 1 | All scenarios |
-| Correct follow-up MCQ | 1 | Normal mode, scenarios with followUp |
-| Correct evolving stage MCQ | 1 | Scenarios with evolvingStage |
+| Element                       | Marks | Present in                           |
+| ----------------------------- | ----- | ------------------------------------ |
+| Correct sick/not-sick verdict | 1     | All scenarios                        |
+| Correct follow-up MCQ         | 1     | Normal mode, scenarios with followUp |
+| Correct evolving stage MCQ    | 1     | Scenarios with evolvingStage         |
 
 ### Display
 
@@ -67,21 +68,21 @@ Scores are expressed as **percentage of available marks** — never raw points �
 ```typescript
 // utils/scoring.ts
 interface ScenarioScore {
-  scenarioId: string
-  earned: number       // 0–3
-  available: number    // 1–3 (depends on scenario structure)
-  percent: number      // Math.round((earned / available) * 100)
+  scenarioId: string;
+  earned: number; // 0–3
+  available: number; // 1–3 (depends on scenario structure)
+  percent: number; // Math.round((earned / available) * 100)
 }
 
 interface SessionScore {
-  totalEarned: number
-  totalAvailable: number
-  percent: number
-  breakdown: ScenarioScore[]
+  totalEarned: number;
+  totalAvailable: number;
+  percent: number;
+  breakdown: ScenarioScore[];
 }
 
-function scoreSession(answers: AnswerRecord[], deck: Scenario[]): SessionScore
-function scoreScenario(answer: AnswerRecord, scenario: Scenario): ScenarioScore
+function scoreSession(answers: AnswerRecord[], deck: Scenario[]): SessionScore;
+function scoreScenario(answer: AnswerRecord, scenario: Scenario): ScenarioScore;
 ```
 
 ---
@@ -117,9 +118,11 @@ The card must be readable without scrolling in its default state. The goal is a 
 ### Expandable sections (tap to reveal, accordion)
 
 **History & background** — expands inline below the button:
+
 - Complaint / History / PMH / Drugs & allergies / Injuries / Additional
 
 **Full observations** — expands inline:
+
 - Complete 2-column table (1st set / 2nd set after correct treatment)
 - Note: 2nd set is only revealed in the debrief, not during gameplay
 
@@ -136,125 +139,126 @@ The card must be readable without scrolling in its default state. The goal is a 
 
 ```typescript
 // types/level.ts
-export type Level = 'cfa' | 'er'
+export type Level = 'cfa' | 'er';
 
 // types/scenario.ts
-export type Verdict = 'sick' | 'not-sick'
+export type Verdict = 'sick' | 'not-sick';
 
 export interface ObservationsShared {
-  fastTest: string
-  respirationRate: string
-  pulseRate: string
-  painScore: string
-  temperature: string
+  fastTest: string;
+  respirationRate: string;
+  pulseRate: string;
+  painScore: string;
+  temperature: string;
 }
 
 export interface ObservationsCFA {
-  avpu: string
+  avpu: string;
 }
 
 export interface ObservationsER {
-  acvpu: string
-  pupilSize: string
-  pulseOximetry: string
-  bloodGlucose: string
-  bloodPressure: string
+  acvpu: string;
+  pupilSize: string;
+  pulseOximetry: string;
+  bloodGlucose: string;
+  bloodPressure: string;
 }
 
 export interface PrimarySurveyShared {
-  danger: string
-  response: string
-  catHaem: string
-  airway: string
-  breathing: string
-  circulation: string
+  danger: string;
+  response: string;
+  catHaem: string;
+  airway: string;
+  breathing: string;
+  circulation: string;
 }
 
 export interface PrimarySurveyER {
-  disability: string
-  exposure: string
+  disability: string;
+  exposure: string;
 }
 
 export interface MCQOption {
-  text: string
-  correct: boolean
+  text: string;
+  correct: boolean;
 }
 
 export interface FollowUpQuestion {
-  question: string
-  options: [MCQOption, MCQOption, MCQOption, MCQOption]  // always exactly 4
-  explanation: string          // shown in debrief regardless of answer
-  levelExplanation?: {         // optional level-specific additions to debrief
-    cfa?: string
-    er?: string
-  }
+  question: string;
+  options: [MCQOption, MCQOption, MCQOption, MCQOption]; // always exactly 4
+  explanation: string; // shown in debrief regardless of answer
+  levelExplanation?: {
+    // optional level-specific additions to debrief
+    cfa?: string;
+    er?: string;
+  };
 }
 
 // Some scenarios need entirely different questions per level
 export type LevelAwareFollowUp =
-  | FollowUpQuestion                          // same question for both levels
-  | { cfa: FollowUpQuestion; er: FollowUpQuestion }  // different per level
+  | FollowUpQuestion // same question for both levels
+  | { cfa: FollowUpQuestion; er: FollowUpQuestion }; // different per level
 
 export interface EvolvingStage {
-  narrative: string            // "The patient's condition changes..."
-  updatedObservations: Partial<ObservationsShared & ObservationsCFA & ObservationsER>
-  followUp: LevelAwareFollowUp
+  narrative: string; // "The patient's condition changes..."
+  updatedObservations: Partial<ObservationsShared & ObservationsCFA & ObservationsER>;
+  followUp: LevelAwareFollowUp;
 }
 
 export interface History {
-  complaint: string
-  history: string
-  pmh: string
-  drugs: string
-  injuries: string
-  additional: string
+  complaint: string;
+  history: string;
+  pmh: string;
+  drugs: string;
+  injuries: string;
+  additional: string;
 }
 
 export interface Scenario {
-  id: string                   // e.g. "sja-001"
-  version: string              // e.g. "1.0" — bump when content changes
-  guidelineReference: string   // e.g. "Resus Council UK BLS 2021"
-  title: string                // shown in results debrief only
-  setting: string              // MAX 200 chars — scene-setter
-  image: string                // filename in assets/scenarios/
+  id: string; // e.g. "sja-001"
+  version: string; // e.g. "1.0" — bump when content changes
+  guidelineReference: string; // e.g. "Resus Council UK BLS 2021"
+  title: string; // shown in results debrief only
+  setting: string; // MAX 200 chars — scene-setter
+  image: string; // filename in assets/scenarios/
 
-  correctVerdict: Verdict
-  verdictExplanation: string   // why sick/not-sick — shown in debrief
+  correctVerdict: Verdict;
+  verdictExplanation: string; // why sick/not-sick — shown in debrief
 
   observations: {
-    shared: ObservationsShared
-    cfa: ObservationsCFA
-    er: ObservationsER
-  }
+    shared: ObservationsShared;
+    cfa: ObservationsCFA;
+    er: ObservationsER;
+  };
 
   primarySurvey: {
-    shared: PrimarySurveyShared
-    er: PrimarySurveyER
-  }
+    shared: PrimarySurveyShared;
+    er: PrimarySurveyER;
+  };
 
-  history: History
+  history: History;
 
-  followUp?: LevelAwareFollowUp      // absent = swipe-only compatible
-  evolvingStage?: EvolvingStage      // absent on most scenarios
+  followUp?: LevelAwareFollowUp; // absent = swipe-only compatible
+  evolvingStage?: EvolvingStage; // absent on most scenarios
 
   levelFlags: {
-    availableTo: Level[]             // ['cfa','er'] or ['er'] only
-    cfaNotes?: string                // extra debrief context for CFA
-    erNotes?: string                 // extra debrief context for ER
-  }
+    availableTo: Level[]; // ['cfa','er'] or ['er'] only
+    cfaNotes?: string; // extra debrief context for CFA
+    erNotes?: string; // extra debrief context for ER
+  };
 }
 ```
 
 ```typescript
 // types/game.ts
 export interface AnswerRecord {
-  scenarioId: string
-  verdictGiven: Verdict
-  verdictCorrect: boolean
-  followupAnswerIndex?: number
-  followupCorrect?: boolean
-  evolvingAnswerIndex?: number
-  evolvingCorrect?: boolean
+  scenarioId: string;
+  verdictGiven: Verdict;
+  verdictCorrect: boolean;
+  followupAnswerIndex?: number;
+  followupCorrect?: boolean;
+  evolvingAnswerIndex?: number;
+  evolvingCorrect?: boolean;
 }
 
 export type GameStatus =
@@ -264,17 +268,17 @@ export type GameStatus =
   | 'followup-mcq'
   | 'evolving-presentation'
   | 'card-complete'
-  | 'session-complete'
+  | 'session-complete';
 
 export interface GameSession {
-  id: string                   // uuid — used as AsyncStorage key
-  startedAt: string            // ISO timestamp
-  level: Level
-  mode: 'normal' | 'swipe-only'
-  deck: Scenario[]
-  currentIndex: number
-  answers: AnswerRecord[]
-  status: GameStatus
+  id: string; // uuid — used as AsyncStorage key
+  startedAt: string; // ISO timestamp
+  level: Level;
+  mode: 'normal' | 'swipe-only';
+  deck: Scenario[];
+  currentIndex: number;
+  answers: AnswerRecord[];
+  status: GameStatus;
 }
 ```
 
@@ -366,14 +370,14 @@ sja-gistalt/
 
 ```typescript
 interface SettingsState {
-  level: Level
-  hasSeenDisclaimer: boolean
-  gameMode: 'normal' | 'swipe-only'
-  stackSize: 10 | 20 | 30
-  setLevel: (level: Level) => void
-  acknowledgeDisclaimer: () => void
-  setGameMode: (mode: 'normal' | 'swipe-only') => void
-  setStackSize: (size: 10 | 20 | 30) => void
+  level: Level;
+  hasSeenDisclaimer: boolean;
+  gameMode: 'normal' | 'swipe-only';
+  stackSize: 10 | 20 | 30;
+  setLevel: (level: Level) => void;
+  acknowledgeDisclaimer: () => void;
+  setGameMode: (mode: 'normal' | 'swipe-only') => void;
+  setStackSize: (size: 10 | 20 | 30) => void;
 }
 ```
 
@@ -381,13 +385,13 @@ interface SettingsState {
 
 ```typescript
 interface GameState {
-  session: GameSession | null
-  startSession: (deck: Scenario[], level: Level, mode: string) => void
-  recordVerdict: (verdict: Verdict) => void
-  recordFollowup: (answerIndex: number) => void
-  recordEvolving: (answerIndex: number) => void
-  advance: () => void
-  reset: () => void
+  session: GameSession | null;
+  startSession: (deck: Scenario[], level: Level, mode: string) => void;
+  recordVerdict: (verdict: Verdict) => void;
+  recordFollowup: (answerIndex: number) => void;
+  recordEvolving: (answerIndex: number) => void;
+  advance: () => void;
+  reset: () => void;
 }
 ```
 
@@ -432,8 +436,8 @@ export async function getScenarios(): Promise<Scenario[]> {
     require('./scenarios/sja-001.json'),
     require('./scenarios/sja-002.json'),
     // ...
-  ]
-  return raw as Scenario[]
+  ];
+  return raw as Scenario[];
 }
 ```
 
@@ -474,17 +478,17 @@ The card uses both vertical scroll and horizontal swipe. These must be coordinat
 ```typescript
 // constants/colors.ts
 export const colors = {
-  primary: '#006B3F',       // SJA green — used sparingly
-  primaryLight: '#E8F5EE',  // light green tint
-  accent: '#F0C93A',        // SJA yellow — chevron stripe accent only
-  sick: '#C0392B',          // red — SICK verdict
-  notSick: '#1C1C1E',       // near-black — NOT SICK verdict
+  primary: '#006B3F', // SJA green — used sparingly
+  primaryLight: '#E8F5EE', // light green tint
+  accent: '#F0C93A', // SJA yellow — chevron stripe accent only
+  sick: '#C0392B', // red — SICK verdict
+  notSick: '#1C1C1E', // near-black — NOT SICK verdict
   surface: '#FFFFFF',
   background: '#F5F5F5',
   text: '#1C1C1E',
   textSecondary: '#6B6B6B',
   border: '#E0E0E0',
-}
+};
 ```
 
 - Do **not** use the SJA cross or official logo anywhere in the app
@@ -505,6 +509,7 @@ export const colors = {
 ### Persistent "unofficial" banner on home screen
 
 A small, always-visible pill/badge on the game setup screen:
+
 > ⚠️ Independent practice tool — not an official SJA product
 
 ### App Store listing (first paragraph must include)
@@ -517,44 +522,44 @@ A small, always-visible pill/badge on the game setup screen:
 
 `data/validateScenario.ts` runs in CI and during development. It enforces:
 
-| Rule | Check |
-|---|---|
-| `setting` ≤ 200 characters | Warn if exceeded |
-| Exactly 4 MCQ options per question | Error |
-| Exactly 1 correct option per MCQ | Error |
-| `levelFlags.availableTo` is non-empty | Error |
-| `guidelineReference` is present | Warn if missing |
-| `version` is a valid semver string | Warn if missing |
-| Image file exists in `assets/scenarios/` | Error if missing |
-| If `availableTo` includes `'cfa'`, `observations.cfa` is present | Error |
-| If `availableTo` includes `'er'`, `observations.er` is present | Error |
+| Rule                                                             | Check            |
+| ---------------------------------------------------------------- | ---------------- |
+| `setting` ≤ 200 characters                                       | Warn if exceeded |
+| Exactly 4 MCQ options per question                               | Error            |
+| Exactly 1 correct option per MCQ                                 | Error            |
+| `levelFlags.availableTo` is non-empty                            | Error            |
+| `guidelineReference` is present                                  | Warn if missing  |
+| `version` is a valid semver string                               | Warn if missing  |
+| Image file exists in `assets/scenarios/`                         | Error if missing |
+| If `availableTo` includes `'cfa'`, `observations.cfa` is present | Error            |
+| If `availableTo` includes `'er'`, `observations.er` is present   | Error            |
 
 ---
 
 ## 13. Scenario Content Plan (v1 — 20 scenarios)
 
-| ID | Title | CFA | ER | Verdict | Has evolving stage |
-|---|---|---|---|---|---|
-| sja-001 | Ankle sprain — sports event | — | ✓ | Not sick | No |
-| sja-002 | Knee sprain — walking event | — | ✓ | Not sick | No |
-| sja-003 | Hand strain — country show | — | ✓ | Not sick | No |
-| sja-004 | Epistaxis simple — sports tournament | ✓ | ✓ | Not sick | No |
-| sja-005 | Epistaxis deteriorating — air show | — | ✓ | Sick | Yes |
-| sja-006 | Minor laceration — craft festival | — | ✓ | Not sick | No |
-| sja-007 | Minor graze — park event | — | ✓ | Not sick | No |
-| sja-008 | Adult cardiac arrest — football | ✓ | ✓ | Sick | No |
-| sja-009 | Adult cardiac arrest — theatre (electrocution) | ✓ | ✓ | Sick | No |
-| sja-010 | Child cardiac arrest — country fayre (drowning) | ✓ | ✓ | Sick | No |
-| sja-011 | Child cardiac arrest — sports day | ✓ | ✓ | Sick | No |
-| sja-012 | Anaphylaxis — food festival | ✓ | ✓ | Sick | Yes |
-| sja-013 | FAST positive stroke — community event | ✓ | ✓ | Sick | No |
-| sja-014 | Hypoglycaemia — marathon | — | ✓ | Sick | Yes |
-| sja-015 | Asthma attack — indoor venue | ✓ | ✓ | Sick | Yes |
-| sja-016 | Heat exhaustion — outdoor festival | — | ✓ | Not sick | No |
-| sja-017 | Seizure (postictal, recovering) — school event | ✓ | ✓ | Sick | No |
-| sja-018 | Choking (adult, resolved) — gala dinner | ✓ | ✓ | Not sick | No |
-| sja-019 | Chest pain — race day | — | ✓ | Sick | Yes |
-| sja-020 | Faint / vasovagal — concert | ✓ | ✓ | Not sick | No |
+| ID      | Title                                           | CFA | ER  | Verdict  | Has evolving stage |
+| ------- | ----------------------------------------------- | --- | --- | -------- | ------------------ |
+| sja-001 | Ankle sprain — sports event                     | —   | ✓   | Not sick | No                 |
+| sja-002 | Knee sprain — walking event                     | —   | ✓   | Not sick | No                 |
+| sja-003 | Hand strain — country show                      | —   | ✓   | Not sick | No                 |
+| sja-004 | Epistaxis simple — sports tournament            | ✓   | ✓   | Not sick | No                 |
+| sja-005 | Epistaxis deteriorating — air show              | —   | ✓   | Sick     | Yes                |
+| sja-006 | Minor laceration — craft festival               | —   | ✓   | Not sick | No                 |
+| sja-007 | Minor graze — park event                        | —   | ✓   | Not sick | No                 |
+| sja-008 | Adult cardiac arrest — football                 | ✓   | ✓   | Sick     | No                 |
+| sja-009 | Adult cardiac arrest — theatre (electrocution)  | ✓   | ✓   | Sick     | No                 |
+| sja-010 | Child cardiac arrest — country fayre (drowning) | ✓   | ✓   | Sick     | No                 |
+| sja-011 | Child cardiac arrest — sports day               | ✓   | ✓   | Sick     | No                 |
+| sja-012 | Anaphylaxis — food festival                     | ✓   | ✓   | Sick     | Yes                |
+| sja-013 | FAST positive stroke — community event          | ✓   | ✓   | Sick     | No                 |
+| sja-014 | Hypoglycaemia — marathon                        | —   | ✓   | Sick     | Yes                |
+| sja-015 | Asthma attack — indoor venue                    | ✓   | ✓   | Sick     | Yes                |
+| sja-016 | Heat exhaustion — outdoor festival              | —   | ✓   | Not sick | No                 |
+| sja-017 | Seizure (postictal, recovering) — school event  | ✓   | ✓   | Sick     | No                 |
+| sja-018 | Choking (adult, resolved) — gala dinner         | ✓   | ✓   | Not sick | No                 |
+| sja-019 | Chest pain — race day                           | —   | ✓   | Sick     | Yes                |
+| sja-020 | Faint / vasovagal — concert                     | ✓   | ✓   | Not sick | No                 |
 
 **CFA-available scenarios: 12 of 20**
 **ER-available scenarios: 20 of 20**
@@ -567,6 +572,7 @@ All content references Resus Council UK guidelines (current edition at time of w
 ## 14. Phased Build Plan
 
 ### Phase 1 — Foundation (Weeks 1–3)
+
 - [ ] Expo project init, TypeScript config, GitHub Actions CI
 - [ ] expo-router navigation skeleton (tabs, game stack)
 - [ ] `data/registry.ts` + 3 sample scenarios
@@ -576,6 +582,7 @@ All content references Resus Council UK guidelines (current edition at time of w
 - [ ] Swipe gesture (horizontal) + tap buttons
 
 ### Phase 2 — Gameplay (Weeks 4–6)
+
 - [ ] MCQ follow-up screen
 - [ ] Evolving presentation screen
 - [ ] Game state machine (`useGameSession` with useReducer)
@@ -584,6 +591,7 @@ All content references Resus Council UK guidelines (current edition at time of w
 - [ ] Session auto-save + resume on launch
 
 ### Phase 3 — Content & Polish (Weeks 7–10)
+
 - [ ] All 20 scenarios authored and clinically reviewed
 - [ ] Photography / images sourced and optimised
 - [ ] Full branding pass (colours, typography, unofficial banner)
@@ -592,12 +600,14 @@ All content references Resus Council UK guidelines (current edition at time of w
 - [ ] Physical device testing (outdoor sunlight conditions)
 
 ### Phase 4 — Release Prep (Weeks 11–12)
+
 - [ ] App Store / Play Store assets (icon, splash, screenshots)
 - [ ] Store listing copy (education category, unofficial disclaimer in first paragraph)
 - [ ] TestFlight beta with SJA volunteers
 - [ ] Feedback → fixes → release
 
 ### Phase 5 — Future
+
 - [ ] Headless CMS for scenario management (non-technical editors)
 - [ ] Additional levels (Event Paramedic / Doctor)
 - [ ] Score history and progress tracking
@@ -607,15 +617,15 @@ All content references Resus Council UK guidelines (current edition at time of w
 
 ## 15. Key Decisions Log
 
-| Decision | Choice | Rationale |
-|---|---|---|
-| Framework | Expo (React Native) | Single codebase iOS + Android, fast setup, good ecosystem |
-| Navigation | expo-router | File-based, standard for modern Expo projects |
-| State management | Zustand | Minimal boilerplate, works cleanly with AsyncStorage persist |
-| Gesture library | RNGH v2 + Reanimated v3 | Best-in-class for React Native gesture handling |
-| Data layer | Local JSON behind `getScenarios()` | Fast to start; abstraction allows CMS swap without refactor |
-| Level MCQ variants | `LevelAwareFollowUp` union type | Allows single or split questions; decided at data model level |
-| Scoring display | Percentage only (never raw points) | Comparable across variable-length scenarios |
-| Session persistence | AsyncStorage auto-save + resume prompt | Prevents loss during events; low implementation cost |
-| Branding | SJA-inspired palette, no logo | Avoids trademark issues; clear unofficial status |
-| Card compactness | Compact default + tap-to-expand accordion | No scroll needed for gestalt decision; detail available if needed |
+| Decision            | Choice                                    | Rationale                                                         |
+| ------------------- | ----------------------------------------- | ----------------------------------------------------------------- |
+| Framework           | Expo (React Native)                       | Single codebase iOS + Android, fast setup, good ecosystem         |
+| Navigation          | expo-router                               | File-based, standard for modern Expo projects                     |
+| State management    | Zustand                                   | Minimal boilerplate, works cleanly with AsyncStorage persist      |
+| Gesture library     | RNGH v2 + Reanimated v3                   | Best-in-class for React Native gesture handling                   |
+| Data layer          | Local JSON behind `getScenarios()`        | Fast to start; abstraction allows CMS swap without refactor       |
+| Level MCQ variants  | `LevelAwareFollowUp` union type           | Allows single or split questions; decided at data model level     |
+| Scoring display     | Percentage only (never raw points)        | Comparable across variable-length scenarios                       |
+| Session persistence | AsyncStorage auto-save + resume prompt    | Prevents loss during events; low implementation cost              |
+| Branding            | SJA-inspired palette, no logo             | Avoids trademark issues; clear unofficial status                  |
+| Card compactness    | Compact default + tap-to-expand accordion | No scroll needed for gestalt decision; detail available if needed |

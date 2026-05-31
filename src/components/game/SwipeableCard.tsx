@@ -1,4 +1,4 @@
-import { useWindowDimensions, StyleSheet, Text, View } from 'react-native';
+import { useWindowDimensions, StyleSheet, Text } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   interpolate,
@@ -27,17 +27,9 @@ export function SwipeableCard({ scenario, level, onVerdict }: SwipeableCardProps
   const threshold = width * 0.28;
   const translateX = useSharedValue(0);
 
-  const fling = (verdict: Verdict) => {
-    translateX.value = withTiming(
-      verdict === 'sick' ? SWIPE_OUT : -SWIPE_OUT,
-      { duration: 220, easing: easeOut },
-      (done) => {
-        if (done) runOnJS(onVerdict)(verdict);
-      }
-    );
-  };
-
-  // Horizontal pan that yields to vertical scrolling inside the card.
+  // Horizontal pan that yields to vertical scrolling inside the card:
+  // activeOffsetX starts the swipe only past a horizontal threshold, while
+  // failOffsetY hands a mostly-vertical drag back to the inner ScrollView.
   const pan = Gesture.Pan()
     .activeOffsetX([-16, 16])
     .failOffsetY([-14, 14])
@@ -45,7 +37,8 @@ export function SwipeableCard({ scenario, level, onVerdict }: SwipeableCardProps
       translateX.value = e.translationX;
     })
     .onEnd((e) => {
-      if (Math.abs(e.translationX) > threshold || Math.abs(e.velocityX) > 800) {
+      const committed = Math.abs(e.translationX) > threshold || Math.abs(e.velocityX) > 800;
+      if (committed) {
         const verdict: Verdict = e.translationX > 0 ? 'sick' : 'not-sick';
         translateX.value = withTiming(
           verdict === 'sick' ? SWIPE_OUT : -SWIPE_OUT,
@@ -87,9 +80,6 @@ export function SwipeableCard({ scenario, level, onVerdict }: SwipeableCardProps
     </GestureDetector>
   );
 }
-
-// Exposed so buttons can trigger the same fling animation if desired in future.
-export const SWIPE_OUT_DISTANCE = SWIPE_OUT;
 
 const styles = StyleSheet.create({
   fill: { flex: 1 },

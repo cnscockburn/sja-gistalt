@@ -1,0 +1,77 @@
+{
+  "id": "sja-026",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021 (Choking)",
+  "title": "Child choking on a button at a country show",
+  "setting": "County show treatment centre. A father runs in holding his 8-year-old daughter. She is gasping, clutching at her throat, and unable to speak.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe complete paediatric airway obstruction (unable to speak, cough, or breathe). Choking is a critical life-threatening emergency. Sick: deliver paediatric choking treatment.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "0/min",
+      "pulseRate": "110 bpm",
+      "painScore": "5/10",
+      "temperature": "37.5\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Voice"
+    },
+    "er": {
+      "acvpu": "Voice",
+      "pupilSize": "Large, equal and reactive",
+      "pulseOximetry": "85%",
+      "bloodGlucose": "8.9 mmol/L",
+      "bloodPressure": "95/70 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Responding to voice with severe panic",
+      "catHaem": "None",
+      "airway": "Completely obstructed by a button",
+      "breathing": "None",
+      "circulation": "Cyanosis around lips, fast pulse"
+    },
+    "er": {
+      "disability": "Hypoxic, responding to voice",
+      "exposure": "Indoors, treatment area"
+    }
+  },
+  "history": {
+    "complaint": "Child choking",
+    "history": "Chewing a plastic button off her jumper, accidentally swallowed it and started choking",
+    "pmh": "Usually fit and well",
+    "drugs": "Allergic to peanuts, has an EpiPen (not indicated here)",
+    "injuries": "None visible, reports back and chest pain from gasping",
+    "additional": "Father is extremely distressed"
+  },
+  "followUp": {
+    "question": "What is the correct protocol for treating a conscious child with severe choking?",
+    "options": [
+      {
+        "text": "Lean her forward, give up to 5 back blows; if unsuccessful, give up to 5 abdominal thrusts; repeat",
+        "correct": true
+      },
+      {
+        "text": "Perform adult abdominal thrusts with full strength while she stands upright",
+        "correct": false
+      },
+      {
+        "text": "Give her peanut allergy EpiPen into her outer thigh immediately",
+        "correct": false
+      },
+      {
+        "text": "Hold her upside down by her feet and slap her back vigorously",
+        "correct": false
+      }
+    ],
+    "explanation": "Paediatric conscious choking is managed with up to 5 back blows followed by up to 5 abdominal thrusts. The force must be adjusted for a child. EpiPen is only for anaphylaxis, not mechanical choking. Inverting the child is dangerous and wastes time."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Reassure father. Lean child forward and deliver 5 back blows, then 5 abdominal thrusts. Call 999 if the button does not clear.",
+    "erNotes": "Deliver paediatric choking treatment. If she becomes unresponsive, immediately guide her to the floor, call 999, and start paediatric CPR (beginning with 5 rescue breaths, check mouth before breathing)."
+  }
+}

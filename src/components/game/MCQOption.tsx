@@ -30,7 +30,13 @@ export function MCQOption({ index, text, state, disabled, onPress }: MCQOptionPr
         pressed && !disabled && styles.pressed,
       ]}
     >
-      <View style={[styles.badge, showCorrect && styles.badgeCorrect, showWrong && styles.badgeWrong]}>
+      <View
+        style={[
+          styles.badge,
+          showCorrect && styles.badgeCorrect,
+          showWrong && styles.badgeWrong,
+        ]}
+      >
         {showCorrect ? (
           <Ionicons name="checkmark" size={16} color={colors.onBrand} />
         ) : showWrong ? (

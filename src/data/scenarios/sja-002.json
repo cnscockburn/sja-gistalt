@@ -1,0 +1,77 @@
+{
+  "id": "sja-002",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / soft-tissue injury (RICE)",
+  "title": "Knee sprain at a walking event",
+  "setting": "Large charity walk. 23F slipped descending a steep slope. Sitting on the ground, complaining of severe knee pain, won't bear weight.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, airway clear, breathing and circulation normal. An isolated, painful soft-tissue knee injury with no red flags. Injured but not sick: treat on scene.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "16/min",
+      "pulseRate": "86 bpm",
+      "painScore": "7/10",
+      "temperature": "36.7\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "96%",
+      "bloodGlucose": "4.8 mmol/L",
+      "bloodPressure": "115/78 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Slippery slope nearby",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Slightly rapid",
+      "circulation": "No visible issues"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, recently exerting"
+    }
+  },
+  "history": {
+    "complaint": "Slipped and twisted knee",
+    "history": "Injury occurred moments ago, slipped descending a muddy path",
+    "pmh": "Depression",
+    "drugs": "Antidepressants (SSRIs)",
+    "injuries": "Knee swelling and bruising, tender to touch",
+    "additional": "Carries adrenaline injector for shellfish allergy but no allergy signs"
+  },
+  "followUp": {
+    "question": "What is your immediate management?",
+    "options": [
+      {
+        "text": "Rest, apply a cold compress, support comfortably with a bandage, and elevate the leg",
+        "correct": true
+      },
+      {
+        "text": "Call 999 for an emergency ambulance",
+        "correct": false
+      },
+      {
+        "text": "Strap firmly and encourage her to complete the rest of the walk",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet above the knee to reduce swelling",
+        "correct": false
+      }
+    ],
+    "explanation": "Soft-tissue sprains are managed using RICE (Rest, Ice, Comfortable support, Elevation) and reassessed. There are no systemic red flags, so 999 is not indicated. Weight-bearing should be avoided, and tourniquets are only for life-threatening limb haemorrhage."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Support and advise rest. Warn that if pain worsens or she cannot weight-bear after rest, she should seek onward medical assessment.",
+    "erNotes": "Assess distal circulation and sensation. Offer appropriate analgesia within scope and reassess pain after treatment."
+  }
+}

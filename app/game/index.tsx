@@ -29,7 +29,14 @@ const OBS_LABELS: Record<string, string> = {
   bloodPressure: 'Blood pressure',
 };
 
-const CFA_KEYS = ['fastTest', 'avpu', 'respirationRate', 'pulseRate', 'painScore', 'temperature'];
+const CFA_KEYS = [
+  'fastTest',
+  'avpu',
+  'respirationRate',
+  'pulseRate',
+  'painScore',
+  'temperature',
+];
 const ER_KEYS = [
   'fastTest',
   'acvpu',
@@ -51,7 +58,13 @@ function UpdatedObs({ obs, level }: { obs: Record<string, string>; level: Level 
     <View style={styles.obsBox}>
       <Text style={styles.obsTitle}>Updated observations</Text>
       {entries.map(([k, v], i) => (
-        <DataRow key={k} label={OBS_LABELS[k] ?? k} value={v} mono last={i === entries.length - 1} />
+        <DataRow
+          key={k}
+          label={OBS_LABELS[k] ?? k}
+          value={v}
+          mono
+          last={i === entries.length - 1}
+        />
       ))}
     </View>
   );
@@ -120,14 +133,22 @@ export default function GameScreen() {
       {status === 'viewing-card' && (
         <View style={styles.body}>
           <View style={styles.cardArea}>
-            <SwipeableCard key={scenario.id} scenario={scenario} level={level} onVerdict={recordVerdict} />
+            <SwipeableCard
+              key={scenario.id}
+              scenario={scenario}
+              level={level}
+              onVerdict={recordVerdict}
+            />
           </View>
           <VerdictButtons onVerdict={recordVerdict} />
         </View>
       )}
 
       {status === 'followup-mcq' && followUp && (
-        <ScrollView contentContainerStyle={styles.qContent} showsVerticalScrollIndicator={false}>
+        <ScrollView
+          contentContainerStyle={styles.qContent}
+          showsVerticalScrollIndicator={false}
+        >
           <Text style={styles.phaseLabel}>Follow-up</Text>
           <QuestionPanel
             question={followUp}
@@ -139,7 +160,10 @@ export default function GameScreen() {
       )}
 
       {status === 'evolving-presentation' && scenario.evolvingStage && evolvingQuestion && (
-        <ScrollView contentContainerStyle={styles.qContent} showsVerticalScrollIndicator={false}>
+        <ScrollView
+          contentContainerStyle={styles.qContent}
+          showsVerticalScrollIndicator={false}
+        >
           <Text style={styles.phaseLabel}>The picture changes</Text>
           <Text style={styles.narrative}>{scenario.evolvingStage.narrative}</Text>
           {scenario.evolvingStage.updatedObservations ? (

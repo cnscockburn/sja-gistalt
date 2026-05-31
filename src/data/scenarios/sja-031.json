@@ -1,0 +1,77 @@
+{
+  "id": "sja-031",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / burn care",
+  "title": "Minor superficial burn on Bonfire Night",
+  "setting": "Bonfire Night celebration. An 8-year-old child is brought to the post. Accidentally touched his cheek with the hot end of a used sparkler. Red skin, in pain.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, responsive, stable observations. A minor, superficial dry burn on the cheek with no airway compromise. Not sick: simple burn management.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "19/min",
+      "pulseRate": "84 bpm",
+      "painScore": "6/10",
+      "temperature": "37.3\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "96%",
+      "bloodGlucose": "4.3 mmol/L",
+      "bloodPressure": "85/55 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Crowds and active sparklers in the area",
+      "response": "Alert and responsive, crying",
+      "catHaem": "None",
+      "airway": "Open and clear, no soot or throat swelling",
+      "breathing": "Slightly rapid from crying",
+      "circulation": "Red skin and swelling along the cheek"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, cold winter night"
+    }
+  },
+  "history": {
+    "complaint": "Dry burn on the face",
+    "history": "Distracted by fireworks, touched cheek with hot end of a sparkler 5 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies",
+    "injuries": "Superficial burn to the right cheek",
+    "additional": "Parents are present and highly concerned about scarring"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for this minor burn?",
+    "options": [
+      {
+        "text": "Cool the burn under clean, cool running water for 20 minutes, then cover with a clean dressing (e.g. cling film)",
+        "correct": true
+      },
+      {
+        "text": "Apply butter, toothpaste, or burn cream immediately to soothe the skin",
+        "correct": false
+      },
+      {
+        "text": "Burst any blisters that form and scrub the wound to keep it clean",
+        "correct": false
+      },
+      {
+        "text": "Call 999 immediately for a critical paediatric emergency",
+        "correct": false
+      }
+    ],
+    "explanation": "All burns must be cooled under clean, cool running water for a full 20 minutes. Cover with cling film or a sterile non-adherent dressing. Never apply butter, toothpaste, or fats (they trap heat). Never burst blisters. 999 is not indicated for stable, minor superficial burns."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Cool the cheek with water/wet compress for 20 minutes. Reassure child and parents.",
+    "erNotes": "Cool the burn for 20 minutes. Assess depth (superficial erythema). Cover loosely with non-adherent dressing or cling film. Advise onward medical review if scarring is a concern."
+  }
+}

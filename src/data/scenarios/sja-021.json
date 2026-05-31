@@ -1,0 +1,77 @@
+{
+  "id": "sja-021",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021",
+  "title": "Infant cardiac arrest at a family fun day",
+  "setting": "Family fun day. A frantic parent runs into the first aid post holding an 8-month-old infant in their arms. The baby is unresponsive and not breathing.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive and not breathing normally in an infant. Paediatric cardiac arrest is a critical, time-sensitive life-threatening emergency. Sick: start CPR beginning with rescue breaths.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "0/min",
+      "pulseRate": "0 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "36.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Fixed and dilated",
+      "pulseOximetry": "Unrecordable",
+      "bloodGlucose": "5.3 mmol/L",
+      "bloodPressure": "Unrecordable"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Stuffy, warm room; clear bystanders",
+      "response": "Unresponsive",
+      "catHaem": "None",
+      "airway": "Open, requires manual positioning (neutral head position)",
+      "breathing": "None",
+      "circulation": "No effective pulse"
+    },
+    "er": {
+      "disability": "Unresponsive",
+      "exposure": "Indoors, baby is dressed in warm layers"
+    }
+  },
+  "history": {
+    "complaint": "Baby not waking up",
+    "history": "Fell asleep in pushchair 10 minutes ago, mother checked and found him unresponsive, frantically ran to post",
+    "pmh": "Usually fit and well, crying more regularly in the last 12 hours",
+    "drugs": "No medication, no allergies known",
+    "injuries": "None visible",
+    "additional": "Teddy Mardon, 8 months old"
+  },
+  "followUp": {
+    "question": "What is your immediate resuscitation action for this infant?",
+    "options": [
+      {
+        "text": "Ensure neutral head position, give 5 initial rescue breaths, then perform 15:2 chest compressions to breaths",
+        "correct": true
+      },
+      {
+        "text": "Start with 30 chest compressions, as for an adult, and tilt the head fully back",
+        "correct": false
+      },
+      {
+        "text": "Place in the recovery position immediately and wait for the ambulance crew",
+        "correct": false
+      },
+      {
+        "text": "Hold him upside down by the ankles and slap his back to clear the throat",
+        "correct": false
+      }
+    ],
+    "explanation": "Infant resuscitation begins with ensuring a neutral head position (sniffing position, not over-extended as in adults) and giving 5 initial rescue breaths. If there is no response, perform chest compressions (with two fingers or two thumbs) in a 15:2 ratio. Never hold an infant upside down or place them in recovery position if they are not breathing."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999 immediately. Resuscitate at a 15:2 ratio after 5 initial rescue breaths.",
+    "erNotes": "Maintain airway with neutral head alignment. Check BGL and keep the infant warm. Prepare AED with paediatric attenuator/pads if available; if not, use adult pads placed front-and-back."
+  }
+}

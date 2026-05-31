@@ -1,0 +1,77 @@
+{
+  "id": "sja-054",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / panic attack and grounding",
+  "title": "Panic attack at a royal event",
+  "setting": "Crowded royal event. 17M student has severe anxiety, panicked breathing, disoriented, struggling to focus on words, trying to run away.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Anxiety mimic of systemic issues, requires full diagnostic check, calm grounding, and airway management. Sick: manage and monitor closely.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "18/min",
+      "pulseRate": "86 bpm",
+      "painScore": "1/10",
+      "temperature": "37.4\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "99%",
+      "bloodGlucose": "3.8 mmol/L",
+      "bloodPressure": "83/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Crowded barriers and stewards",
+      "response": "Alert but panicked, disoriented",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Slightly rapid and shallow",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, hot sun"
+    }
+  },
+  "history": {
+    "complaint": "Severe anxiety and panic",
+    "history": "Struggled with the vast amount of people around him at a royal event, became disoriented",
+    "pmh": "Known history of anxiety",
+    "drugs": "Takes daily anti-anxiety medication",
+    "injuries": "None",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is the appropriate first aid management for this panicked patient?",
+    "options": [
+      {
+        "text": "Escort him away from the crowd to a quiet area, encourage slow breathing, and ground him using calming reassurance",
+        "correct": true
+      },
+      {
+        "text": "Force him to breathe into a paper bag to stop hyperventilation",
+        "correct": false
+      },
+      {
+        "text": "Call 999 for a priority emergency response immediately",
+        "correct": false
+      },
+      {
+        "text": "Give him a cold glass of water and tell him to ignore the crowd",
+        "correct": false
+      }
+    ],
+    "explanation": "Panic attacks are managed by moving the patient away from the trigger (crowds), encouraging slow controlled breathing, and grounding them with calm, clear reassurance. Paper bags are no longer recommended due to hypoxia risks. 999 is only needed if systemic issues develop."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Move to a quiet area, encourage slow breathing. Reassure and ground the patient.",
+    "erNotes": "Ground the patient, check BGL to rule out hypoglycaemia (mimics anxiety), monitor SpO\u2082 and BP. Escort away from the crowd with stewards."
+  }
+}

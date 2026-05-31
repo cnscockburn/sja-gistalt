@@ -1,0 +1,77 @@
+{
+  "id": "sja-023",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / major bleeding and shock",
+  "title": "Severe crushed hand injury at a steam rally",
+  "setting": "Vintage steam engine rally. A 42M exhibitor accidentally got his hand caught in the mechanism. Heavy arterial bleeding, mangled hand, in severe pain.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Mangled extremity with rapid, heavy arterial bleeding and early signs of shock (tachycardia 120 bpm, hypotension 87/57, pale skin). Sick: immediate bleed control and 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "22/min",
+      "pulseRate": "120 bpm",
+      "painScore": "10/10",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert (moving into voice)"
+    },
+    "er": {
+      "acvpu": "Alert (moving into voice)",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "90%",
+      "bloodGlucose": "5.3 mmol/L",
+      "bloodPressure": "87/57 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Mechanical steam engine gears (isolated and safe now)",
+      "response": "Alert but highly distressed, level of response dropping",
+      "catHaem": "Heavy, rapid bleeding from crushed hand",
+      "airway": "Open and clear",
+      "breathing": "Hyperventilating",
+      "circulation": "Extremely fast pulse, cold, clammy, and pale skin"
+    },
+    "er": {
+      "disability": "Responsive to voice, hypotensive",
+      "exposure": "Outdoors, dirty mechanical area"
+    }
+  },
+  "history": {
+    "complaint": "Mangled and bleeding crushed hand",
+    "history": "Hand caught in the gear mechanism of a running steam engine moments ago",
+    "pmh": "Usually fit and well",
+    "drugs": "None",
+    "injuries": "Severe crush injury to lower hand and wrist, partial amputation of fingers",
+    "additional": "Patient is in excruciating pain and highly panicked"
+  },
+  "followUp": {
+    "question": "What is your immediate priority action for this catastrophic haemorrhage?",
+    "options": [
+      {
+        "text": "Apply immediate firm direct pressure over a sterile dressing, elevate the hand, and call 999",
+        "correct": true
+      },
+      {
+        "text": "Wash the wound thoroughly under warm running water to remove grease",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet above the elbow immediately as the first-line treatment for any bleed",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his stomach and tell him to rest his hand",
+        "correct": false
+      }
+    ],
+    "explanation": "First-line control for heavy bleeding is firm, direct pressure with a sterile dressing. Tourniquets are indicated if direct pressure fails to control catastrophic limb haemorrhage. Washing the wound increases bleeding and should be avoided. Place him flat on his back (supine) to treat for shock, never on his stomach."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Apply firm direct pressure, elevate, call 999. Watch for signs of shock (sweating, cold clammy skin). Keep him warm.",
+    "erNotes": "Suspected hemorrhagic shock. Apply pressure dressing. If bleeding cannot be controlled with direct pressure, immediately apply a commercial tourniquet above the wound, note the time, administer high-flow oxygen, keep warm, and expedite transport."
+  }
+}

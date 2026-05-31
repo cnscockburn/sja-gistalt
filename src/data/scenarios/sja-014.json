@@ -1,0 +1,108 @@
+{
+  "id": "sja-014",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / diabetic emergency (hypoglycaemia)",
+  "title": "Hypoglycaemia at a 10K run",
+  "setting": "Hot summer day 10K run. 25M runner staggering near catering stand, looking extremely pale, cold, clammy, behaving in a confused, grumpy, and argumentative manner.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Diabetic runner with blood glucose of 2.5 mmol/L, altered mental status (grumpy, confused), and autonomic symptoms (sweaty, pale). Sick: needs immediate glucose treatment.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "16/min",
+      "pulseRate": "100 bpm",
+      "painScore": "1/10",
+      "temperature": "37.5\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert but confused and irritable",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "90%",
+      "bloodGlucose": "2.5 mmol/L",
+      "bloodPressure": "83/56 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Spectators and runners moving past",
+      "response": "Responding but very confused and argumentative",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "Extremely pale, cold, and clammy skin"
+    },
+    "er": {
+      "disability": "Confused, unsteady on feet",
+      "exposure": "Outdoors, hot sun, dehydrated"
+    }
+  },
+  "history": {
+    "complaint": "Staggering and behaving oddly",
+    "history": "Midway through a 10K run, missed breakfast and lunch, collapsed near catering area",
+    "pmh": "Type 1 diabetes",
+    "drugs": "Insulin",
+    "injuries": "None",
+    "additional": "His friend says he has not eaten all day and is normally very friendly"
+  },
+  "followUp": {
+    "question": "What is the first-line treatment for this patient while he is still able to swallow?",
+    "options": [
+      {
+        "text": "Give 15-20g of fast-acting sugar (sugary drink, sweets, or gel) and reassess in 15 minutes",
+        "correct": true
+      },
+      {
+        "text": "Administer his regular dose of insulin to stabilize his blood sugar",
+        "correct": false
+      },
+      {
+        "text": "Encourage him to run to the finish line to complete the race",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back, elevate his legs, and give him water",
+        "correct": false
+      }
+    ],
+    "explanation": "Symptomatic low blood sugar requires immediate fast-acting oral sugar. Giving insulin is highly dangerous and could be fatal. He must not continue the race. Water alone does not raise blood sugar."
+  },
+  "evolvingStage": {
+    "narrative": "While waiting for the observations to stabilize, he suddenly becomes unresponsive and floppy. He is lying on the ground, breathing but uncooperative, and cannot swallow.",
+    "updatedObservations": {
+      "avpu": "Voice",
+      "acvpu": "Voice",
+      "respirationRate": "12/min",
+      "bloodGlucose": "2.1 mmol/L"
+    },
+    "followUp": {
+      "question": "He is now unresponsive and unable to swallow safely. What is your priority action?",
+      "options": [
+        {
+          "text": "Call 999 immediately, place him in the recovery position to protect the airway, and monitor breathing",
+          "correct": true
+        },
+        {
+          "text": "Force glucose gel into his mouth and hold his head back to swallow",
+          "correct": false
+        },
+        {
+          "text": "Administer an injection of insulin immediately",
+          "correct": false
+        },
+        {
+          "text": "Wait another 10 minutes to see if he naturally wakes up",
+          "correct": false
+        }
+      ],
+      "explanation": "An unresponsive patient who is breathing must be placed in the recovery position to protect the airway. Never force liquids/gels into the mouth of someone who cannot swallow due to choking risk. Call 999 immediately."
+    }
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Recognize the signs of low blood sugar (irritable, sweaty, pale). Give sugary food/drink immediately if conscious. If unresponsive, recovery position and 999.",
+    "erNotes": "Measure blood glucose. Treat with oral glucose if conscious. If unresponsive/unconscious, administer glucagon IM (if trained/authorized) or call 999 and protect the airway. Monitor vital signs."
+  }
+}

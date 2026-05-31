@@ -1,0 +1,77 @@
+{
+  "id": "sja-047",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / moving and handling",
+  "title": "Back pain assistance from public toilets",
+  "setting": "Local event. Elderly patient suffered severe back pain lifting grandchild, needs help getting into a wheelchair to go to the toilet.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, responsive, stable observations. Safe transfer of an elderly patient with back pain. Not sick: follow safe moving and handling guidelines.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "12/min",
+      "pulseRate": "75 bpm",
+      "painScore": "5/10",
+      "temperature": "37\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "97%",
+      "bloodGlucose": "5.1 mmol/L",
+      "bloodPressure": "145/89 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Limited space in the bathroom, crowds and obstacles",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Severe back pain, no weakness",
+      "exposure": "Indoors, public toilets"
+    }
+  },
+  "history": {
+    "complaint": "Back pain requires assistance",
+    "history": "Injured back lifting grandchild 10 minutes ago, currently resting and awaiting advice",
+    "pmh": "None",
+    "drugs": "No medication, no allergies",
+    "injuries": "None visible",
+    "additional": "Needs to use the toilet urgently"
+  },
+  "followUp": {
+    "question": "What is the correct protocol for transferring this patient into a wheelchair?",
+    "options": [
+      {
+        "text": "Explain the transfer, gain consent, ensure wheelchair brakes are locked, and assist patient to stand and pivot",
+        "correct": true
+      },
+      {
+        "text": "Lift the patient in a full-body carry without telling them",
+        "correct": false
+      },
+      {
+        "text": "Tell the patient to jump into the wheelchair while it is moving",
+        "correct": false
+      },
+      {
+        "text": "Move the patient without locking the wheelchair brakes to save time",
+        "correct": false
+      }
+    ],
+    "explanation": "Safe wheelchair transfer. Explain the procedure and gain consent. Position the wheelchair on a flat surface and lock the brakes. Assist the patient to stand and pivot, ensuring footplates are out of the way during transfer."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Explain the transfer, lock brakes, assist patient. Reassure during transfer.",
+    "erNotes": "Ensure wheelchair is clean. Explain procedure, gain consent. Lock brakes. Assist to transfer, secure footplates and lap belt."
+  }
+}

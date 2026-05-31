@@ -1,0 +1,77 @@
+{
+  "id": "sja-059",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / pelvic fractures and major trauma",
+  "title": "Pelvic fracture after cycling collision",
+  "setting": "Road cycling event. Cyclist hit by a car, thrown from bike, lying on road. Severe pelvic and thigh pain, loss of sensation in feet, pale, clammy.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Suspected pelvic fracture with life-threatening internal bleeding, loss of sensation, and severe shock (pulse 110 bpm, BP 90/60). Sick: immediate immobilization and 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "22/min",
+      "pulseRate": "110 bpm",
+      "painScore": "10/10",
+      "temperature": "36.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert (moving into voice)"
+    },
+    "er": {
+      "acvpu": "Confused (moving to unresponsive)",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "96%",
+      "bloodGlucose": "5.7 mmol/L",
+      "bloodPressure": "90/60 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Car involved in collision, other vehicles on road",
+      "response": "Responsive but in severe pain, becoming unresponsive",
+      "catHaem": "Internal bleeding around pelvic fracture",
+      "airway": "Clear and open",
+      "breathing": "Rapid and shallow",
+      "circulation": "Weak, irregular pulse, pale skin"
+    },
+    "er": {
+      "disability": "Confused, loss of sensation in feet",
+      "exposure": "Recent physical exertion, outdoors on asphalt road"
+    }
+  },
+  "history": {
+    "complaint": "Severe pelvic and left thigh pain",
+    "history": "Collision with a moving car while cycling 10 minutes ago, thrown from bicycle, helmet thrown off",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies known",
+    "injuries": "Suspect pelvic fracture, bruising and swelling around pelvis and left thigh",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is the priority first aid intervention for a suspected pelvic fracture?",
+    "options": [
+      {
+        "text": "Call 999, keep the patient completely still, do not move the legs, apply a pelvic binder if ER trained, and treat for shock",
+        "correct": true
+      },
+      {
+        "text": "Encourage the patient to sit up and bend his knees to check mobility",
+        "correct": false
+      },
+      {
+        "text": "Log-roll the patient onto his side to inspect his back immediately",
+        "correct": false
+      },
+      {
+        "text": "Force him to stand and walk to the roadside to clear traffic",
+        "correct": false
+      }
+    ],
+    "explanation": "Pelvic fractures can cause massive, life-threatening internal bleeding. Call 999 immediately. Keep the patient completely still, do not move the legs. If ER trained, apply a pelvic binder. Never roll the patient or allow sitting/standing as it can cause catastrophic bleeding."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999 immediately. Keep him completely still, reassure, keep warm.",
+    "erNotes": "Suspected pelvic fracture with hypovolemic shock. Apply pelvic binder (if trained). Administer high-flow oxygen, check BGL, monitor vitals, and arrange rapid transport."
+  }
+}

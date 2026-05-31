@@ -1,0 +1,77 @@
+{
+  "id": "sja-015",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / asthma attack; BTS/SIGN Asthma guidelines",
+  "title": "Severe asthma attack at a charity fun run",
+  "setting": "Outdoor charity fun run. 30F participant sitting on a grass verge, struggling to breathe and communicating in short, gasping, single-word sentences.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe respiratory distress: breathing fast (27/min), low oxygen saturation (88%), unable to speak in full sentences, and using accessory muscles. Sick: immediate treatment and 999 needed.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "27/min",
+      "pulseRate": "89 bpm",
+      "painScore": "4/10",
+      "temperature": "37.4\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "88%",
+      "bloodGlucose": "6.0 mmol/L",
+      "bloodPressure": "127/88 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Alert but highly anxious and distressed",
+      "catHaem": "None",
+      "airway": "Open, audible wheezing",
+      "breathing": "Rapid, gasping, shallow",
+      "circulation": "Warm, dry skin, tachycardic"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, mild weather, wearing a superhero costume"
+    }
+  },
+  "history": {
+    "complaint": "Severe shortness of breath",
+    "history": "Asthma attack triggered by exertion during the fun run",
+    "pmh": "Known chronic asthma",
+    "drugs": "Salbutamol (blue inhaler) in her bum-bag, has taken several puffs without relief",
+    "injuries": "None",
+    "additional": "Expresses fear and anxiety about not being able to catch her breath"
+  },
+  "followUp": {
+    "question": "What is your immediate priority first aid management?",
+    "options": [
+      {
+        "text": "Sit her upright, help her take her blue salbutamol inhaler (up to 10 puffs via spacer), and call 999",
+        "correct": true
+      },
+      {
+        "text": "Lay her flat on her back, raise her legs, and tell her to breathe slowly",
+        "correct": false
+      },
+      {
+        "text": "Administer her brown preventer inhaler immediately",
+        "correct": false
+      },
+      {
+        "text": "Encourage her to walk to the first aid tent 200m away to rest",
+        "correct": false
+      }
+    ],
+    "explanation": "Sit the patient upright to ease breathing. Use the blue reliever inhaler (salbutamol) - 1 puff every 30-60 seconds up to 10 puffs. Call 999 as she has taken inhalers without relief and cannot speak in sentences. Never lay a breathless patient flat or make them walk."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Sit upright, keep calm. Help her use her reliever (blue) inhaler. Call 999 if no improvement.",
+    "erNotes": "Severe acute asthma. Monitor pulse oximetry. Give high-flow oxygen, assist with salbutamol via spacer or nebulizer if available. Sit upright, prepare for emergency transport. Do not let her walk."
+  }
+}

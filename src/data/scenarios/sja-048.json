@@ -1,0 +1,77 @@
+{
+  "id": "sja-048",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / spinal injury and helmet removal",
+  "title": "Helmet removal after a BMX crash",
+  "setting": "BMX track. Rider crashed jump, landed badly on head and shoulder. Sore/stiff neck, wearing helmet, unresponsive/vomited.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive patient with a compromised airway (vomiting while unresponsive), wearing a helmet, and high risk of spinal injury. Sick: immediate airway protection.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "22/min",
+      "pulseRate": "110 bpm",
+      "painScore": "7/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert but disoriented"
+    },
+    "er": {
+      "acvpu": "Alert but disoriented",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "97%",
+      "bloodGlucose": "5.2 mmol/L",
+      "bloodPressure": "126/84 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "BMX track uneven ground and spectators",
+      "response": "Alert but slightly disoriented",
+      "catHaem": "None",
+      "airway": "Clear and speaking in full sentences",
+      "breathing": "Rapid but not labored",
+      "circulation": "Slight bruising on shoulder, skin is pale"
+    },
+    "er": {
+      "disability": "Complaining of neck pain",
+      "exposure": "Outside, wearing helmet and protective clothing"
+    }
+  },
+  "history": {
+    "complaint": "Headache and neck pain",
+    "history": "Injured after coming off a jump at speed, hit shoulder and head 5 minutes ago",
+    "pmh": "Healthy and active teenager",
+    "drugs": "No medication, no allergies",
+    "injuries": "Helmet still in place, dizziness, neck pain, nausea",
+    "additional": "Gary Thomas, 17 years old"
+  },
+  "followUp": {
+    "question": "What is the priority management step for this patient?",
+    "options": [
+      {
+        "text": "Stabilize the head and spine in a neutral position, call 999, and safely remove the helmet using a two-person technique if breathing is threatened",
+        "correct": true
+      },
+      {
+        "text": "Pull the helmet off immediately to relieve pressure on the neck",
+        "correct": false
+      },
+      {
+        "text": "Encourage him to stand up and walk to the nearest first aid tent",
+        "correct": false
+      },
+      {
+        "text": "Do nothing; wait for the ambulance crew to arrive before touching the patient",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected spinal injury. Stabilize the head and spine in a neutral position. Call 999 immediately. Only remove the helmet if breathing is threatened or if the airway is compromised (e.g. vomiting), using a safe two-person technique. Never pull the helmet off immediately or allow walking."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999. Stabilize head and spine. Reassure patient, keep warm.",
+    "erNotes": "Suspected spinal injury. Maintain neutral alignment. Check BGL, monitor vitals. If patient goes unresponsive and vomits, safely remove helmet using two-person technique, clear airway, and place in recovery position using log-roll."
+  }
+}

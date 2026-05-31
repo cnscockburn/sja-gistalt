@@ -1,0 +1,77 @@
+{
+  "id": "sja-024",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / major bleeding and shock",
+  "title": "Knife attack and wrist slash at a music festival",
+  "setting": "Music festival. 20M teenager rushed into the first aid tent by friends. Slender bladed wound to the wrist, active spurting blood, bone visible.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Spurting arterial wrist bleed, partial hand amputation, and severe hypovolemic shock (PR 110 bpm, BP 75/51, deteriorating ACVPU). Sick: immediate arterial occlusion and 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "20/min",
+      "pulseRate": "110 bpm",
+      "painScore": "10/10",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert (moving into voice)"
+    },
+    "er": {
+      "acvpu": "Alert (moving into voice)",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "87%",
+      "bloodGlucose": "5.0 mmol/L",
+      "bloodPressure": "75/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Attacker's whereabouts are unknown (ensure security/police are called)",
+      "response": "Alert but rapidly becoming drowsy and weak",
+      "catHaem": "Spurting, rapid arterial bleeding from wrist wound",
+      "airway": "Open and clear",
+      "breathing": "Hyperventilating",
+      "circulation": "Very weak and rapid pulse, skin is extremely cold, clammy, and pale"
+    },
+    "er": {
+      "disability": "ACVPU level is dropping rapidly",
+      "exposure": "Outdoors, damp grass, cool evening"
+    }
+  },
+  "history": {
+    "complaint": "Slashed wrist with bladed weapon",
+    "history": "Assaulted by an attacker with a knife 5 minutes ago in the park area",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies",
+    "injuries": "Large deep laceration on the inside of the right wrist, partial amputation",
+    "additional": "Friend reports the attacker fled the scene"
+  },
+  "followUp": {
+    "question": "The wound is spurting bright red blood rapidly. What is your immediate intervention?",
+    "options": [
+      {
+        "text": "Apply a commercial tourniquet above the wound on the upper arm, note the time, call 999, and lie him flat",
+        "correct": true
+      },
+      {
+        "text": "Apply a simple light adhesive plaster and encourage him to sit on a chair",
+        "correct": false
+      },
+      {
+        "text": "Run to find the attacker to ensure scene safety before doing anything else",
+        "correct": false
+      },
+      {
+        "text": "Give him a hot sweet tea and raise his arm above his head without touching the wound",
+        "correct": false
+      }
+    ],
+    "explanation": "Spurting arterial bleeding from a limb that cannot be controlled by direct pressure warrants immediate tourniquet application. Lie him flat on his back (supine) to maintain cerebral perfusion in severe hypovolemic shock. Do not delay life-saving care to pursue an attacker, and do not give anything by mouth."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Apply direct pressure immediately. If a tourniquet is available in the kit and bleeding is catastrophic, apply high and tight on the arm. Call 999 and lie him flat.",
+    "erNotes": "Catastrophic arterial haemorrhage. Apply tourniquet high on the single bone (humerus) of the upper arm, tighten until bleeding stops, write the time. Treat for hypovolemic shock with high-flow oxygen, keeping him warm, and arrange immediate priority transfer."
+  }
+}

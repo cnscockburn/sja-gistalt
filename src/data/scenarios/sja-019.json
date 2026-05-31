@@ -1,0 +1,77 @@
+{
+  "id": "sja-019",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Acute Coronary Syndromes 2021",
+  "title": "Suspected heart attack in the changing rooms",
+  "setting": "Football changing rooms. 52M referee walked off the pitch, sitting down, struggling to breathe, pale, sweaty, with severe central chest pain radiating down his arm.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Crushing central chest pain with radiation to the arm, shortness of breath, pallor, sweating, and hypotension (77/48). This is suspected myocardial infarction (heart attack). Sick: needs 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "25/min",
+      "pulseRate": "120 bpm",
+      "painScore": "9/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "90%",
+      "bloodGlucose": "7.1 mmol/L",
+      "bloodPressure": "77/48 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Alert and responsive but terrified",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Rapid, shallow, and labored",
+      "circulation": "Very pale, cold, and clammy skin; weak pulse"
+    },
+    "er": {
+      "disability": "Alert and responsive, hypotensive",
+      "exposure": "Indoors, humid changing room"
+    }
+  },
+  "history": {
+    "complaint": "Crushing central chest pain",
+    "history": "Felt sudden chest tightness while refereeing a match 10 minutes ago, pain spreads to left arm",
+    "pmh": "None",
+    "drugs": "None noted",
+    "injuries": "None",
+    "additional": "Expresses severe anxiety and a fear of dying"
+  },
+  "followUp": {
+    "question": "What is the priority medical first aid management for this patient?",
+    "options": [
+      {
+        "text": "Call 999 immediately, sit him in the 'W' position, administer 300mg chewable aspirin, and monitor closely",
+        "correct": true
+      },
+      {
+        "text": "Lie him flat on his back with legs raised and encourage him to cough repeatedly",
+        "correct": false
+      },
+      {
+        "text": "Give him a warm sweet tea and let him rest in the changing room until the match ends",
+        "correct": false
+      },
+      {
+        "text": "Apply a cold compress to his chest and tell him to walk to his car",
+        "correct": false
+      }
+    ],
+    "explanation": "Suspected heart attack is a critical medical emergency. Call 999 immediately. Sit the patient in the semi-recumbent 'W' position (knees bent, back supported) to reduce cardiac workload. Give 300mg chewable aspirin. Never lay flat (worsens breathing) or allow walking."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Call 999, place in W-position, administer aspirin 300mg if available and no contraindications. Keep him completely at rest.",
+    "erNotes": "Suspected STEMI/ACS. Sit in 'W' position, give aspirin 300mg chewable. Administer oxygen if SpO2 <94%. Monitor vitals closely, prepare AED in case of cardiac arrest (VF is a high risk in early MI), and expedite ambulance."
+  }
+}

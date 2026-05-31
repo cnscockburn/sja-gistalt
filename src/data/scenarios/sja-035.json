@@ -1,0 +1,77 @@
+{
+  "id": "sja-035",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Acute Coronary Syndromes 2021",
+  "title": "Angina episode at a football match",
+  "setting": "Football stands. 60M spectator has mild chest discomfort, lightheaded, known history of angina. Carries GTN spray.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Chest pain with radiation to the arm, shortness of breath, and risk of myocardial infarction in a patient with active angina. Sick: administer GTN and monitor closely.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "25/min",
+      "pulseRate": "120 bpm",
+      "painScore": "9/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "90%",
+      "bloodGlucose": "7.1 mmol/L",
+      "bloodPressure": "124/90 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Stairs and crowds in football stands",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Fast and shallow",
+      "circulation": "Fast pulse, skin is pale, cold, and clammy"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, cool wind"
+    }
+  },
+  "history": {
+    "complaint": "Central chest pain",
+    "history": "Felt okay when arrived, developed chest discomfort radiating to left arm in the last 30 minutes",
+    "pmh": "Known history of angina",
+    "drugs": "GTN spray (in coat pocket)",
+    "injuries": "None",
+    "additional": "None"
+  },
+  "followUp": {
+    "question": "What is the priority first aid intervention for this patient?",
+    "options": [
+      {
+        "text": "Sit him in the 'W' position, administer 1-2 sprays of his GTN spray under the tongue, and call 999 if pain persists after 5 minutes",
+        "correct": true
+      },
+      {
+        "text": "Help him stand up and walk down the stairs to the treatment room",
+        "correct": false
+      },
+      {
+        "text": "Give him a cold cup of water and tell him to lie flat on the floor",
+        "correct": false
+      },
+      {
+        "text": "Force him to walk around the concourse to relieve the indigestion",
+        "correct": false
+      }
+    ],
+    "explanation": "Sit the patient comfortably in the 'W' position. Administer 1-2 sprays of GTN under the tongue. If the pain does not ease after 5 minutes, give a second dose. If pain persists after 10 minutes or is severe/suspected heart attack, call 999 immediately. Never allow the patient to walk or stand."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Place in W-position, assist with GTN spray. Call 999 if pain is severe or does not resolve with GTN.",
+    "erNotes": "ACS protocol. Administer oxygen if SpO\u2082 <94%, give aspirin 300mg chewable if not already taken. Monitor BP and prepare AED in case of arrest."
+  }
+}

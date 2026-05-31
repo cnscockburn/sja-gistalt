@@ -1,0 +1,77 @@
+{
+  "id": "sja-034",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / asthma attack; BTS/SIGN Asthma guidelines",
+  "title": "Asthma attack at a crowded music festival",
+  "setting": "Music festival. An individual near an outdoor stage experiencing breathing difficulties. Distressed, gasping sentences.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe respiratory distress (breathing rate 28/min, oxygen saturation 91%, gasping single-word speech). Sick: immediate reliever inhaler and 999 needed.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "28/min",
+      "pulseRate": "89 bpm",
+      "painScore": "3/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "91%",
+      "bloodGlucose": "7.0 mmol/L",
+      "bloodPressure": "130/87 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "High number of bystanders around the patient",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Breathing affected by asthma attack, audible wheeze",
+      "breathing": "Laborious and rapid",
+      "circulation": "No circulation issues"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, mild weather, dusty environment"
+    }
+  },
+  "history": {
+    "complaint": "Asthma attack",
+    "history": "Triggered by dust and crowd at the main stage. Inhaler is in their bag.",
+    "pmh": "Known chronic asthma, recent flu",
+    "drugs": "Blue reliever (salbutamol) and brown preventer inhalers",
+    "injuries": "None",
+    "additional": "Expresses frustration about missing out on the festival activities"
+  },
+  "followUp": {
+    "question": "What is the correct immediate action for this severe asthma attack?",
+    "options": [
+      {
+        "text": "Sit them upright, help them take up to 10 puffs of their blue salbutamol inhaler via spacer, and call 999",
+        "correct": true
+      },
+      {
+        "text": "Lay them flat on their back and encourage deep breaths into a paper bag",
+        "correct": false
+      },
+      {
+        "text": "Administer their brown preventer inhaler as a first-line emergency medication",
+        "correct": false
+      },
+      {
+        "text": "Do nothing; wait for them to calm down as it is likely a panic attack",
+        "correct": false
+      }
+    ],
+    "explanation": "Sit the patient upright to ease breathing. Help them take their blue reliever (salbutamol) inhaler (1 puff every 30-60 seconds up to 10 puffs). Call 999 immediately as they are in severe respiratory distress (SpO\u2082 91%, gasping sentences). Reliever is used, not preventer. Panic bags are dangerous in asthma."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Reassure, sit upright. Assist with blue salbutamol inhaler. Call 999.",
+    "erNotes": "Provide high-flow oxygen. Assist with salbutamol via spacer or nebulizer if available. Sit upright, monitor vital signs, prepare for emergency transfer."
+  }
+}

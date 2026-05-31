@@ -1,0 +1,77 @@
+{
+  "id": "sja-038",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / stroke (FAST)",
+  "title": "Suspected stroke at a first aid post",
+  "setting": "First aid post. Patient walked in complaining of feeling weak, slurring words, face dropped on one side, left arm weakness.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Positive FAST test (Face drooped, Arm weakness, Speech slurred). This is a suspected stroke, a time-critical neurological emergency. Sick: requires immediate 999 escalation.",
+  "observations": {
+    "shared": {
+      "fastTest": "Positive (Face, Arm, Speech)",
+      "respirationRate": "12/min",
+      "pulseRate": "100 bpm",
+      "painScore": "1/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Uneven and not reactive",
+      "pulseOximetry": "85%",
+      "bloodGlucose": "13.1 mmol/L",
+      "bloodPressure": "148/93 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Alert and responsive but confused",
+      "catHaem": "None",
+      "airway": "Open and clear, mild drooling",
+      "breathing": "Normal",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Left-sided weakness, disoriented",
+      "exposure": "Indoors, first aid post"
+    }
+  },
+  "history": {
+    "complaint": "Dizzy, weak, and slurred speech",
+    "history": "Began feeling unwell and weak 20 minutes ago while walking in the park",
+    "pmh": "High blood pressure, Type 2 diabetes",
+    "drugs": "Ramipril, Metformin",
+    "injuries": "None",
+    "additional": "Dribbling slightly, hand 'doesn't feel quite right'"
+  },
+  "followUp": {
+    "question": "What is the correct priority management for this suspected stroke?",
+    "options": [
+      {
+        "text": "Call 999 immediately, note the exact time of onset, keep the patient calm, and protect the airway",
+        "correct": true
+      },
+      {
+        "text": "Give him a glass of water and Metformin to lower blood sugar",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back and encourage him to sleep",
+        "correct": false
+      },
+      {
+        "text": "Apply a cold compress to his head and tell him to wait inside",
+        "correct": false
+      }
+    ],
+    "explanation": "Stroke requires an immediate 999 call and exact time of onset. Swallowing may be compromised, so do not give oral fluids or medications. Sleep is dangerous as it delays care."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "FAST test positive. Call 999 immediately, keep calm, protect airway.",
+    "erNotes": "Suspected acute stroke. Monitor airway. Check BGL to rule out hypoglycaemia. Administer oxygen if SpO\u2082 <94%. Prepare for rapid transport."
+  }
+}

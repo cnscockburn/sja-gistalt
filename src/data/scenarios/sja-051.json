@@ -1,0 +1,77 @@
+{
+  "id": "sja-051",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / poisoning",
+  "title": "Food poisoning at a charity auction",
+  "setting": "Community centre auction. Out-of-date dairy product in homemade cake caused severe food poisoning. Patient gagging, about to vomit, severe stomach pain.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Severe food poisoning with intense pain, gagging, borderline low BP (88/59), and high risk of dehydration/airway blockage. Sick: 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "18/min",
+      "pulseRate": "74 bpm",
+      "painScore": "4/10",
+      "temperature": "37.1\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Uneven and not reactive",
+      "pulseOximetry": "94%",
+      "bloodGlucose": "17.1 mmol/L",
+      "bloodPressure": "88/59 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Burning airway after being sick",
+      "breathing": "Normal",
+      "circulation": "No bleeding, pale skin"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Indoors, crowded community centre"
+    }
+  },
+  "history": {
+    "complaint": "Stomach pain and feeling sick",
+    "history": "Eaten a homemade cake with out-of-date dairy products 30 minutes ago",
+    "pmh": "None of note",
+    "drugs": "None of note",
+    "injuries": "None of note",
+    "additional": "None of note"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for this patient?",
+    "options": [
+      {
+        "text": "Help the patient sit comfortably, provide a sick bag, encourage small sips of water if fully conscious, and seek medical advice",
+        "correct": true
+      },
+      {
+        "text": "Force the patient to drink large quantities of salty water to induce further vomiting",
+        "correct": false
+      },
+      {
+        "text": "Administer his regular dose of insulin to lower blood sugar",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back and tell him to sleep",
+        "correct": false
+      }
+    ],
+    "explanation": "Management of food poisoning. Help the patient sit comfortably and provide a sick bag. Encourage small sips of water to prevent dehydration if fully conscious. Never force vomiting or administer prescription drugs. Never lay flat due to aspiration risk."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Reassure, provide sick bag. Give sips of water. Monitor closely.",
+    "erNotes": "Ensure BGL is monitored (risk of ketoacidosis in diabetic patients). Hydrate within scope, check vitals, and prepare for onward care if severe."
+  }
+}

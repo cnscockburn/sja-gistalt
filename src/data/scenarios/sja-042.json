@@ -1,0 +1,77 @@
+{
+  "id": "sja-042",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / fractures and splinting",
+  "title": "Open arm fracture at a mountain biking race",
+  "setting": "Mountain biking race. Participant fell off bike, landed on hand. Open fracture to right arm, bleeding, in severe pain.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Open right arm fracture with severe bleeding, pain 9/10, pale/sweating, and hypotension (90/60). Sick: immediate immobilization, bleed control, and 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "16/min",
+      "pulseRate": "62 bpm",
+      "painScore": "9/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "93%",
+      "bloodGlucose": "6.7 mmol/L",
+      "bloodPressure": "90/60 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Racers going past the patient",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "Skin is pale, cold, and clammy"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, dirty track"
+    }
+  },
+  "history": {
+    "complaint": "Open fracture in the right arm",
+    "history": "Fell off bike at speed, landed on right hand 5 minutes ago",
+    "pmh": "Has asthma",
+    "drugs": "Asthma inhaler (reliever), allergic to ibuprofen",
+    "injuries": "Open fracture wound on right forearm, bone visible, bleeding",
+    "additional": "Extremely self-conscious and crying"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for this open fracture?",
+    "options": [
+      {
+        "text": "Control bleeding with direct pressure on wound edges, support arm with a sling/splint, and call 999",
+        "correct": true
+      },
+      {
+        "text": "Push the visible bone back into the arm to reduce the fracture",
+        "correct": false
+      },
+      {
+        "text": "Administer ibuprofen immediately to reduce pain",
+        "correct": false
+      },
+      {
+        "text": "Instruct him to walk to the exit to clear the track",
+        "correct": false
+      }
+    ],
+    "explanation": "Control bleeding by applying direct pressure around the wound edges, avoiding the bone. Support and immobilize the arm. Call 999. Never push a bone back into a wound. Ibuprofen is contraindicated due to allergy. Never allow walking."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Apply direct pressure to wound edges, immobilize. Call 999.",
+    "erNotes": "Open fracture. Dress with sterile wet-to-dry dressings. Splint in position of comfort. Administer high-flow oxygen, check BGL, manage pain within scope (avoiding NSAIDs/ibuprofen), and transport priority."
+  }
+}

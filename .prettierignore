@@ -1,0 +1,7 @@
+node_modules
+dist
+.expo
+.export-test
+.agents
+package-lock.json
+expo-env.d.ts

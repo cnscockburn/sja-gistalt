@@ -49,8 +49,7 @@ function eachResolvedQuestion(
 
 export function validateScenario(s: Scenario): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
-  const err = (message: string) =>
-    issues.push({ scenarioId: s.id, level: 'error', message });
+  const err = (message: string) => issues.push({ scenarioId: s.id, level: 'error', message });
   const warn = (message: string) =>
     issues.push({ scenarioId: s.id, level: 'warning', message });
 

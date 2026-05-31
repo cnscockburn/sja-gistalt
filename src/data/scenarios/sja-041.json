@@ -1,0 +1,77 @@
+{
+  "id": "sja-041",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / major bleeding and shock",
+  "title": "Embedded glass shard hand injury at a charity dance",
+  "setting": "Charity dance. Catering team member tried to catch a falling glass, resulting in a large shard of glass embedded in palm, bleeding heavily.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Embedded glass shard in palm, bleeding heavily, pale, cold, clammy, and hypotensive (88/55). Sick: immediate bleed control and 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "14/min",
+      "pulseRate": "95 bpm",
+      "painScore": "8/10",
+      "temperature": "37.0\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "93%",
+      "bloodGlucose": "3.9 mmol/L",
+      "bloodPressure": "88/55 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Broken glass on the floor",
+      "response": "Alert and responsive, in severe pain",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal",
+      "circulation": "Skin is pale, cold, and clammy"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Indoors, warm kitchen area"
+    }
+  },
+  "history": {
+    "complaint": "Cut hand on glass",
+    "history": "Tried to catch a falling drinks glass, resulted in large shard embedded in palm 5 minutes ago",
+    "pmh": "Usually fit and well",
+    "drugs": "No medication, no allergies known",
+    "injuries": "Shard of glass embedded in right palm, bleeding heavily",
+    "additional": "Patient is in severe pain and highly panicked"
+  },
+  "followUp": {
+    "question": "What is the correct first aid management for this embedded glass shard?",
+    "options": [
+      {
+        "text": "Apply padding on either side of the glass to build up support, secure with a bandage, and do not remove the glass",
+        "correct": true
+      },
+      {
+        "text": "Pull the glass shard out immediately to stop the pain and bleed",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet above the elbow as a first-line treatment",
+        "correct": false
+      },
+      {
+        "text": "Run to find the attacker to ensure scene safety before doing anything else",
+        "correct": false
+      }
+    ],
+    "explanation": "Never remove an embedded object. It acts as a plug to prevent severe bleeding. Build up padding on either side of the object to support it, secure with a bandage, and call 999. Tourniquets are only for uncontrolled catastrophic haemorrhage."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Do not remove the glass. Apply padding on either side, secure, call 999. Monitor for shock.",
+    "erNotes": "Secure embedded object. Treat for hemorrhagic shock. Maintain pressure, administer oxygen, check BGL, and prepare for priority transport."
+  }
+}

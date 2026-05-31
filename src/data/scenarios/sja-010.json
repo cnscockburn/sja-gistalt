@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021",
   "title": "Child pulled from a stream at a country fayre",
+  "image": "sja-010.jpg",
   "setting": "Country fayre by a stream. A 6-year-old girl was found floating face down and pulled out by her father moments ago. Unresponsive and not breathing.",
   "correctVerdict": "sick",
   "verdictExplanation": "An unresponsive, non-breathing child after immersion. Paediatric cardiac arrest secondary to drowning. Critically sick: this needs immediate paediatric resuscitation starting with rescue breaths.",
@@ -48,9 +49,18 @@
   "followUp": {
     "question": "How does your resuscitation start for this child?",
     "options": [
-      { "text": "Give 5 initial rescue breaths, then 15 compressions to 2 breaths; send for help and the AED", "correct": true },
-      { "text": "Start with 30 compressions before any breaths, as for an adult", "correct": false },
-      { "text": "Roll her straight into the recovery position to drain water", "correct": false },
+      {
+        "text": "Give 5 initial rescue breaths, then 15 compressions to 2 breaths; send for help and the AED",
+        "correct": true
+      },
+      {
+        "text": "Start with 30 compressions before any breaths, as for an adult",
+        "correct": false
+      },
+      {
+        "text": "Roll her straight into the recovery position to drain water",
+        "correct": false
+      },
       { "text": "Hold her upside down and slap her back to clear the lungs", "correct": false }
     ],
     "explanation": "Paediatric arrest from drowning is hypoxic, so begin with 5 rescue breaths, then continue 15:2. Draining water and inverting the child waste time and risk harm. Get help and the AED on the way without delaying CPR.",

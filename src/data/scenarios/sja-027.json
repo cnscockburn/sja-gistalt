@@ -1,0 +1,77 @@
+{
+  "id": "sja-027",
+  "version": "1.0",
+  "guidelineReference": "Resus Council UK Adult Basic Life Support 2021",
+  "title": "Unresponsive drunk student at a music festival",
+  "setting": "Music festival cubicles. You are called to a bathroom where a young female student is lying unresponsive in a tight cubicle, with vomit coming out of her mouth.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Unresponsive patient with a compromised airway (blocked by vomit) and dangerously slow respiration rate (3/min). Sick: protect airway immediately and call 999.",
+  "observations": {
+    "shared": {
+      "fastTest": "Unable to obtain",
+      "respirationRate": "3/min",
+      "pulseRate": "90 bpm",
+      "painScore": "Unable to obtain",
+      "temperature": "36.4\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
+    "er": {
+      "acvpu": "Unresponsive",
+      "pupilSize": "Even but unreactive",
+      "pulseOximetry": "93%",
+      "bloodGlucose": "3.5 mmol/L",
+      "bloodPressure": "75/51 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Very confined space between cubicle and wall, slippery floor",
+      "response": "Unresponsive to voice and physical touch",
+      "catHaem": "None",
+      "airway": "Obstructed by vomit",
+      "breathing": "Dangerously slow (3/min) and shallow",
+      "circulation": "Pulse present, skin is pale and cool"
+    },
+    "er": {
+      "disability": "Unresponsive, severe alcohol intoxication",
+      "exposure": "Cold, damp bathroom floor"
+    }
+  },
+  "history": {
+    "complaint": "Unresponsive in bathroom cubicle",
+    "history": "Drinking heavily with friends for 6 hours, went to bathroom and did not return",
+    "pmh": "Suffers from anxiety",
+    "drugs": "No other drugs/narcotics reported by friends",
+    "injuries": "None visible",
+    "additional": "Friends on scene are highly intoxicated and panicked"
+  },
+  "followUp": {
+    "question": "What is your immediate priority action for this unresponsive patient?",
+    "options": [
+      {
+        "text": "Clear the vomit from her mouth, place her in the recovery position to protect the airway, and call 999",
+        "correct": true
+      },
+      {
+        "text": "Perform cardiopulmonary resuscitation (CPR) with chest compressions immediately",
+        "correct": false
+      },
+      {
+        "text": "Force her to drink black coffee and try to make her stand up and walk",
+        "correct": false
+      },
+      {
+        "text": "Leave her in the cubicle to sleep it off, checking on her in an hour",
+        "correct": false
+      }
+    ],
+    "explanation": "An unresponsive patient who is breathing (even slowly) must be placed in the recovery position immediately to clear the airway and prevent aspiration of vomit. CPR is only for patients who are not breathing normally. Never force fluids or try to walk an unresponsive patient."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Clear the airway, turn into recovery position. Call 999 immediately. Keep her warm and monitor breathing continuously.",
+    "erNotes": "Severe alcohol poisoning / unresponsive. Airway protection is critical. Clear vomit, position in recovery position, administer high-flow oxygen, check BGL (hypoglycaemia risk in heavy drinking), keep warm, and prepare for rapid transport."
+  }
+}

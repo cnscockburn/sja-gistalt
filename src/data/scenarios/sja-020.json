@@ -1,0 +1,77 @@
+{
+  "id": "sja-020",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / fainting (syncope)",
+  "title": "Simple faint at a crowded concert",
+  "setting": "Hot crowded indoor concert. 19F fainted, collapsed for about 10 seconds. Now alert and responsive, fanned by friends, feeling slightly dizzy.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, fully responsive, stable observations. A simple vasovagal faint (syncope) with immediate and complete recovery upon lying flat. Not sick: manage on scene.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "14/min",
+      "pulseRate": "72 bpm",
+      "painScore": "0/10",
+      "temperature": "36.8\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "98%",
+      "bloodGlucose": "4.5 mmol/L",
+      "bloodPressure": "110/70 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "Crowded standing area, loud noise",
+      "response": "Alert, oriented, and talking normally",
+      "catHaem": "None",
+      "airway": "Open and clear",
+      "breathing": "Normal and regular",
+      "circulation": "No bleeding, skin color returning to normal (was pale)"
+    },
+    "er": {
+      "disability": "Alert and responsive, fully recovered",
+      "exposure": "Indoors, hot and stuffy environment"
+    }
+  },
+  "history": {
+    "complaint": "Collapsed and fainted briefly",
+    "history": "Felt hot, dizzy, and fainted while standing in the crowd. Woke up immediately when she hit the floor.",
+    "pmh": "None",
+    "drugs": "None",
+    "injuries": "No injuries from the fall (friends caught her)",
+    "additional": "Had not eaten or drank much water all day"
+  },
+  "followUp": {
+    "question": "What is the correct management for this patient who has fainted?",
+    "options": [
+      {
+        "text": "Keep her lying down, elevate her legs, loosen tight clothing, provide fresh air, and give sips of water when alert",
+        "correct": true
+      },
+      {
+        "text": "Help her stand up immediately and walk to the bar for a drink",
+        "correct": false
+      },
+      {
+        "text": "Call 999 for an emergency ambulance",
+        "correct": false
+      },
+      {
+        "text": "Place her in the recovery position and keep her warm with heavy blankets",
+        "correct": false
+      }
+    ],
+    "explanation": "If a patient has fainted, keep them lying flat and elevate their legs to improve venous return to the brain. Loosen tight clothing and ensure fresh air. Do not force them to stand too quickly, as they may faint again. 999 is not indicated for a simple, resolved faint with no red flags."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Reassure, elevate legs, and give water once fully conscious. Advise her to sit down for a while before walking.",
+    "erNotes": "Ensure BGL is normal to rule out hypoglycaemia. Check for injuries. Discharge with advice (hydration, rest) if completely recovered and mobile; instruct to seek medical advice if faints recur."
+  }
+}

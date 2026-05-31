@@ -137,8 +137,8 @@ export default function PracticeHome() {
       <View style={styles.reminder}>
         <Text style={styles.reminderTitle}>How it works</Text>
         <Text style={styles.reminderText}>
-          Swipe left for not-sick, right for sick. Sick patients need escalation, further workup or
-          transport. Not-sick patients can be treated on scene.
+          Swipe left for not-sick, right for sick. Sick patients need escalation, further
+          workup or transport. Not-sick patients can be treated on scene.
         </Text>
       </View>
 
@@ -163,7 +163,12 @@ const styles = StyleSheet.create({
   resumeTitle: { ...type.title, color: colors.brandDark },
   resumeSub: { ...type.caption, color: colors.brandDark },
   section: { gap: space.sm },
-  sectionLabel: { ...type.label, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 0.5 },
+  sectionLabel: {
+    ...type.label,
+    color: colors.inkSoft,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
   hint: { ...type.caption, color: colors.inkFaint },
   reminder: {
     backgroundColor: colors.surfaceRaised,

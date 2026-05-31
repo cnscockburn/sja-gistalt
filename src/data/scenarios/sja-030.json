@@ -1,0 +1,77 @@
+{
+  "id": "sja-030",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / minor allergic reaction",
+  "title": "Mild pollen allergy at a temple fun day",
+  "setting": "Sikh temple children's fun day. A pre-teen child walks up to you with streaming, watery eyes, sneezing repeatedly. Patient is alert and responsive.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, responsive, stable observations. Mild localized allergic reaction to pollen (hayfever) with no airway, breathing, or circulation red flags. Treat on scene.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "17/min",
+      "pulseRate": "78 bpm",
+      "painScore": "1/10",
+      "temperature": "37.2\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "97%",
+      "bloodGlucose": "8.1 mmol/L",
+      "bloodPressure": "100/70 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "None",
+      "response": "Alert and responsive",
+      "catHaem": "None",
+      "airway": "Open and clear, sneezing",
+      "breathing": "Normal and regular",
+      "circulation": "Skin around eyes is red, watery eyes"
+    },
+    "er": {
+      "disability": "Alert and responsive, no weakness",
+      "exposure": "Outdoors, hot summer day next to flower stands"
+    }
+  },
+  "history": {
+    "complaint": "Streaming watery eyes and sneezing",
+    "history": "Triggered by flower stand pollen on a hot summer day at the fun day",
+    "pmh": "Known pollen allergy (hayfever)",
+    "drugs": "Takes daily antihistamine (forgot to take his dose today)",
+    "injuries": "None",
+    "additional": "Parent is nearby at the bouncy castle"
+  },
+  "followUp": {
+    "question": "What is the appropriate first aid management for this mild pollen allergy?",
+    "options": [
+      {
+        "text": "Move him away from the flower stands into a cool indoor area, wash his face with cold water, and locate his parent",
+        "correct": true
+      },
+      {
+        "text": "Call 999 for a priority emergency response",
+        "correct": false
+      },
+      {
+        "text": "Lie him flat on his back, elevate his legs, and prepare the AED",
+        "correct": false
+      },
+      {
+        "text": "Force him to use a stranger's adrenaline auto-injector as a precaution",
+        "correct": false
+      }
+    ],
+    "explanation": "Mild localized allergies are managed by removing the trigger (move indoors/away from flowers), washing eyes/face with cold water to soothe, and coordinating with parents for their regular antihistamine. 999 and AED are completely inappropriate for hayfever. Adrenaline is only for life-threatening anaphylaxis."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Wash face and eyes. Locate parents so they can administer his antihistamine. Reassure.",
+    "erNotes": "Ensure BGL is normal. Check for signs of worsening (wheeze, lip swelling). Discharge with advice once parents are present."
+  }
+}

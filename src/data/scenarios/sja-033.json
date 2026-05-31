@@ -1,0 +1,77 @@
+{
+  "id": "sja-033",
+  "version": "1.0",
+  "guidelineReference": "SJA First Aid / minor wound care",
+  "title": "Minor wounds at an inter-schools sports competition",
+  "setting": "Inter-schools sports competition. A 10-year-old child collapsed with a cut knee and hand grazes after tripping over while running.",
+  "correctVerdict": "not-sick",
+  "verdictExplanation": "Alert, responsive, stable observations. A minor superficial cut on the knee and grazes with no systemic red flags. Not sick: simple wound care and safety-netting.",
+  "observations": {
+    "shared": {
+      "fastTest": "Negative",
+      "respirationRate": "21/min",
+      "pulseRate": "72 bpm",
+      "painScore": "4/10",
+      "temperature": "37.3\u00b0C"
+    },
+    "cfa": {
+      "avpu": "Alert"
+    },
+    "er": {
+      "acvpu": "Alert",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "96%",
+      "bloodGlucose": "3.8 mmol/L",
+      "bloodPressure": "103/71 mmHg"
+    }
+  },
+  "primarySurvey": {
+    "shared": {
+      "danger": "No danger",
+      "response": "Alert",
+      "catHaem": "None",
+      "airway": "Clear and open",
+      "breathing": "Normal",
+      "circulation": "Minor bleeding from knee"
+    },
+    "er": {
+      "disability": "Alert and responsive",
+      "exposure": "Outdoors, but no specific concerns"
+    }
+  },
+  "history": {
+    "complaint": "Cut on the knee from falling over",
+    "history": "Tripped over while running, noticed broken metal on the ground where she fell",
+    "pmh": "Has not had a tetanus immunisation",
+    "drugs": "None relevant",
+    "injuries": "Small cut on knee, superficial grazes on palms, dirt inside wound",
+    "additional": "Parents were not able to come to see her compete today"
+  },
+  "followUp": {
+    "question": "What is the correct management for this child's minor wounds?",
+    "options": [
+      {
+        "text": "Clean the knee and hands under cool water, dry, apply a sterile plaster, and advise parental review for tetanus",
+        "correct": true
+      },
+      {
+        "text": "Call 999 immediately due to the risk of lockjaw (tetanus)",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet above the knee to stop the minor bleeding",
+        "correct": false
+      },
+      {
+        "text": "Leave the dirty wound open to air-dry and allow her to continue running the race",
+        "correct": false
+      }
+    ],
+    "explanation": "Minor wounds should be cleaned and dressed. Since she has dirt in the wound and has not had a tetanus immunisation, her parents must be advised to seek medical review. 999 is not indicated. Tourniquets are for life-threatening haemorrhage."
+  },
+  "levelFlags": {
+    "availableTo": ["cfa", "er"],
+    "cfaNotes": "Wash wounds, dress. Inform school/parent regarding the dirt and tetanus status.",
+    "erNotes": "Thoroughly clean wound (irrigate). Reassure, verify tetanus history, advise parents on infection signs."
+  }
+}
