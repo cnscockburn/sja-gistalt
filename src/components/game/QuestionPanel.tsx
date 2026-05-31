@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import * as Haptics from 'expo-haptics';
 import { StyleSheet, Text, View } from 'react-native';
 import { colors, radius, space, type } from '@/constants/theme';
 import type { Level } from '@/types/level';
 import type { FollowUpQuestion, Scenario } from '@/types/scenario';
 import type { RecallMode } from '@/types/game';
+import { shuffle } from '@/utils/shuffle';
 import { Disclosure } from '@/components/ui/Disclosure';
 import { HeadlineVitals } from '@/components/card/HeadlineVitals';
 import { Button } from '@/components/ui/Button';
@@ -28,6 +29,14 @@ export function QuestionPanel({
   scenario,
   recallMode = 'hidden',
 }: QuestionPanelProps) {
+  // Shuffle options once per question. Each entry carries its originalIndex so
+  // onComplete can pass back the position in the unshuffled array — the parent
+  // uses that index to look up the correct answer in the scenario data.
+  const shuffledOptions = useMemo(
+    () => shuffle(question.options.map((opt, i) => ({ ...opt, originalIndex: i }))),
+    [question]
+  );
+
   const [selected, setSelected] = useState<number | null>(null);
   const answered = selected !== null;
 
@@ -35,7 +44,7 @@ export function QuestionPanel({
     if (answered) return;
     setSelected(i);
     void Haptics.notificationAsync(
-      question.options[i].correct
+      shuffledOptions[i].correct
         ? Haptics.NotificationFeedbackType.Success
         : Haptics.NotificationFeedbackType.Warning
     );
@@ -44,10 +53,10 @@ export function QuestionPanel({
   const stateFor = (i: number): MCQOptionState => {
     if (selected === null) return 'idle';
     if (i === selected) {
-      return question.options[i].correct ? 'selectedCorrect' : 'selectedWrong';
+      return shuffledOptions[i].correct ? 'selectedCorrect' : 'selectedWrong';
     }
-    const pickedWrong = !question.options[selected].correct;
-    if (pickedWrong && question.options[i].correct) return 'revealCorrect';
+    const pickedWrong = !shuffledOptions[selected].correct;
+    if (pickedWrong && shuffledOptions[i].correct) return 'revealCorrect';
     return 'idle';
   };
 
@@ -67,9 +76,9 @@ export function QuestionPanel({
       <Text style={styles.question}>{question.question}</Text>
 
       <View style={styles.options}>
-        {question.options.map((opt, i) => (
+        {shuffledOptions.map((opt, i) => (
           <MCQOption
-            key={i}
+            key={opt.originalIndex}
             index={i}
             text={opt.text}
             state={stateFor(i)}
@@ -87,7 +96,12 @@ export function QuestionPanel({
         </View>
       )}
 
-      {answered && <Button label={continueLabel} onPress={() => onComplete(selected)} />}
+      {answered && (
+        <Button
+          label={continueLabel}
+          onPress={() => onComplete(shuffledOptions[selected].originalIndex)}
+        />
+      )}
     </View>
   );
 }

@@ -30,7 +30,7 @@ export function PatientCard({ scenario, level, scrollEnabled = true }: PatientCa
           <Image
             source={imageSource}
             style={styles.image}
-            contentFit="cover"
+            contentFit="contain"
             transition={150}
             accessibilityIgnoresInvertColors
           />
