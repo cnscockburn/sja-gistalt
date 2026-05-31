@@ -4,9 +4,11 @@ import { colors, font, radius, space } from '@/constants/theme';
 interface ProgressBarProps {
   current: number; // 1-based
   total: number;
+  /** Available marks for the current scenario. When provided, shown as "·  Xpt" after the count. */
+  availableMarks?: number;
 }
 
-export function ProgressBar({ current, total }: ProgressBarProps) {
+export function ProgressBar({ current, total, availableMarks }: ProgressBarProps) {
   const ratio = total === 0 ? 0 : Math.min(current / total, 1);
   return (
     <View style={styles.wrap}>
@@ -15,6 +17,9 @@ export function ProgressBar({ current, total }: ProgressBarProps) {
       </View>
       <Text style={styles.count}>
         {current}/{total}
+        {availableMarks != null && (
+          <Text style={styles.marks}>{`  ·  ${availableMarks}pt`}</Text>
+        )}
       </Text>
     </View>
   );
@@ -31,4 +36,5 @@ const styles = StyleSheet.create({
   },
   fill: { height: '100%', backgroundColor: colors.brand, borderRadius: radius.pill },
   count: { fontFamily: font.mono, fontSize: 13, color: colors.inkSoft },
+  marks: { fontFamily: font.mono, fontSize: 12, color: colors.inkFaint },
 });

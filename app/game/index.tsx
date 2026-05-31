@@ -119,6 +119,10 @@ export default function GameScreen() {
     : undefined;
   const hasEvolving = !!evolvingQuestion;
 
+  // Available marks for the current scenario shown in the header.
+  const availableMarks =
+    session.mode === 'normal' ? 1 + (followUp ? 1 : 0) + (hasEvolving ? 1 : 0) : 1;
+
   const followupContinue = hasEvolving ? 'Continue' : isLast ? 'See results' : 'Next patient';
   const evolvingContinue = isLast ? 'See results' : 'Next patient';
 
@@ -128,7 +132,11 @@ export default function GameScreen() {
         <Pressable hitSlop={12} onPress={leave} accessibilityLabel="Leave session">
           <Ionicons name="chevron-back" size={26} color={colors.ink} />
         </Pressable>
-        <ProgressBar current={session.currentIndex + 1} total={session.deck.length} />
+        <ProgressBar
+          current={session.currentIndex + 1}
+          total={session.deck.length}
+          availableMarks={availableMarks}
+        />
         <Pill label={LEVEL_SHORT[level]} tone="brand" />
       </View>
 
