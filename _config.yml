@@ -1,11 +1,14 @@
-title: "Gestalt: Clinical Intuition Development for First Responders"
-description: "Privacy policy for the Gestalt training app."
+title: "Gestalt"
+description: "Clinical situation awareness training for first responders. A scenario-based training app for St John Ambulance CFA and ER volunteers."
+url: "https://cnscockburn.github.io"
+baseurl: "/sja-gistalt"
 theme: minima
 
 minima:
   skin: classic
 
-header_pages: []
+header_pages:
+  - privacy.md
 
 author:
   name: C N S Cockburn

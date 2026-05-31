@@ -1,67 +1,55 @@
 ---
-layout: page
-title: Privacy Policy
-permalink: /
+layout: home
+title: "Gestalt — Clinical Intuition Development for First Responders"
 ---
 
-**Last updated: 31 May 2026**
+## What is Gestalt?
 
-Gestalt: Clinical Intuition Development for First Responders ("the App") is a training tool for St John Ambulance volunteers and first-aid practitioners. This policy explains what data the App does and does not collect.
+Gestalt is a scenario-based training app for **St John Ambulance volunteers** that builds the clinical pattern recognition needed to quickly read whether a patient is sick or not sick — the foundation of effective pre-hospital care.
 
----
+It is built for volunteers working at two levels:
 
-## What we collect
+- **CFA (Community First Aider)** — core observations, FAST, AVPU, primary survey
+- **ER (Emergency Responder)** — extended observations including SpO2, blood glucose, blood pressure, pupils, ACVPU
 
-**Nothing.** The App does not collect, transmit, or store any personal data on any server.
-
-The only data written anywhere is stored **locally on your device**:
-
-| Data | Purpose | Where |
-|---|---|---|
-| Training preferences (clinical level, mode, stack size, recall setting) | Remember your last-used settings between sessions | Your device only (AsyncStorage) |
-| Current in-progress session | Allow you to resume a session if you close the app mid-way | Your device only (AsyncStorage) |
-
-This data is never sent off your device. It is deleted when you uninstall the App.
+All 60 scenarios are original fictional cases written for the SJA scope of practice at each level.
 
 ---
 
-## What we do not collect
+## How it works
 
-- No names, email addresses, or contact details
-- No location data
-- No usage analytics or crash reports
-- No advertising identifiers
-- No camera, microphone, or contacts access
-- No account or sign-in is required
+Each session presents a stack of patient cards. A card shows the scene setting, primary survey, headline observations, and relevant history. You make a rapid **sick or not-sick call** — a swipe right for sick, left for not sick.
 
----
+After your verdict, a **management follow-up question** asks what you would do next: whether to escalate, monitor, treat on scene, or request additional resources. Some scenarios evolve mid-session: the patient's condition changes and you have to reassess.
 
-## Third-party services
-
-The App uses no third-party analytics, advertising, or tracking SDKs.
-
-The App is distributed via the Google Play Store, which has its own privacy practices described at [policies.google.com/privacy](https://policies.google.com/privacy).
+At the end of each session a **full debrief** walks through every scenario with explanations for each decision point.
 
 ---
 
-## Clinical content
+## Features
 
-All scenarios in the App are fictional training cases. No real patient data is entered into, stored by, or transmitted from the App. The App is not a medical device and must not be used in place of formal clinical training or professional judgement.
-
----
-
-## Children
-
-The App is intended for adult volunteers and practitioners. It is not directed at children under 13, and we do not knowingly collect data from children.
-
----
-
-## Changes to this policy
-
-Any changes will be posted at this URL with an updated date at the top. Continued use of the App after a change constitutes acceptance of the updated policy.
+- Swipe-based patient cards with scene, primary survey, and observations
+- Management MCQs with randomised option order
+- Evolving presentations that change mid-session
+- Two clinical levels: CFA and ER
+- Configurable stack size (10, 20, or 30 scenarios per session)
+- Case recall mode: choose whether the patient card stays available during follow-ups
+- Per-session debrief with per-scenario scoring and explanations
+- Resume sessions after closing the app
+- 60 scenarios across a wide range of medical and trauma presentations
 
 ---
 
-## Contact
+## Get the app
 
-Questions about this policy can be directed to the developer via GitHub: [github.com/cnscockburn](https://github.com/cnscockburn).
+Coming soon on Google Play.
+
+---
+
+## About
+
+Gestalt is an unofficial training tool developed independently for SJA volunteers. It is not produced by or affiliated with St John Ambulance. It is not a clinical reference and must not be used in place of formal SJA training, unit protocols, or professional judgement on scene.
+
+---
+
+[Privacy Policy](privacy/)
