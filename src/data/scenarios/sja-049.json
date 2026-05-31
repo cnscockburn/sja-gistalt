@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / spinal injury and helmet removal",
   "title": "Helmet removal after a horse fall",
+  "image": "sja_049_helmet_fall.jpeg",
   "setting": "Circus event. Performer fell from horse, landed face-first. Facial injury, equestrian helmet tight, semi-conscious, gurgling in airway.",
   "correctVerdict": "sick",
   "verdictExplanation": "Semi-conscious patient with a compromised airway (gurgling due to facial bleeding/position), wearing a helmet, and high risk of spinal injury. Sick: immediate airway protection.",
@@ -11,14 +12,14 @@
       "fastTest": "Negative",
       "respirationRate": "26/min",
       "pulseRate": "118 bpm",
-      "painScore": "8/10",
-      "temperature": "37.2\u00b0C"
+      "painScore": "Unable to ascertain",
+      "temperature": "37.2°C"
     },
     "cfa": {
-      "avpu": "Alert but disoriented"
+      "avpu": "Voice"
     },
     "er": {
-      "acvpu": "Alert but disoriented",
+      "acvpu": "Voice",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "96%",
       "bloodGlucose": "5.0 mmol/L",
@@ -44,7 +45,7 @@
     "history": "Fell off a horse during a circus act, landed on face and shoulder 5 minutes ago",
     "pmh": "Professional performer, fit and healthy",
     "drugs": "No medication, no allergies",
-    "injuries": "Facial trauma, bleeding from nose and mouth, neck pain",
+    "injuries": "Facial trauma, bleeding from nose and mouth, grimacing when alerted to voice",
     "additional": "Crowd of children are watching the event"
   },
   "followUp": {
@@ -72,6 +73,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Call 999. Stabilize head and spine. Reassure patient, keep warm.",
-    "erNotes": "Suspected spinal injury. Maintain neutral alignment. Check BGL, monitor vitals. If patient goes unresponsive and vomits, safely remove helmet using two-person technique, clear airway, and place in recovery position using log-roll."
+    "erNotes": "Suspected spinal injury. Maintain neutral alignment. Check BGL, monitor vitals. Airway is compromised by blood. Safely remove helmet immediately using two-person technique, clear airway, and place in recovery position using log-roll."
   }
 }

@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / spinal injury and helmet removal",
   "title": "Helmet removal after a BMX crash",
-  "setting": "BMX track. Rider crashed jump, landed badly on head and shoulder. Sore/stiff neck, wearing helmet, unresponsive/vomited.",
+  "setting": "BMX track. Rider crashed jump, landed badly on head and shoulder. Wearing helmet, unresponsive/vomited.",
   "correctVerdict": "sick",
   "verdictExplanation": "Unresponsive patient with a compromised airway (vomiting while unresponsive), wearing a helmet, and high risk of spinal injury. Sick: immediate airway protection.",
   "observations": {
@@ -11,14 +11,14 @@
       "fastTest": "Negative",
       "respirationRate": "22/min",
       "pulseRate": "110 bpm",
-      "painScore": "7/10",
+      "painScore": "Unable to obtain",
       "temperature": "37.2\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert but disoriented"
+      "avpu": "Unresponsive"
     },
     "er": {
-      "acvpu": "Alert but disoriented",
+      "acvpu": "Unresponsive",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "97%",
       "bloodGlucose": "5.2 mmol/L",
@@ -28,23 +28,23 @@
   "primarySurvey": {
     "shared": {
       "danger": "BMX track uneven ground and spectators",
-      "response": "Alert but slightly disoriented",
+      "response": "Unresponsive",
       "catHaem": "None",
-      "airway": "Clear and speaking in full sentences",
+      "airway": "Compromised \u2014 vomiting, gurgling",
       "breathing": "Rapid but not labored",
       "circulation": "Slight bruising on shoulder, skin is pale"
     },
     "er": {
-      "disability": "Complaining of neck pain",
+      "disability": "Unresponsive, unable to assess neck pain",
       "exposure": "Outside, wearing helmet and protective clothing"
     }
   },
   "history": {
-    "complaint": "Headache and neck pain",
+    "complaint": "Unresponsive following crash",
     "history": "Injured after coming off a jump at speed, hit shoulder and head 5 minutes ago",
     "pmh": "Healthy and active teenager",
     "drugs": "No medication, no allergies",
-    "injuries": "Helmet still in place, dizziness, neck pain, nausea",
+    "injuries": "Helmet still in place, bruising to shoulder, vomited once",
     "additional": "Gary Thomas, 17 years old"
   },
   "followUp": {
@@ -72,6 +72,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Call 999. Stabilize head and spine. Reassure patient, keep warm.",
-    "erNotes": "Suspected spinal injury. Maintain neutral alignment. Check BGL, monitor vitals. If patient goes unresponsive and vomits, safely remove helmet using two-person technique, clear airway, and place in recovery position using log-roll."
+    "erNotes": "Suspected spinal injury. Maintain neutral alignment. Check BGL, monitor vitals. Patient is unresponsive and vomiting. Safely remove helmet immediately using two-person technique, clear airway, and place in recovery position using log-roll."
   }
 }

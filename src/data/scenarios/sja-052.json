@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / poisoning",
   "title": "Accidental fertilizer poisoning at a flower show",
+  "image": "sja_052_fertilizer_poisoning.jpeg",
   "setting": "Garden centre flower show. Contestant accidentally swallowed liquid fertilizer instead of tea. Panicked, nauseous, severe abdominal pain.",
   "correctVerdict": "sick",
   "verdictExplanation": "Accidental chemical ingestion with severe pain, nausea, panic, compromised airway, and borderline low BP (73/51). Sick: 999.",
@@ -10,18 +11,18 @@
     "shared": {
       "fastTest": "Negative",
       "respirationRate": "25/min",
-      "pulseRate": "81 bpm",
-      "painScore": "4/10",
-      "temperature": "37.2\u00b0C"
+      "pulseRate": "110 bpm",
+      "painScore": "7/10",
+      "temperature": "37.2°C"
     },
     "cfa": {
       "avpu": "Alert"
     },
     "er": {
       "acvpu": "Alert",
-      "pupilSize": "Uneven and not reactive",
+      "pupilSize": "Constricted and reactive",
       "pulseOximetry": "87%",
-      "bloodGlucose": "12.8 mmol/L",
+      "bloodGlucose": "5.8 mmol/L",
       "bloodPressure": "73/51 mmHg"
     }
   },
@@ -32,7 +33,7 @@
       "catHaem": "None",
       "airway": "They may have a slight burn in their airway from the poison",
       "breathing": "Panicked breathing",
-      "circulation": "No circulation issues"
+      "circulation": "Pale and sweaty, weak rapid pulse"
     },
     "er": {
       "disability": "Alert and responsive",
@@ -48,30 +49,30 @@
     "additional": "None of note"
   },
   "followUp": {
-    "question": "What is the correct first aid management for this chemical ingestion?",
+    "question": "What is the most concerning clinical sign in this patient that suggests systemic toxicity rather than just a localized burn?",
     "options": [
       {
-        "text": "Call 999 immediately, identify the chemical, rinse the mouth with water, and do not induce vomiting",
+        "text": "The borderline low blood pressure (73/51) combined with constricted pupils and hypoxia",
         "correct": true
       },
       {
-        "text": "Force the patient to drink large quantities of soapy water to neutralize the poison",
+        "text": "The patient's high pain score of 7/10",
         "correct": false
       },
       {
-        "text": "Lie him flat on his back and tell him to sleep",
+        "text": "The rapid pulse rate of 110 bpm",
         "correct": false
       },
       {
-        "text": "Give him a thick slice of bread to absorb the poison",
+        "text": "The patient's panicked breathing and alertness",
         "correct": false
       }
     ],
-    "explanation": "Chemical ingestion requires an immediate 999 call. Identify the poison and note the package details. Rinse the mouth with water. Never induce vomiting as it can cause corrosive burns in the airway. Never lay flat."
+    "explanation": "While pain and a rapid pulse can be driven by panic, the combination of hypotension, constricted pupils, and hypoxia (SpO2 87%) are major red flags pointing to severe systemic poisoning (such as organophosphates in the fertilizer)."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Call 999 immediately. Identify chemical, rinse mouth, do not induce vomiting.",
-    "erNotes": "Corrosive chemical ingestion. Assess airway for swelling/burns. Give oxygen if indicated. Keep warm, check BGL, and prepare for rapid transfer."
+    "erNotes": "Suspected organophosphate ingestion. Assess airway for swelling/secretions. Administer high-flow oxygen immediately for low SpO2. Keep warm, check BGL, and prepare for rapid transfer."
   }
 }

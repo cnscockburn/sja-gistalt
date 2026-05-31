@@ -3,16 +3,17 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Adult Basic Life Support 2021",
   "title": "Unresponsive drunk student at a music festival",
+  "image": "sja_027_unresponsive_drunk.jpeg",
   "setting": "Music festival cubicles. You are called to a bathroom where a young female student is lying unresponsive in a tight cubicle, with vomit coming out of her mouth.",
   "correctVerdict": "sick",
   "verdictExplanation": "Unresponsive patient with a compromised airway (blocked by vomit) and dangerously slow respiration rate (3/min). Sick: protect airway immediately and call 999.",
   "observations": {
     "shared": {
       "fastTest": "Unable to obtain",
-      "respirationRate": "3/min",
+      "respirationRate": "8/min",
       "pulseRate": "90 bpm",
       "painScore": "Unable to obtain",
-      "temperature": "36.4\u00b0C"
+      "temperature": "36.4°C"
     },
     "cfa": {
       "avpu": "Unresponsive"
@@ -31,7 +32,7 @@
       "response": "Unresponsive to voice and physical touch",
       "catHaem": "None",
       "airway": "Obstructed by vomit",
-      "breathing": "Dangerously slow (3/min) and shallow",
+      "breathing": "Slow (8/min) and shallow",
       "circulation": "Pulse present, skin is pale and cool"
     },
     "er": {
@@ -72,6 +73,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Clear the airway, turn into recovery position. Call 999 immediately. Keep her warm and monitor breathing continuously.",
-    "erNotes": "Severe alcohol poisoning / unresponsive. Airway protection is critical. Clear vomit, position in recovery position, administer high-flow oxygen, check BGL (hypoglycaemia risk in heavy drinking), keep warm, and prepare for rapid transport."
+    "erNotes": "Severe alcohol poisoning / unresponsive. Airway protection is critical. Clear vomit, position in recovery position, administer high-flow oxygen, check BGL (threshold is 3.3 in non-diabetics, but monitor closely in case it drops; if treatment needed, ERs/CFAs cannot do IVs, it would be oral glucogel if safe), keep warm, and prepare for rapid transport."
   }
 }

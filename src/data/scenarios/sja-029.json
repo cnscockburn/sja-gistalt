@@ -3,22 +3,23 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Anaphylaxis 2021",
   "title": "Severe bee sting anaphylaxis at a park fun day",
-  "setting": "Park fun day. 8M fainted and collapsed after a bee sting. Sat down, clutching his chest, gasping for air, face swollen with visible hives on skin.",
+  "image": "sja_029_bee_anaphylaxis.jpeg",
+  "setting": "Park fun day. 8M felt dizzy and sat down after a bee sting, now clutching his chest, gasping for air, face swollen with visible hives on skin.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Sudden onset of systemic reaction after a known trigger: airway (face/lip swelling), breathing (wheeze, rate 8/min), and circulation (hypotension 77/58, fainted). Sick: adrenaline now.",
+  "verdictExplanation": "Sudden onset of systemic reaction after a known trigger: airway (face/lip swelling), breathing (wheeze and stridor, rate 36/min), and circulation (hypotension 77/58, fainted). Sick: adrenaline now.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
-      "respirationRate": "8/min",
+      "respirationRate": "36/min",
       "pulseRate": "120 bpm",
       "painScore": "Unable to obtain",
-      "temperature": "37.2\u00b0C"
+      "temperature": "37.2°C"
     },
     "cfa": {
-      "avpu": "Alert but deteriorating"
+      "avpu": "Voice"
     },
     "er": {
-      "acvpu": "Alert but deteriorating",
+      "acvpu": "Voice",
       "pupilSize": "Large, equal and reactive",
       "pulseOximetry": "87%",
       "bloodGlucose": "8.1 mmol/L",
@@ -31,7 +32,7 @@
       "response": "Alert but highly distressed, level of response dropping",
       "catHaem": "None",
       "airway": "Swollen lips, tongue, and face",
-      "breathing": "Severely reduced, slow, and gasping (8/min)",
+      "breathing": "Rapid, labored, with audible wheeze and stridor",
       "circulation": "Widespread red hives over skin, tachycardic"
     },
     "er": {
@@ -43,7 +44,7 @@
     "complaint": "Bee sting and severe breathing difficulty",
     "history": "Stung by a bee 10 minutes ago while playing in the park, developed rapid hives and swelling",
     "pmh": "Known severe allergy to bee stings",
-    "drugs": "Carries a training auto-injector (has one auto-injector in the car, none on person)",
+    "drugs": "Prescribed an auto-injector (has two in the car, none on person)",
     "injuries": "Sting site on forearm",
     "additional": "Friends ran to get help"
   },
@@ -67,11 +68,11 @@
         "correct": false
       }
     ],
-    "explanation": "Anaphylaxis is a life-threatening emergency. Adrenaline IM is the first-line and most critical treatment. Call 999 immediately. Sit him upright to assist breathing. Antihistamines must never delay adrenaline. Do not give oral fluids."
+    "explanation": "Anaphylaxis is a life-threatening emergency. Adrenaline IM is the first-line and most critical treatment. Call 999 immediately. Either positions are fine if appropriate - given the extensive circulatory compromise, they should be lying flat with legs raised. In earlier stages, sitting against the wall in the W position (not on a chair) might be better to support breathing. Antihistamines must never delay adrenaline. Do not give oral fluids."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Call 999. Sit upright if breathing is the main issue. Help administer his auto-injector if located.",
-    "erNotes": "Anaphylaxis with airway and circulation involvement. Administer IM Adrenaline (0.15mg for child 6-12 years) into the anterolateral thigh. Give high-flow oxygen, monitor SpO\u2082 and BP closely, and prepare for a second dose if no improvement in 5 minutes."
+    "erNotes": "Anaphylaxis with airway and circulation involvement. Administer IM Adrenaline via their adrenaline autoinjector into the anterolateral thigh. Give high-flow oxygen, monitor SpO₂ and BP closely, and prepare for a second auto-injector if no improvement in 5 minutes."
   }
 }

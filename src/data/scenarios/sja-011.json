@@ -21,7 +21,7 @@
       "acvpu": "Unresponsive",
       "pupilSize": "Fixed and dilated",
       "pulseOximetry": "Unrecordable",
-      "bloodGlucose": "4.3 mmol/L",
+      "bloodGlucose": "Unable to obtain",
       "bloodPressure": "Unrecordable"
     }
   },
@@ -69,9 +69,44 @@
     ],
     "explanation": "Paediatric arrest is usually hypoxic, so resuscitation begins with 5 initial rescue breaths followed by a 15:2 ratio of compressions to breaths. Adult BLS ratio of 30:2 is secondary if paediatric protocol is not known."
   },
+  "cfa": {
+    "evolving": {
+      "narrative": "After 2 minutes of high-quality CPR and one shock delivered by the AED, the child suddenly gasps, opens her eyes, and starts crying.",
+      "vitals": {
+        "avpu": "Alert",
+        "respirationRate": "24/min",
+        "pulseRate": "115 bpm"
+      },
+      "primarySurvey": {
+        "response": "Alert and crying",
+        "airway": "Clear",
+        "breathing": "Spontaneous and adequate",
+        "circulation": "Pulse present"
+      }
+    }
+  },
+  "er": {
+    "evolving": {
+      "narrative": "After 2 minutes of high-quality CPR and one shock delivered by the AED, the child suddenly gasps, opens her eyes, and starts crying.",
+      "vitals": {
+        "acvpu": "Alert",
+        "respirationRate": "24/min",
+        "pulseRate": "115 bpm",
+        "pulseOximetry": "95%",
+        "bloodGlucose": "4.3 mmol/L",
+        "bloodPressure": "95/60 mmHg"
+      },
+      "primarySurvey": {
+        "response": "Alert and crying",
+        "airway": "Clear",
+        "breathing": "Spontaneous and adequate",
+        "circulation": "Pulse present"
+      }
+    }
+  },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Start paediatric CPR immediately. Paediatric sequence is 5 breaths, then 15:2.",
-    "erNotes": "Prioritize airway and ventilations with high-flow oxygen, attach paediatric pads to AED if available (or adult pads if >8 years old), and coordinate with the teacher on scene."
+    "erNotes": "Prioritize airway and ventilations with high-flow oxygen, attach standard adult AED pads to AED. (Note: for children under 8, you would use adult pads if paediatric are not available, ensuring they are placed far enough apart). Coordinate with the teacher on scene."
   }
 }

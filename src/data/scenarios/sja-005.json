@@ -3,19 +3,21 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / shock and major bleeding; Resus Council UK",
   "title": "Heavy nosebleed at an air show",
-  "image": "sja-005.jpg",
+  "image": "sja_005_severe_nosebleed.jpeg",
   "setting": "Air show. 12M, nosebleed for 20 minutes that won't stop. Pale, sweaty and dizzy, going wobbly. Blood flowing down his face.",
   "correctVerdict": "sick",
   "verdictExplanation": "Prolonged bleeding with pallor, sweating, dizziness, a falling conscious level and a low blood pressure (83/51). These are signs of developing shock. This patient is sick and needs escalation.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
-      "respirationRate": "13/min",
-      "pulseRate": "71 bpm",
+      "respirationRate": "24/min",
+      "pulseRate": "122 bpm",
       "painScore": "3/10",
       "temperature": "37.3°C"
     },
-    "cfa": { "avpu": "Voice" },
+    "cfa": {
+      "avpu": "Voice"
+    },
     "er": {
       "acvpu": "Voice",
       "pupilSize": "Equal and reactive",
@@ -28,7 +30,7 @@
     "shared": {
       "danger": "None relevant",
       "response": "Responding to voice, level dropping",
-      "catHaem": "Not relevant",
+      "catHaem": "None",
       "airway": "Breathing through mouth",
       "breathing": "Getting slower",
       "circulation": "Heavy bleeding from nose"
@@ -53,9 +55,18 @@
         "text": "Call 999, keep pinching the nose, sit forward, treat for shock and monitor",
         "correct": true
       },
-      { "text": "Lie him flat with legs raised and tilt his head back", "correct": false },
-      { "text": "Give a sugary drink and continue waiting", "correct": false },
-      { "text": "Reassure and send him back to his school group", "correct": false }
+      {
+        "text": "Lie him flat with legs raised and tilt his head back",
+        "correct": false
+      },
+      {
+        "text": "Give a sugary drink and continue waiting",
+        "correct": false
+      },
+      {
+        "text": "Reassure and send him back to his school group",
+        "correct": false
+      }
     ],
     "explanation": "Signs of shock with ongoing bleeding require an emergency ambulance. Maintain direct pressure on the nose, keep him leaning forward to protect the airway, keep him warm and monitor closely. Tilting the head back risks aspiration; he must not be discharged.",
     "levelExplanation": {
@@ -77,7 +88,10 @@
           "text": "Protect the airway, place in the recovery position, expedite the ambulance and monitor breathing",
           "correct": true
         },
-        { "text": "Sit him upright in a chair and keep pinching the nose", "correct": false },
+        {
+          "text": "Sit him upright in a chair and keep pinching the nose",
+          "correct": false
+        },
         {
           "text": "Give an oral glucose gel because his blood sugar was low",
           "correct": false

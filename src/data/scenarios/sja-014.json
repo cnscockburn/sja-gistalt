@@ -18,11 +18,11 @@
       "avpu": "Alert"
     },
     "er": {
-      "acvpu": "Alert but confused and irritable",
+      "acvpu": "Confusion",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "90%",
+      "pulseOximetry": "95%",
       "bloodGlucose": "2.5 mmol/L",
-      "bloodPressure": "83/56 mmHg"
+      "bloodPressure": "105/68 mmHg"
     }
   },
   "primarySurvey": {
@@ -70,10 +70,10 @@
     "explanation": "Symptomatic low blood sugar requires immediate fast-acting oral sugar. Giving insulin is highly dangerous and could be fatal. He must not continue the race. Water alone does not raise blood sugar."
   },
   "evolvingStage": {
-    "narrative": "While waiting for the observations to stabilize, he suddenly becomes unresponsive and floppy. He is lying on the ground, breathing but uncooperative, and cannot swallow.",
+    "narrative": "While waiting for the observations to stabilize, he becomes increasingly drowsy and floppy. He is lying on the ground, breathing, but only rouses briefly to pain, and cannot swallow.",
     "updatedObservations": {
-      "avpu": "Voice",
-      "acvpu": "Voice",
+      "avpu": "Pain",
+      "acvpu": "Pain",
       "respirationRate": "12/min",
       "bloodGlucose": "2.1 mmol/L"
     },

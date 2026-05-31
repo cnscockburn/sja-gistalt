@@ -3,24 +3,25 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / poisoning",
   "title": "Food poisoning at a charity auction",
-  "setting": "Community centre auction. Out-of-date dairy product in homemade cake caused severe food poisoning. Patient gagging, about to vomit, severe stomach pain.",
+  "image": "sja_051_food_poisoning.jpeg",
+  "setting": "Community centre auction. Patient believes out-of-date dairy product in homemade cake caused severe food poisoning. Patient gagging, about to vomit, severe stomach pain.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Severe food poisoning with intense pain, gagging, borderline low BP (88/59), and high risk of dehydration/airway blockage. Sick: 999.",
+  "verdictExplanation": "High BGL, tachycardia, tachypnoea, and vomiting in a diabetic patient indicate diabetic ketoacidosis (DKA) mimicking food poisoning. Sick: requires immediate hospital transfer.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
-      "respirationRate": "18/min",
-      "pulseRate": "74 bpm",
-      "painScore": "4/10",
-      "temperature": "37.1\u00b0C"
+      "respirationRate": "22/min",
+      "pulseRate": "98 bpm",
+      "painScore": "7/10",
+      "temperature": "38.2°C"
     },
     "cfa": {
       "avpu": "Alert"
     },
     "er": {
       "acvpu": "Alert",
-      "pupilSize": "Uneven and not reactive",
-      "pulseOximetry": "94%",
+      "pupilSize": "Equal and reactive",
+      "pulseOximetry": "98%",
       "bloodGlucose": "17.1 mmol/L",
       "bloodPressure": "88/59 mmHg"
     }
@@ -31,7 +32,7 @@
       "response": "Alert and responsive",
       "catHaem": "None",
       "airway": "Burning airway after being sick",
-      "breathing": "Normal",
+      "breathing": "Rapid and deep (Kussmaul breathing)",
       "circulation": "No bleeding, pale skin"
     },
     "er": {
@@ -42,32 +43,32 @@
   "history": {
     "complaint": "Stomach pain and feeling sick",
     "history": "Eaten a homemade cake with out-of-date dairy products 30 minutes ago",
-    "pmh": "None of note",
+    "pmh": "Type 1 Diabetes",
     "drugs": "None of note",
     "injuries": "None of note",
     "additional": "None of note"
   },
   "followUp": {
-    "question": "What is the correct first aid management for this patient?",
+    "question": "What is the most likely diagnosis for this patient?",
     "options": [
       {
-        "text": "Help the patient sit comfortably, provide a sick bag, encourage small sips of water if fully conscious, and seek medical advice",
+        "text": "Diabetic ketoacidosis (DKA)",
         "correct": true
       },
       {
-        "text": "Force the patient to drink large quantities of salty water to induce further vomiting",
+        "text": "Severe food poisoning",
         "correct": false
       },
       {
-        "text": "Administer his regular dose of insulin to lower blood sugar",
+        "text": "Hypoglycaemia",
         "correct": false
       },
       {
-        "text": "Lie him flat on his back and tell him to sleep",
+        "text": "Allergic reaction to the cake",
         "correct": false
       }
     ],
-    "explanation": "Management of food poisoning. Help the patient sit comfortably and provide a sick bag. Encourage small sips of water to prevent dehydration if fully conscious. Never force vomiting or administer prescription drugs. Never lay flat due to aspiration risk."
+    "explanation": "The patient has a history of Type 1 Diabetes and a very high blood glucose level (17.1 mmol/L). Along with abdominal pain, vomiting, and rapid breathing, this points to Diabetic Ketoacidosis (DKA), which often mimics food poisoning. It requires immediate medical attention."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

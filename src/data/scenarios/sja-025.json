@@ -2,8 +2,9 @@
   "id": "sja-025",
   "version": "1.0",
   "guidelineReference": "Resus Council UK Adult Basic Life Support 2021 (Choking)",
-  "title": "Elderly choking episode at a care home fun day",
-  "setting": "Care home fun day. An elderly resident (Joyce) shouts for help. Her daughter (Grace, 52F) is clutching her throat, unable to speak, gasp, or cough.",
+  "title": "Choking episode at a care home fun day",
+  "image": "sja_025_choking.jpeg",
+  "setting": "Care home fun day. A daughter shouts for help. Her mother, an elderly resident (Grace, 78F), is clutching her throat, unable to speak, gasp, or cough.",
   "correctVerdict": "sick",
   "verdictExplanation": "Severe complete airway obstruction (unable to speak, cough, or breathe). Choking is a critical life-threatening emergency. Sick: deliver immediate back blows and abdominal thrusts.",
   "observations": {
@@ -12,7 +13,7 @@
       "respirationRate": "0/min",
       "pulseRate": "110 bpm",
       "painScore": "Unable to obtain",
-      "temperature": "37.5\u00b0C"
+      "temperature": "37.5°C"
     },
     "cfa": {
       "avpu": "Voice"
@@ -20,9 +21,9 @@
     "er": {
       "acvpu": "Voice",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "93%",
+      "pulseOximetry": "Unrecordable",
       "bloodGlucose": "10.9 mmol/L",
-      "bloodPressure": "95/62 mmHg"
+      "bloodPressure": "Unable to obtain"
     }
   },
   "primarySurvey": {
@@ -41,11 +42,11 @@
   },
   "history": {
     "complaint": "Severe choking",
-    "history": "Choked on a hard gingersnap biscuit while eating and talking with her mother",
+    "history": "Choked on a hard gingersnap biscuit while eating and talking with her daughter",
     "pmh": "Usually fit and well",
     "drugs": "No medication, no allergies",
     "injuries": "None visible",
-    "additional": "Mother Joyce is crying and hysterical, shouting 'She's choking!'"
+    "additional": "Daughter is crying and hysterical, shouting 'She's choking!'"
   },
   "followUp": {
     "question": "What is your immediate action to relieve this severe choking?",

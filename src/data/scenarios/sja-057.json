@@ -15,14 +15,14 @@
       "temperature": "37.0\u00b0C"
     },
     "cfa": {
-      "avpu": "Voice"
+      "avpu": "Pain"
     },
     "er": {
-      "acvpu": "Voice",
+      "acvpu": "Pain",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "85%",
       "bloodGlucose": "5.3 mmol/L",
-      "bloodPressure": "95/62 mmHg"
+      "bloodPressure": "Unable to obtain"
     }
   },
   "primarySurvey": {
@@ -35,7 +35,7 @@
       "circulation": "Skin is red and puffy, cyanosis around lips"
     },
     "er": {
-      "disability": "Hypoxic, responding to voice",
+      "disability": "Hypoxic, responding to pain",
       "exposure": "Outdoors, mild weather"
     }
   },
@@ -45,7 +45,7 @@
     "pmh": "Usually fit and well",
     "drugs": "No medication, no allergies known",
     "injuries": "None",
-    "additional": "teddy Mardon, 8 months old"
+    "additional": "Teddy Mardon, 8 months old"
   },
   "followUp": {
     "question": "What is the correct treatment sequence for an infant with severe choking?",

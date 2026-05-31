@@ -15,10 +15,10 @@
       "temperature": "37.2\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert"
+      "avpu": "Confusion"
     },
     "er": {
-      "acvpu": "Alert",
+      "acvpu": "Confusion",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "85%",
       "bloodGlucose": "8.5 mmol/L",
@@ -28,14 +28,14 @@
   "primarySurvey": {
     "shared": {
       "danger": "Confined space in public toilets",
-      "response": "Alert and responsive",
+      "response": "Alert but confused",
       "catHaem": "None",
       "airway": "Open and clear",
       "breathing": "Fast and shallow",
       "circulation": "Very weak pulse, skin is pale, cold, and clammy"
     },
     "er": {
-      "disability": "Alert and responsive",
+      "disability": "Alert but confused",
       "exposure": "Indoors, public toilet floor"
     }
   },
@@ -48,30 +48,30 @@
     "additional": "Friend found him and called for first aid"
   },
   "followUp": {
-    "question": "What is your immediate priority action for this patient?",
+    "question": "What does the blood pressure of 70/40 mmHg indicate in the context of this patient's severe central chest pain?",
     "options": [
       {
-        "text": "Call 999 immediately, sit him in the 'W' position, administer 300mg chewable aspirin, and monitor closely",
+        "text": "Profound cardiogenic shock; the heart is failing to pump effectively and the patient should be placed in the position of greatest comfort",
         "correct": true
       },
       {
-        "text": "Give him a glass of water and tell him to lie flat on the floor",
+        "text": "A normal physiological response to severe pain; the patient must be sat upright in the 'W' position regardless of blood pressure",
         "correct": false
       },
       {
-        "text": "Administer GTN spray repeatedly and tell him to walk to the exit",
+        "text": "Hypovolaemic shock due to internal bleeding; administer an auto-injector immediately",
         "correct": false
       },
       {
-        "text": "Give him an antacid tablet for his indigestion and leave him to rest",
+        "text": "A minor faint (syncope); help him stand up slowly and walk to the medical tent",
         "correct": false
       }
     ],
-    "explanation": "Suspected heart attack is a critical emergency. Call 999 immediately. Sit him in the 'W' position to ease breathing and cardiac strain. Administer 300mg chewable aspirin. Never lay flat (worsens breathing) or allow walking. Indigestion is a common mimic of myocardial infarction."
+    "explanation": "With a BP of 70/40 and profound hypoxaemia (SpO2 85%), the patient is in cardiogenic shock with likely pulmonary edema. Laying them flat would acutely worsen respiratory distress. Keep the patient in the position of greatest comfort, call 999 immediately, and administer 300mg chewable aspirin."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
-    "cfaNotes": "Recognize cardiac symptoms, call 999. Place in W-position, administer aspirin 300mg chewable. Keep at rest.",
-    "erNotes": "Suspected myocardial infarction with cardiogenic shock (BP 70/40). Give high-flow oxygen, give aspirin 300mg. Monitor vitals, prepare AED, and expedite ambulance."
+    "cfaNotes": "Recognize cardiac symptoms, call 999. Treat for shock given pale/clammy signs (position of greatest comfort), administer aspirin 300mg chewable.",
+    "erNotes": "Suspected myocardial infarction with cardiogenic shock (BP 70/40). Give high-flow oxygen, give aspirin 300mg. Position of comfort/flat. Monitor vitals, prepare AED, and expedite ambulance."
   }
 }

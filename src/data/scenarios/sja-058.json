@@ -3,22 +3,23 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / major trauma and bleeding",
   "title": "Severe abdominal trauma backstage at a concert",
+  "image": "sja_058_abdominal_trauma.jpeg",
   "setting": "Outdoor concert backstage scaffolding. Young male found collapsed with a severe abdominal injury, bleeding heavily, pale, cold, clammy.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Severe abdominal injury with large open wound, heavy bleeding, and signs of decompensated shock (pulse 98 bpm, BP 82/52). Sick: call 999, control bleed, and elevate.",
+  "verdictExplanation": "Severe abdominal injury with large open wound, heavy bleeding, and signs of decompensated shock (pulse 98 bpm, BP 82/52). Sick: call 999, control the bleed, and treat for shock.",
   "observations": {
     "shared": {
       "fastTest": "Unable to obtain",
       "respirationRate": "20/min",
       "pulseRate": "98 bpm",
       "painScore": "10/10",
-      "temperature": "36.0\u00b0C"
+      "temperature": "36.0°C"
     },
     "cfa": {
       "avpu": "Voice"
     },
     "er": {
-      "acvpu": "Confused (moving to unresponsive)",
+      "acvpu": "Voice (moving to unresponsive)",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "89%",
       "bloodGlucose": "5.4 mmol/L",

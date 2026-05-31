@@ -10,7 +10,7 @@
     "shared": {
       "fastTest": "Negative",
       "respirationRate": "19/min",
-      "pulseRate": "84 bpm",
+      "pulseRate": "112 bpm",
       "painScore": "6/10",
       "temperature": "37.3\u00b0C"
     },
@@ -22,7 +22,7 @@
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "96%",
       "bloodGlucose": "4.3 mmol/L",
-      "bloodPressure": "85/55 mmHg"
+      "bloodPressure": "100/65 mmHg"
     }
   },
   "primarySurvey": {

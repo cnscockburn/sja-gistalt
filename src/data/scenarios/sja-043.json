@@ -3,14 +3,14 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / fractures and hypothermia",
   "title": "Lower leg fracture at a protest",
-  "setting": "City centre protest on a cold December day. Female caught her leg between train and platform earlier, now in severe pain, cold, showing signs of hypothermia.",
+  "setting": "City centre protest on a cold December day. Female tripped and twisted her leg badly stepping off the train earlier, limped to the protest, now in severe pain, cold, showing signs of hypothermia.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Lower leg fracture with severe pain, hypothermia (34.4\u00b0C), and hypotension (85/57). Sick: call 999 immediately, immobilize, and actively warm.",
+  "verdictExplanation": "Lower leg fracture with severe pain, mild hypothermia (34.4\u00b0C), and tachycardia (pulse 110 bpm). Sick: call 999 immediately, immobilize, and actively warm.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
       "respirationRate": "16/min",
-      "pulseRate": "67 bpm",
+      "pulseRate": "110 bpm",
       "painScore": "7/10",
       "temperature": "34.4\u00b0C"
     },
@@ -22,7 +22,7 @@
       "pupilSize": "Slightly large, equal and reactive",
       "pulseOximetry": "93%",
       "bloodGlucose": "7.0 mmol/L",
-      "bloodPressure": "85/57 mmHg"
+      "bloodPressure": "125/85 mmHg"
     }
   },
   "primarySurvey": {
@@ -41,7 +41,7 @@
   },
   "history": {
     "complaint": "Tenderness in the lower leg",
-    "history": "Caught and twisted leg between train and platform earlier, walked awkwardly to protest, collapsed in pain",
+    "history": "Tripped and twisted her leg badly stepping off the train earlier, limped to the protest, then collapsed in worsening pain",
     "pmh": "Hard of hearing",
     "drugs": "Takes daily ear drops",
     "injuries": "Fractured lower leg, swelling and tenderness, non-weight bearing",

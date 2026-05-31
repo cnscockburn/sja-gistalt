@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / panic attack and grounding",
   "title": "Hyperventilation triggered by blood sight",
+  "image": "sja_055_hyperventilation_ptsd.jpeg",
   "setting": "Camping festival. 26F soldier with history of PTSD has hyperventilated and panicked at the sight of her friend's open hand bleed.",
   "correctVerdict": "sick",
   "verdictExplanation": "Anxiety/PTSD episode triggered by blood sight, severe hyperventilation, and altered mental status. Sick: manage, reassure, and monitor.",
@@ -12,7 +13,7 @@
       "respirationRate": "24/min",
       "pulseRate": "91 bpm",
       "painScore": "1/10",
-      "temperature": "37.4\u00b0C"
+      "temperature": "37.4°C"
     },
     "cfa": {
       "avpu": "Alert"
@@ -21,8 +22,8 @@
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "99%",
-      "bloodGlucose": "3.8 mmol/L",
-      "bloodPressure": "83/51 mmHg"
+      "bloodGlucose": "4.8 mmol/L",
+      "bloodPressure": "135/82 mmHg"
     }
   },
   "primarySurvey": {
@@ -69,9 +70,41 @@
     ],
     "explanation": "Move the patient away from the trigger (blood sight). Sit her down, encourage slow, controlled breathing, and provide calm reassurance. Paper bags are dangerous. 999 is not indicated for a simple resolved panic attack."
   },
+  "evolvingStage": {
+    "narrative": "Despite your initial reassurance, the patient's hyperventilation continues to worsen. She becomes increasingly dizzy, complains of tingling in her fingers, and suddenly faints.",
+    "updatedObservations": {
+      "avpu": "Unresponsive",
+      "acvpu": "Unresponsive",
+      "respirationRate": "14/min",
+      "pulseRate": "68 bpm",
+      "bloodPressure": "100/60 mmHg"
+    },
+    "followUp": {
+      "question": "The patient has fainted and is currently unresponsive, but breathing normally. What is your immediate priority?",
+      "options": [
+        {
+          "text": "Place her in the recovery position, monitor her breathing, and check for any injuries from the fall",
+          "correct": true
+        },
+        {
+          "text": "Immediately start CPR as she is unresponsive",
+          "correct": false
+        },
+        {
+          "text": "Sit her upright and splash cold water on her face to wake her up",
+          "correct": false
+        },
+        {
+          "text": "Administer an auto-injector in case it is a severe allergic reaction",
+          "correct": false
+        }
+      ],
+      "explanation": "For an unresponsive patient who is breathing normally, the priority is airway protection using the recovery position. CPR is not indicated, and forcing an unresponsive patient upright is dangerous."
+    }
+  },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Move away from blood, sit down. Reassure and guide breathing.",
-    "erNotes": "Ground the patient, check BGL, monitor SpO\u2082 and BP. Provide high-flow oxygen only if indicated (though usually hyperventilation has SpO\u2082 99-100%)."
+    "erNotes": "Ground the patient, check BGL, monitor SpO₂ and BP. Provide high-flow oxygen only if indicated (though usually hyperventilation has SpO₂ 99-100%)."
   }
 }

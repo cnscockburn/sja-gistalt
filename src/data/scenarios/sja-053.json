@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / burn care",
   "title": "Scalding hot chocolate burns at football stadium",
+  "image": "sja_053_scald_burn.jpeg",
   "setting": "Football stadium terrace. Fan spilled scalding hot chocolate over hands and arms. Red skin, in severe pain.",
   "correctVerdict": "not-sick",
   "verdictExplanation": "Alert, responsive, stable observations. A minor superficial scald on hands/arms with no airway compromise. Not sick: simple burn management.",
@@ -12,7 +13,7 @@
       "respirationRate": "20/min",
       "pulseRate": "90 bpm",
       "painScore": "7/10",
-      "temperature": "37.3\u00b0C"
+      "temperature": "37.3°C"
     },
     "cfa": {
       "avpu": "Alert"
@@ -20,9 +21,9 @@
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "92%",
+      "pulseOximetry": "98%",
       "bloodGlucose": "5.5 mmol/L",
-      "bloodPressure": "95/65 mmHg"
+      "bloodPressure": "120/76 mmHg"
     }
   },
   "primarySurvey": {
@@ -32,7 +33,7 @@
       "catHaem": "None",
       "airway": "Open and clear",
       "breathing": "Normal",
-      "circulation": "Skin is pale, cold, and sweaty"
+      "circulation": "Warm, well-perfused centrally. Affected area red and painful"
     },
     "er": {
       "disability": "Alert and responsive",

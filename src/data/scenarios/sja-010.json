@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021",
   "title": "Child pulled from a stream at a country fayre",
-  "image": "sja-010.jpg",
+  "image": "sja_010_child_drowning.jpeg",
   "setting": "Country fayre by a stream. A 6-year-old girl was found floating face down and pulled out by her father moments ago. Unresponsive and not breathing.",
   "correctVerdict": "sick",
   "verdictExplanation": "An unresponsive, non-breathing child after immersion. Paediatric cardiac arrest secondary to drowning. Critically sick: this needs immediate paediatric resuscitation starting with rescue breaths.",
@@ -13,14 +13,16 @@
       "respirationRate": "0/min",
       "pulseRate": "0 bpm",
       "painScore": "Unable to obtain",
-      "temperature": "36°C"
+      "temperature": "35.5°C (tympanic), feels cold to touch"
     },
-    "cfa": { "avpu": "Unresponsive" },
+    "cfa": {
+      "avpu": "Unresponsive"
+    },
     "er": {
       "acvpu": "Unresponsive",
       "pupilSize": "Fixed and dilated",
       "pulseOximetry": "Unrecordable",
-      "bloodGlucose": "4.8 mmol/L",
+      "bloodGlucose": "Unable to obtain",
       "bloodPressure": "Unrecordable"
     }
   },
@@ -61,7 +63,10 @@
         "text": "Roll her straight into the recovery position to drain water",
         "correct": false
       },
-      { "text": "Hold her upside down and slap her back to clear the lungs", "correct": false }
+      {
+        "text": "Hold her upside down and slap her back to clear the lungs",
+        "correct": false
+      }
     ],
     "explanation": "Paediatric arrest from drowning is hypoxic, so begin with 5 rescue breaths, then continue 15:2. Draining water and inverting the child waste time and risk harm. Get help and the AED on the way without delaying CPR.",
     "levelExplanation": {

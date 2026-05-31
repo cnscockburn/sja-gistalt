@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / psychiatric crisis",
   "title": "Distressed schizophrenic patient refusing care",
+  "image": "sja_056_psychiatric_crisis.jpeg",
   "setting": "City centre sports event. 38M distressed, schizophrenic, believes men are chasing him, refusing to let responders touch him, breathing heavily.",
   "correctVerdict": "sick",
   "verdictExplanation": "Severe psychiatric crisis with paranoia, distress, rapid breathing, and refusal of necessary care. Sick: call for additional support and protect.",
@@ -12,7 +13,7 @@
       "respirationRate": "18/min",
       "pulseRate": "91 bpm",
       "painScore": "1/10",
-      "temperature": "37.4\u00b0C"
+      "temperature": "37.4°C"
     },
     "cfa": {
       "avpu": "Alert"
@@ -21,8 +22,8 @@
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "99%",
-      "bloodGlucose": "3.8 mmol/L",
-      "bloodPressure": "83/51 mmHg"
+      "bloodGlucose": "3.2 mmol/L",
+      "bloodPressure": "148/92 mmHg"
     }
   },
   "primarySurvey": {
@@ -72,6 +73,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Keep safe distance, talk calmly. Coordinate with stewards and call for mental health support.",
-    "erNotes": "Severe psychiatric crisis. Assess capacity, maintain non-confrontational approach. Check BGL if possible (mimics). Request police/mental health team if patient is a danger to himself or others."
+    "erNotes": "Severe psychiatric crisis. Assess capacity, maintain non-confrontational approach. BGL is borderline low (3.2) — treat with oral glucose if the patient will accept it, as hypoglycaemia can exacerbate psychiatric symptoms. Request police/mental health team if patient is a danger to himself or others."
   }
 }

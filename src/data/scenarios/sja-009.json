@@ -21,7 +21,7 @@
       "acvpu": "Unresponsive",
       "pupilSize": "Fixed and dilated",
       "pulseOximetry": "Unrecordable",
-      "bloodGlucose": "12.1 mmol/L",
+      "bloodGlucose": "Unable to obtain",
       "bloodPressure": "Unrecordable"
     }
   },
@@ -43,7 +43,7 @@
     "complaint": "Electric shock and collapse",
     "history": "Shocked by faulty stage light, collapsed immediately",
     "pmh": "Asthma (reported by colleagues)",
-    "drugs": "Ventolin inhaler (in bag)",
+    "drugs": "Salbutamol inhaler (in bag)",
     "injuries": "Electrical burn entry wound to hand and exit wound to knee",
     "additional": "None"
   },

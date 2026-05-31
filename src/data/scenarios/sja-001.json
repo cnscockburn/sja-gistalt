@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / soft-tissue injury (RICE)",
   "title": "Ankle injury at a sports competition",
-  "image": "sja-001.jpg",
+  "image": "sja_001_ankle_sprain.jpeg",
   "setting": "Busy sporting event. 24M, tripped during a football match, twisting his ankle. Sitting on the ground, won't weight-bear, in obvious pain.",
   "correctVerdict": "not-sick",
   "verdictExplanation": "Alert, airway clear, breathing and circulation normal. An isolated, painful soft-tissue ankle injury with no red flags. Injured but not sick: treat on scene.",
@@ -15,11 +15,13 @@
       "painScore": "7/10",
       "temperature": "37.4°C"
     },
-    "cfa": { "avpu": "Alert" },
+    "cfa": {
+      "avpu": "Alert"
+    },
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "88%",
+      "pulseOximetry": "98%",
       "bloodGlucose": "7 mmol/L",
       "bloodPressure": "125/85 mmHg"
     }
@@ -30,7 +32,7 @@
       "response": "Alert and responsive",
       "catHaem": "None",
       "airway": "Open and clear",
-      "breathing": "Shallow, controlling pain",
+      "breathing": "Normal rate, slightly shallow and guarded",
       "circulation": "No visible issues"
     },
     "er": {
@@ -49,10 +51,22 @@
   "followUp": {
     "question": "What is your first-line management?",
     "options": [
-      { "text": "Rest, ice, comfortable support and elevation; reassess", "correct": true },
-      { "text": "Call 999 for an emergency ambulance", "correct": false },
-      { "text": "Strap firmly and send him back onto the pitch", "correct": false },
-      { "text": "Apply a tourniquet above the ankle", "correct": false }
+      {
+        "text": "Rest, ice, comfortable support and elevation; reassess",
+        "correct": true
+      },
+      {
+        "text": "Call 999 for an emergency ambulance",
+        "correct": false
+      },
+      {
+        "text": "Strap firmly and send him back onto the pitch",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet above the ankle",
+        "correct": false
+      }
     ],
     "explanation": "Soft-tissue injuries are managed with rest, ice, comfortable support and elevation, plus reassessment. This patient is not sick, so 999 is not indicated. Returning to play risks worsening the injury, and a tourniquet is only for life-threatening limb haemorrhage.",
     "levelExplanation": {
@@ -60,7 +74,7 @@
     }
   },
   "levelFlags": {
-    "availableTo": ["er"],
+    "availableTo": ["cfa", "er"],
     "erNotes": "Discharge with advice may be appropriate if pain controlled and able to mobilise; otherwise arrange onward care."
   }
 }

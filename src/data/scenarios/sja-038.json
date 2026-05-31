@@ -3,24 +3,24 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / stroke (FAST)",
   "title": "Suspected stroke at a first aid post",
-  "setting": "First aid post. Patient walked in complaining of feeling weak, slurring words, face dropped on one side, left arm weakness.",
+  "setting": "First aid post. Patient walked in stumbling, complaining of sudden severe vertigo, double vision, and being unable to coordinate their movements.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Positive FAST test (Face drooped, Arm weakness, Speech slurred). This is a suspected stroke, a time-critical neurological emergency. Sick: requires immediate 999 escalation.",
+  "verdictExplanation": "Sudden onset of severe vertigo, ataxia (unsteady gait), and double vision indicate a suspected posterior circulation stroke. Even if the standard FAST test is negative, these neurological red flags mean they are sick: requires immediate 999 escalation.",
   "observations": {
     "shared": {
-      "fastTest": "Positive (Face, Arm, Speech)",
+      "fastTest": "Negative (but ataxia and vertigo present)",
       "respirationRate": "12/min",
       "pulseRate": "100 bpm",
       "painScore": "1/10",
       "temperature": "37.2\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert"
+      "avpu": "Confusion"
     },
     "er": {
-      "acvpu": "Alert",
-      "pupilSize": "Uneven and not reactive",
-      "pulseOximetry": "85%",
+      "acvpu": "Confusion",
+      "pupilSize": "Equal and reactive, but double vision reported",
+      "pulseOximetry": "95%",
       "bloodGlucose": "13.1 mmol/L",
       "bloodPressure": "148/93 mmHg"
     }
@@ -30,48 +30,48 @@
       "danger": "None",
       "response": "Alert and responsive but confused",
       "catHaem": "None",
-      "airway": "Open and clear, mild drooling",
+      "airway": "Open and clear",
       "breathing": "Normal",
       "circulation": "No bleeding, pale skin"
     },
     "er": {
-      "disability": "Left-sided weakness, disoriented",
+      "disability": "Severe ataxia (unsteady gait), double vision, disoriented",
       "exposure": "Indoors, first aid post"
     }
   },
   "history": {
-    "complaint": "Dizzy, weak, and slurred speech",
-    "history": "Began feeling unwell and weak 20 minutes ago while walking in the park",
+    "complaint": "Severe dizziness and double vision",
+    "history": "Began feeling suddenly dizzy and completely off-balance 20 minutes ago while walking in the park",
     "pmh": "High blood pressure, Type 2 diabetes",
     "drugs": "Ramipril, Metformin",
     "injuries": "None",
-    "additional": "Dribbling slightly, hand 'doesn't feel quite right'"
+    "additional": "Struggling to walk straight, feels like the room is spinning violently"
   },
   "followUp": {
-    "question": "What is the correct priority management for this suspected stroke?",
+    "question": "The FAST test is negative, but the patient has sudden severe vertigo and ataxia. What is the correct priority management?",
     "options": [
       {
-        "text": "Call 999 immediately, note the exact time of onset, keep the patient calm, and protect the airway",
+        "text": "Call 999 immediately for a suspected stroke, noting the exact time of onset and keeping the patient calm",
         "correct": true
       },
       {
-        "text": "Give him a glass of water and Metformin to lower blood sugar",
+        "text": "Tell them they are just dizzy from low blood sugar and give them a sugary drink",
         "correct": false
       },
       {
-        "text": "Lie him flat on his back and encourage him to sleep",
+        "text": "Lie them flat on their back and encourage them to sleep off the vertigo",
         "correct": false
       },
       {
-        "text": "Apply a cold compress to his head and tell him to wait inside",
+        "text": "Encourage them to walk around the post to regain their balance",
         "correct": false
       }
     ],
-    "explanation": "Stroke requires an immediate 999 call and exact time of onset. Swallowing may be compromised, so do not give oral fluids or medications. Sleep is dangerous as it delays care."
+    "explanation": "Not all strokes present with FAST symptoms. Sudden onset of severe vertigo, ataxia (loss of balance), and visual disturbances suggest a posterior circulation stroke. This requires an immediate 999 call and exact time of onset, just like a FAST-positive stroke."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
-    "cfaNotes": "FAST test positive. Call 999 immediately, keep calm, protect airway.",
+    "cfaNotes": "Suspect stroke despite negative FAST due to sudden ataxia/vertigo. Call 999 immediately, keep calm, protect airway.",
     "erNotes": "Suspected acute stroke. Monitor airway. Check BGL to rule out hypoglycaemia. Administer oxygen if SpO\u2082 <94%. Prepare for rapid transport."
   }
 }

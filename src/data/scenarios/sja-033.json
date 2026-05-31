@@ -3,14 +3,14 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / minor wound care",
   "title": "Minor wounds at an inter-schools sports competition",
-  "setting": "Inter-schools sports competition. A 10-year-old child collapsed with a cut knee and hand grazes after tripping over while running.",
+  "setting": "Inter-schools sports competition. A 10-year-old child fell and grazed their knee and hands after tripping over while running.",
   "correctVerdict": "not-sick",
   "verdictExplanation": "Alert, responsive, stable observations. A minor superficial cut on the knee and grazes with no systemic red flags. Not sick: simple wound care and safety-netting.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
       "respirationRate": "21/min",
-      "pulseRate": "72 bpm",
+      "pulseRate": "98 bpm",
       "painScore": "4/10",
       "temperature": "37.3\u00b0C"
     },
@@ -21,7 +21,7 @@
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "96%",
-      "bloodGlucose": "3.8 mmol/L",
+      "bloodGlucose": "5.0 mmol/L",
       "bloodPressure": "103/71 mmHg"
     }
   },
@@ -73,5 +73,78 @@
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Wash wounds, dress. Inform school/parent regarding the dirt and tetanus status.",
     "erNotes": "Thoroughly clean wound (irrigate). Reassure, verify tetanus history, advise parents on infection signs."
+  },
+  "cfa": {
+    "evolving": {
+      "narrative": "While waiting, the child begins to feel dizzy and lightheaded. She slumps against the wall and is now only responding to voice.",
+      "vitals": {
+        "avpu": "Voice",
+        "respirationRate": "24/min",
+        "pulseRate": "130 bpm"
+      },
+      "primarySurvey": {
+        "response": "Only responds to voice",
+        "circulation": "Pale and sweaty skin"
+      },
+      "followUp": {
+        "question": "What is the most likely cause of this deterioration and what should you do?",
+        "options": [
+          {
+            "text": "A simple faint (syncope); lay her flat with legs raised, ensure fresh air, and monitor",
+            "correct": true
+          },
+          {
+            "text": "Hypovolaemic shock from the knee graze; call 999",
+            "correct": false
+          },
+          {
+            "text": "Anaphylaxis to the plaster; administer an auto-injector",
+            "correct": false
+          },
+          {
+            "text": "Hypothermia from the cool water; wrap her tightly in blankets",
+            "correct": false
+          }
+        ],
+        "explanation": "A sudden faint is common after the stress and pain of a minor injury. Laying the patient flat with their legs raised will usually restore blood flow to the brain quickly."
+      }
+    }
+  },
+  "er": {
+    "evolving": {
+      "narrative": "While waiting, the child begins to feel dizzy and lightheaded. She slumps against the wall and is now only responding to voice.",
+      "vitals": {
+        "acvpu": "Voice",
+        "respirationRate": "24/min",
+        "pulseRate": "130 bpm",
+        "bloodPressure": "90/60 mmHg"
+      },
+      "primarySurvey": {
+        "response": "Only responds to voice",
+        "circulation": "Pale and sweaty skin"
+      },
+      "followUp": {
+        "question": "What is the most likely cause of this deterioration and what should you do?",
+        "options": [
+          {
+            "text": "Vasovagal syncope (faint); lay her flat with legs raised and monitor ABCs",
+            "correct": true
+          },
+          {
+            "text": "Hypovolaemic shock from the knee graze; call 999",
+            "correct": false
+          },
+          {
+            "text": "Anaphylaxis to the plaster; administer an auto-injector",
+            "correct": false
+          },
+          {
+            "text": "Hypothermia from the cool water; wrap her tightly in blankets",
+            "correct": false
+          }
+        ],
+        "explanation": "A sudden faint (vasovagal syncope) is common after the stress of a minor injury. Laying the patient flat with legs raised will help restore cerebral perfusion."
+      }
+    }
   }
 }

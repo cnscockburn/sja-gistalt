@@ -9,7 +9,7 @@
   "observations": {
     "shared": {
       "fastTest": "Unable to obtain",
-      "respirationRate": "20/min",
+      "respirationRate": "28/min",
       "pulseRate": "110 bpm",
       "painScore": "10/10",
       "temperature": "37.0\u00b0C"
@@ -41,33 +41,33 @@
   },
   "history": {
     "complaint": "Slashed wrist with bladed weapon",
-    "history": "Assaulted by an attacker with a knife 5 minutes ago in the park area",
+    "history": "Assaulted by an attacker with a knife 5 minutes ago in the park area. A bystander has been applying direct pressure but cannot control the bleeding.",
     "pmh": "Usually fit and well",
     "drugs": "No medication, no allergies",
     "injuries": "Large deep laceration on the inside of the right wrist, partial amputation",
     "additional": "Friend reports the attacker fled the scene"
   },
   "followUp": {
-    "question": "The wound is spurting bright red blood rapidly. What is your immediate intervention?",
+    "question": "Which set of findings best indicates that this patient is in severe, decompensated hypovolaemic shock?",
     "options": [
       {
-        "text": "Apply a commercial tourniquet above the wound on the upper arm, note the time, call 999, and lie him flat",
+        "text": "Dropping ACVPU level, blood pressure of 75/51, and cold/clammy skin",
         "correct": true
       },
       {
-        "text": "Apply a simple light adhesive plaster and encourage him to sit on a chair",
+        "text": "Pulse rate of 110 bpm and a pain score of 10/10",
         "correct": false
       },
       {
-        "text": "Run to find the attacker to ensure scene safety before doing anything else",
+        "text": "A respiration rate of 28/min and oxygen saturations of 87%",
         "correct": false
       },
       {
-        "text": "Give him a hot sweet tea and raise his arm above his head without touching the wound",
+        "text": "The presence of spurting arterial blood and partial hand amputation",
         "correct": false
       }
     ],
-    "explanation": "Spurting arterial bleeding from a limb that cannot be controlled by direct pressure warrants immediate tourniquet application. Lie him flat on his back (supine) to maintain cerebral perfusion in severe hypovolemic shock. Do not delay life-saving care to pursue an attacker, and do not give anything by mouth."
+    "explanation": "Severe (decompensated) hypovolaemic shock is marked by inadequate brain perfusion (dropping ACVPU) and profound hypotension (75/51 mmHg). While tachycardia, pain, and the wound itself indicate injury and early shock, the key red flags of decompensation are the altered mental status and low blood pressure."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

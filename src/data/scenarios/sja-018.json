@@ -20,9 +20,9 @@
     "er": {
       "acvpu": "Voice",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "85%",
+      "pulseOximetry": "Unrecordable - sats probe doesn't give reading",
       "bloodGlucose": "12.1 mmol/L",
-      "bloodPressure": "91/62 mmHg"
+      "bloodPressure": "Unable to obtain"
     }
   },
   "primarySurvey": {

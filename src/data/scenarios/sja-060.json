@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / flail chest and rib fractures",
   "title": "Flail chest injury during a rugby match",
+  "image": "sja_060_flail_chest.jpeg",
   "setting": "Rugby tournament. Player tackled, fell under ruck, did not get up. Extreme right-sided chest pain, breathlessness, visible paradoxical movement on right side.",
   "correctVerdict": "sick",
   "verdictExplanation": "Severe flail chest with paradoxical chest wall movement, extreme pain, dyspnea, and borderline low BP (90/52). Sick: call 999 immediately and manage.",
@@ -12,13 +13,13 @@
       "respirationRate": "24/min",
       "pulseRate": "105 bpm",
       "painScore": "10/10",
-      "temperature": "36.0\u00b0C"
+      "temperature": "36.0°C"
     },
     "cfa": {
       "avpu": "Alert"
     },
     "er": {
-      "acvpu": "Alert but in Pain (moving to unresponsive)",
+      "acvpu": "Alert (deteriorating)",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "95%",
       "bloodGlucose": "5.5 mmol/L",
@@ -72,6 +73,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Call 999. Support in semi-sitting position leaning to injured side, apply sling. Reassure.",
-    "erNotes": "Suspected flail chest / multiple rib fractures. Give high-flow oxygen. Monitor SpO\u2082 and BP. If he goes unresponsive, safely log-roll to recovery position on the *injured* side to protect the uninjured lung."
+    "erNotes": "Suspected flail chest / multiple rib fractures. Give high-flow oxygen. Monitor SpO₂ and BP. If he goes unresponsive, safely log-roll to recovery position on the *injured* side to protect the uninjured lung."
   }
 }

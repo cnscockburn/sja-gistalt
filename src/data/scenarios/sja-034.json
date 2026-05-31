@@ -3,14 +3,14 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / asthma attack; BTS/SIGN Asthma guidelines",
   "title": "Asthma attack at a crowded music festival",
-  "setting": "Music festival. An individual near an outdoor stage experiencing breathing difficulties. Distressed, gasping sentences.",
+  "setting": "Music festival. An individual near an outdoor stage experiencing breathing difficulties. Distressed, gasping, only managing single words.",
   "correctVerdict": "sick",
   "verdictExplanation": "Severe respiratory distress (breathing rate 28/min, oxygen saturation 91%, gasping single-word speech). Sick: immediate reliever inhaler and 999 needed.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
       "respirationRate": "28/min",
-      "pulseRate": "89 bpm",
+      "pulseRate": "125 bpm",
       "painScore": "3/10",
       "temperature": "37.2\u00b0C"
     },
@@ -67,7 +67,37 @@
         "correct": false
       }
     ],
-    "explanation": "Sit the patient upright to ease breathing. Help them take their blue reliever (salbutamol) inhaler (1 puff every 30-60 seconds up to 10 puffs). Call 999 immediately as they are in severe respiratory distress (SpO\u2082 91%, gasping sentences). Reliever is used, not preventer. Panic bags are dangerous in asthma."
+    "explanation": "Sit the patient upright to ease breathing. Help them take their blue reliever (salbutamol) inhaler (1 puff every 30-60 seconds up to 10 puffs). Call 999 immediately as they are in severe respiratory distress (SpO\u2082 91%, gasping, only managing single words). Reliever is used, not preventer. Panic bags are dangerous in asthma."
+  },
+  "evolvingStage": {
+    "narrative": "After taking 6 puffs of their blue inhaler and moving to a quiet area, their breathing eases significantly. The audible wheeze has reduced, and they can now speak in full sentences.",
+    "updatedObservations": {
+      "respirationRate": "20/min",
+      "pulseRate": "100 bpm",
+      "pulseOximetry": "97%"
+    },
+    "followUp": {
+      "question": "The patient's condition has improved. How does this alter your management plan?",
+      "options": [
+        {
+          "text": "Continue to monitor closely, allow them to rest, and liaise with ambulance control about downgrading or cancelling the response if fully recovered",
+          "correct": true
+        },
+        {
+          "text": "Administer 10 more puffs of the inhaler immediately just to be safe, then discharge them",
+          "correct": false
+        },
+        {
+          "text": "Tell them to return to the crowd immediately as they are no longer sick",
+          "correct": false
+        },
+        {
+          "text": "Lay them flat to recover their energy for the rest of the festival",
+          "correct": false
+        }
+      ],
+      "explanation": "If the asthma attack resolves completely with treatment, they should be observed. You can discuss downgrading or cancelling the ambulance with control, but they still need rest and monitoring before returning to a dusty, crowded environment."
+    }
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

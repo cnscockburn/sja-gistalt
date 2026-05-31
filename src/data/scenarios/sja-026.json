@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Paediatric Basic Life Support 2021 (Choking)",
   "title": "Child choking on a button at a country show",
+  "image": "sja_026_child_choking.jpeg",
   "setting": "County show treatment centre. A father runs in holding his 8-year-old daughter. She is gasping, clutching at her throat, and unable to speak.",
   "correctVerdict": "sick",
   "verdictExplanation": "Severe complete paediatric airway obstruction (unable to speak, cough, or breathe). Choking is a critical life-threatening emergency. Sick: deliver paediatric choking treatment.",
@@ -11,8 +12,8 @@
       "fastTest": "Negative",
       "respirationRate": "0/min",
       "pulseRate": "110 bpm",
-      "painScore": "5/10",
-      "temperature": "37.5\u00b0C"
+      "painScore": "Unable to obtain - visible grimace/pain on face",
+      "temperature": "37.5°C"
     },
     "cfa": {
       "avpu": "Voice"
@@ -22,7 +23,7 @@
       "pupilSize": "Large, equal and reactive",
       "pulseOximetry": "85%",
       "bloodGlucose": "8.9 mmol/L",
-      "bloodPressure": "95/70 mmHg"
+      "bloodPressure": "Unable to obtain"
     }
   },
   "primarySurvey": {

@@ -48,26 +48,26 @@
     "additional": "Had not eaten or drank much water all day"
   },
   "followUp": {
-    "question": "What is the correct management for this patient who has fainted?",
+    "question": "Which of the following would be considered a 'red flag' that indicates this was NOT a simple faint and requires urgent escalation?",
     "options": [
       {
-        "text": "Keep her lying down, elevate her legs, loosen tight clothing, provide fresh air, and give sips of water when alert",
+        "text": "The patient feels embarrassed and wants to leave immediately",
+        "correct": false
+      },
+      {
+        "text": "The patient remained unresponsive for 5 minutes after falling",
         "correct": true
       },
       {
-        "text": "Help her stand up immediately and walk to the bar for a drink",
+        "text": "The patient was sweating and feeling hot right before collapsing",
         "correct": false
       },
       {
-        "text": "Call 999 for an emergency ambulance",
-        "correct": false
-      },
-      {
-        "text": "Place her in the recovery position and keep her warm with heavy blankets",
+        "text": "The patient woke up quickly and feels perfectly fine now",
         "correct": false
       }
     ],
-    "explanation": "If a patient has fainted, keep them lying flat and elevate their legs to improve venous return to the brain. Loosen tight clothing and ensure fresh air. Do not force them to stand too quickly, as they may faint again. 999 is not indicated for a simple, resolved faint with no red flags."
+    "explanation": "A simple vasovagal faint typically results in rapid recovery upon lying flat (within seconds). Remaining unresponsive for several minutes is a major red flag indicating a more serious neurological, cardiac, or metabolic event requiring a 999 call and potential CPR assessment."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

@@ -3,16 +3,17 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / panic attack and grounding",
   "title": "Panic attack at a royal event",
+  "image": "sja_054_panic_attack.jpeg",
   "setting": "Crowded royal event. 17M student has severe anxiety, panicked breathing, disoriented, struggling to focus on words, trying to run away.",
   "correctVerdict": "sick",
   "verdictExplanation": "Anxiety mimic of systemic issues, requires full diagnostic check, calm grounding, and airway management. Sick: manage and monitor closely.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
-      "respirationRate": "18/min",
-      "pulseRate": "86 bpm",
+      "respirationRate": "26/min",
+      "pulseRate": "118 bpm",
       "painScore": "1/10",
-      "temperature": "37.4\u00b0C"
+      "temperature": "37.4°C"
     },
     "cfa": {
       "avpu": "Alert"
@@ -21,8 +22,8 @@
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "99%",
-      "bloodGlucose": "3.8 mmol/L",
-      "bloodPressure": "83/51 mmHg"
+      "bloodGlucose": "5.2 mmol/L",
+      "bloodPressure": "142/88 mmHg"
     }
   },
   "primarySurvey": {
@@ -72,6 +73,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Move to a quiet area, encourage slow breathing. Reassure and ground the patient.",
-    "erNotes": "Ground the patient, check BGL to rule out hypoglycaemia (mimics anxiety), monitor SpO\u2082 and BP. Escort away from the crowd with stewards."
+    "erNotes": "Ground the patient, check BGL to rule out hypoglycaemia (mimics anxiety), monitor SpO₂ and BP. Escort away from the crowd with stewards."
   }
 }

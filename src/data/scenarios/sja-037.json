@@ -15,12 +15,12 @@
       "temperature": "37.2\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert"
+      "avpu": "Confusion"
     },
     "er": {
-      "acvpu": "Alert",
-      "pupilSize": "Uneven and not reactive",
-      "pulseOximetry": "86%",
+      "acvpu": "Confusion",
+      "pupilSize": "Equal but sluggish",
+      "pulseOximetry": "95%",
       "bloodGlucose": "7.9 mmol/L",
       "bloodPressure": "150/90 mmHg"
     }
@@ -48,26 +48,26 @@
     "additional": "Dribbling slightly, which he finds very embarrassing"
   },
   "followUp": {
-    "question": "What is the correct priority management for this suspected stroke?",
+    "question": "Which of the following is the most critical piece of information to communicate to ambulance control for this patient?",
     "options": [
       {
-        "text": "Call 999 immediately, note the exact time of onset, keep the patient calm, and protect the airway",
+        "text": "The exact time the symptoms started, as this determines their eligibility for time-critical clot-busting treatments",
         "correct": true
       },
       {
-        "text": "Give him his ramipril tablet to lower his high blood pressure",
+        "text": "The patient's blood pressure, as ambulance control will want you to administer their ramipril tablet",
         "correct": false
       },
       {
-        "text": "Give him a sugary drink to treat a potential hypoglycaemic episode",
+        "text": "The fact that they are embarrassed by their drooling",
         "correct": false
       },
       {
-        "text": "Encourage him to stand up and walk to the nearest clinic",
+        "text": "Their blood glucose level, because a level of 7.9 mmol/L definitively confirms a stroke diagnosis",
         "correct": false
       }
     ],
-    "explanation": "Suspected stroke is a medical emergency. Call 999 immediately and record exact onset time. Do not give anything by mouth due to swallowing risk. Do not administer prescription drugs. Never allow walking."
+    "explanation": "For a suspected stroke, noting and communicating the exact time of symptom onset is vital because thrombolysis (clot-busting medication) has a strict time window. Blood glucose should be checked to rule out a mimic (hypoglycaemia), but time of onset is the critical stroke-specific red flag to convey."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / diabetic emergency (hypoglycaemia)",
   "title": "Hypoglycaemia at a country fair",
-  "setting": "Country fair. 18F stumbling towards first aid, complaining of feeling dizzy and weak, friends concerned.",
+  "setting": "Country fair. 18F stumbling towards first aid, complaining of feeling dizzy and weak, friends concerned. Smells of alcohol, holding an empty cider cup.",
   "correctVerdict": "sick",
   "verdictExplanation": "Diabetic patient with blood glucose of 3.5 mmol/L, altered mental status (grumpy, confused), and autonomic symptoms (sweaty, pale). Sick: needs immediate glucose treatment.",
   "observations": {
@@ -15,20 +15,20 @@
       "temperature": "37.5\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert"
+      "avpu": "Voice"
     },
     "er": {
       "acvpu": "Alert but confused and irritable",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "92%",
+      "pulseOximetry": "97%",
       "bloodGlucose": "3.5 mmol/L",
-      "bloodPressure": "83/54 mmHg"
+      "bloodPressure": "122/78 mmHg"
     }
   },
   "primarySurvey": {
     "shared": {
       "danger": "Spectators and equipment nearby",
-      "response": "Responding but very confused and argumentative",
+      "response": "Responding but very confused and argumentative, smelling of alcohol",
       "catHaem": "None",
       "airway": "Open and clear",
       "breathing": "Normal",
@@ -41,29 +41,29 @@
   },
   "history": {
     "complaint": "Staggering and behaving oddly",
-    "history": "Dancing and playing games at the country fair, forgot to eat lunch",
+    "history": "Drinking cider all afternoon and dancing at the fair, forgot to eat lunch",
     "pmh": "Type 1 diabetes",
     "drugs": "Insulin",
     "injuries": "None",
-    "additional": "Friend reports she is normally very friendly, not aggressive"
+    "additional": "Friend reports she is normally very friendly, not aggressive. Has had 3 pints of cider."
   },
   "followUp": {
-    "question": "What is the first-line treatment for this patient while he is still able to swallow?",
+    "question": "What is the first-line treatment for this patient while she is still able to swallow?",
     "options": [
       {
         "text": "Give 15-20g of fast-acting sugar (sugary drink, sweets, or gel) and reassess in 15 minutes",
         "correct": true
       },
       {
-        "text": "Administer his regular dose of insulin to stabilize his blood sugar",
+        "text": "Administer her regular dose of insulin to stabilize her blood sugar",
         "correct": false
       },
       {
-        "text": "Lie him flat on his back, elevate his legs, and give him water",
+        "text": "Lie her flat on her back, elevate her legs, and give her water",
         "correct": false
       },
       {
-        "text": "Tell him to rest quietly in a dark room until the event ends",
+        "text": "Tell her to rest quietly in a dark room until the event ends",
         "correct": false
       }
     ],

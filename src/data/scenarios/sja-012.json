@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Anaphylaxis 2021",
   "title": "Allergic reaction at a food festival",
-  "image": "sja-012.jpg",
+  "image": "sja_012_anaphylaxis.jpeg",
   "setting": "Food festival. 28F ate a satay skewer, now flushed with widespread hives, lip swelling, a wheeze and feeling faint. Carries an adrenaline auto-injector.",
   "correctVerdict": "sick",
   "verdictExplanation": "Sudden onset hives with airway (lip swelling), breathing (wheeze) and circulation (faint, low BP) involvement after a known trigger. This is anaphylaxis: a life-threatening emergency. Sick, needs adrenaline now.",
@@ -15,7 +15,9 @@
       "painScore": "2/10",
       "temperature": "37.0°C"
     },
-    "cfa": { "avpu": "Alert" },
+    "cfa": {
+      "avpu": "Alert"
+    },
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
@@ -58,8 +60,14 @@
           "text": "Lay her flat and give a glass of water to dilute the allergen",
           "correct": false
         },
-        { "text": "Wait to see whether the hives settle before acting", "correct": false },
-        { "text": "Give her antihistamine tablets instead of adrenaline", "correct": false }
+        {
+          "text": "Wait to see whether the hives settle before acting",
+          "correct": false
+        },
+        {
+          "text": "Give her antihistamine tablets instead of adrenaline",
+          "correct": false
+        }
       ],
       "explanation": "Adrenaline is the first-line treatment for anaphylaxis: help her use her own auto-injector into the outer thigh and call 999 immediately. If breathing is the main problem, sitting up helps. Antihistamines do not treat the life-threatening features and must not delay adrenaline."
     },
@@ -106,8 +114,14 @@
           "text": "Wait for the first dose to work; a second dose is unsafe",
           "correct": false
         },
-        { "text": "Sit her fully upright and give a sugary drink", "correct": false },
-        { "text": "Stop treatment until the paramedics arrive", "correct": false }
+        {
+          "text": "Sit her fully upright and give a sugary drink",
+          "correct": false
+        },
+        {
+          "text": "Stop treatment until the paramedics arrive",
+          "correct": false
+        }
       ],
       "explanation": "If there is no improvement after 5 minutes, a second dose of adrenaline is indicated. With hypotension and faintness, lie her flat and raise the legs to support circulation, and expedite the ambulance.",
       "levelExplanation": {

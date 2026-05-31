@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / pelvic fractures and major trauma",
   "title": "Pelvic fracture after cycling collision",
+  "image": "sja_059_pelvic_fracture.jpeg",
   "setting": "Road cycling event. Cyclist hit by a car, thrown from bike, lying on road. Severe pelvic and thigh pain, loss of sensation in feet, pale, clammy.",
   "correctVerdict": "sick",
   "verdictExplanation": "Suspected pelvic fracture with life-threatening internal bleeding, loss of sensation, and severe shock (pulse 110 bpm, BP 90/60). Sick: immediate immobilization and 999.",
@@ -12,13 +13,13 @@
       "respirationRate": "22/min",
       "pulseRate": "110 bpm",
       "painScore": "10/10",
-      "temperature": "36.0\u00b0C"
+      "temperature": "36.0°C"
     },
     "cfa": {
-      "avpu": "Alert (moving into voice)"
+      "avpu": "Alert, becoming confused"
     },
     "er": {
-      "acvpu": "Confused (moving to unresponsive)",
+      "acvpu": "Confusion (deteriorating towards Voice)",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "96%",
       "bloodGlucose": "5.7 mmol/L",
@@ -29,10 +30,10 @@
     "shared": {
       "danger": "Car involved in collision, other vehicles on road",
       "response": "Responsive but in severe pain, becoming unresponsive",
-      "catHaem": "Internal bleeding around pelvic fracture",
+      "catHaem": "None",
       "airway": "Clear and open",
       "breathing": "Rapid and shallow",
-      "circulation": "Weak, irregular pulse, pale skin"
+      "circulation": "Weak, irregular pulse, pale skin, suspect internal pelvic bleeding"
     },
     "er": {
       "disability": "Confused, loss of sensation in feet",

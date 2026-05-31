@@ -3,6 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / stroke (FAST)",
   "title": "Suspected stroke at a care home",
+  "image": "sja_013_stroke.jpeg",
   "setting": "Local care home. 74M resident is sitting in a chair, slurring his words. Drooped face on one side and cannot lift his left arm.",
   "correctVerdict": "sick",
   "verdictExplanation": "Positive FAST test (Face drooped, Arm weakness, Speech slurred). This is a suspected stroke, a time-critical neurological emergency. Sick: requires immediate 999 escalation.",
@@ -12,15 +13,15 @@
       "respirationRate": "14/min",
       "pulseRate": "100 bpm",
       "painScore": "1/10",
-      "temperature": "37.2\u00b0C"
+      "temperature": "37.2°C"
     },
     "cfa": {
       "avpu": "Alert"
     },
     "er": {
-      "acvpu": "Alert",
-      "pupilSize": "Uneven and not reactive",
-      "pulseOximetry": "86%",
+      "acvpu": "Confusion",
+      "pupilSize": "Slightly uneven (3mm and 4mm), both reactive to light",
+      "pulseOximetry": "95%",
       "bloodGlucose": "8.1 mmol/L",
       "bloodPressure": "150/90 mmHg"
     }

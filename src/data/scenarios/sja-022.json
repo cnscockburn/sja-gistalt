@@ -5,24 +5,52 @@
   "title": "Severe asthma attack at a car boot sale",
   "setting": "Rotary club car boot sale. A patient walks up to your first aid shed, gasping for breath, unable to speak. Their child is crying in distress.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Severe respiratory distress (breathing rate 23/min, oxygen saturation 92%, unable to speak in sentences, chest tightness). Sick: immediate reliever inhaler and 999 needed.",
+  "verdictExplanation": "Severe respiratory distress (breathing rate 28/min, oxygen saturation 92%, unable to speak in sentences, chest tightness). Sick: immediate reliever inhaler and 999 needed.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
-      "respirationRate": "23/min",
-      "pulseRate": "71 bpm",
+      "respirationRate": "28/min",
+      "pulseRate": "122 bpm",
       "painScore": "4/10",
       "temperature": "37.1\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert"
+      "avpu": "Alert",
+      "evolving": {
+        "timeElapsed": "5 minutes",
+        "complication": "Exhaustion and hypoxia (progression to life-threatening asthma)",
+        "vitals": {
+          "avpu": "Voice",
+          "respirationRate": "14/min",
+          "pulseRate": "140 bpm"
+        },
+        "primarySurvey": {
+          "breathing": "Slow, shallow, silent chest (wheeze has disappeared)",
+          "circulation": "Pale, sweaty, worsening tachycardia"
+        }
+      }
     },
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "92%",
       "bloodGlucose": "8.0 mmol/L",
-      "bloodPressure": "135/85 mmHg"
+      "bloodPressure": "135/85 mmHg",
+      "evolving": {
+        "timeElapsed": "5 minutes",
+        "complication": "Exhaustion and hypoxia (progression to life-threatening asthma)",
+        "vitals": {
+          "acvpu": "Voice",
+          "pulseOximetry": "86%",
+          "respirationRate": "14/min",
+          "pulseRate": "140 bpm",
+          "bloodPressure": "100/60 mmHg"
+        },
+        "primarySurvey": {
+          "breathing": "Slow, shallow, silent chest (wheeze has disappeared)",
+          "circulation": "Pale, sweaty, worsening tachycardia"
+        }
+      }
     }
   },
   "primarySurvey": {
@@ -51,7 +79,7 @@
     "question": "What is the priority management step for this severe asthma attack?",
     "options": [
       {
-        "text": "Sit the patient upright, send their child to fetch the blue inhaler from the car, and call 999",
+        "text": "Sit the patient upright, send a bystander or helper to fetch the blue inhaler from the car, and call 999",
         "correct": true
       },
       {
@@ -67,7 +95,7 @@
         "correct": false
       }
     ],
-    "explanation": "Sit the patient upright to help expand the lungs. Send their child to the car to retrieve their blue reliever inhaler. Call 999 because the patient is showing severe symptoms (unable to speak, respiratory distress). Walking is dangerous and laying flat severely worsens dyspnea. Aspirin has no role in asthma."
+    "explanation": "Sit the patient upright to help expand the lungs. Send a bystander or helper to the car to retrieve their blue reliever inhaler (do not send the crying child alone). Call 999 because the patient is showing severe symptoms (unable to speak, respiratory distress). Walking is dangerous and laying flat severely worsens dyspnea. Aspirin has no role in asthma."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

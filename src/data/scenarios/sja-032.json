@@ -10,8 +10,8 @@
     "shared": {
       "fastTest": "Negative",
       "respirationRate": "19/min",
-      "pulseRate": "92 bpm",
-      "painScore": "7/10",
+      "pulseRate": "124 bpm",
+      "painScore": "9/10",
       "temperature": "37.3\u00b0C"
     },
     "cfa": {
@@ -68,6 +68,39 @@
       }
     ],
     "explanation": "Severe large-area burns require an immediate 999 call. Cool with clean, cool running water for 20 minutes. Remove rings/watches before swelling begins. Cover burns loosely with cling film or sterile dressings. Never use ice (causes tissue frostbite) or greasy creams."
+  },
+  "evolvingStage": {
+    "narrative": "While waiting for the ambulance and continuing to cool the burns, the patient's voice becomes hoarse and he develops stridor (a harsh vibrating noise when breathing). He complains of tightness in his throat and is struggling to breathe.",
+    "updatedObservations": {
+      "avpu": "Alert",
+      "acvpu": "Alert",
+      "respirationRate": "32/min",
+      "pulseRate": "135 bpm",
+      "pulseOximetry": "90%",
+      "bloodPressure": "95/60 mmHg"
+    },
+    "followUp": {
+      "question": "What is the most likely cause of this deterioration and what is your priority?",
+      "options": [
+        {
+          "text": "Airway swelling and impending obstruction secondary to burns around the neck and face; sit the patient upright, give high-flow oxygen, and immediately update EMS",
+          "correct": true
+        },
+        {
+          "text": "Hypovolaemic shock due to severe fluid loss; lay the patient flat, raise legs if possible, keep warm, and update EMS",
+          "correct": false
+        },
+        {
+          "text": "Anaphylaxis to the cooking oil; administer an auto-injector if available",
+          "correct": false
+        },
+        {
+          "text": "A panic attack due to the pain; offer reassurance and a paper bag to breathe into",
+          "correct": false
+        }
+      ],
+      "explanation": "Burns to the neck/face and inhalation of steam/hot oil can cause rapid and fatal airway swelling. The patient must be kept upright to optimize breathing, administered high-flow oxygen, and EMS immediately updated regarding this critical deterioration."
+    }
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

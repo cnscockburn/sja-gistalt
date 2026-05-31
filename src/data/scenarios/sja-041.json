@@ -5,10 +5,10 @@
   "title": "Embedded glass shard hand injury at a charity dance",
   "setting": "Charity dance. Catering team member tried to catch a falling glass, resulting in a large shard of glass embedded in palm, bleeding heavily.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Embedded glass shard in palm, bleeding heavily, pale, cold, clammy, and hypotensive (88/55). Sick: immediate bleed control and 999.",
+  "verdictExplanation": "Embedded glass shard in palm, bleeding heavily, pale, cold, clammy. Sick: immediate bleed control and 999.",
   "observations": {
     "shared": {
-      "fastTest": "Unable to obtain",
+      "fastTest": "Not indicated",
       "respirationRate": "14/min",
       "pulseRate": "95 bpm",
       "painScore": "8/10",
@@ -20,9 +20,9 @@
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "93%",
+      "pulseOximetry": "98%",
       "bloodGlucose": "3.9 mmol/L",
-      "bloodPressure": "88/55 mmHg"
+      "bloodPressure": "115/72 mmHg"
     }
   },
   "primarySurvey": {
@@ -63,7 +63,7 @@
         "correct": false
       },
       {
-        "text": "Run to find the attacker to ensure scene safety before doing anything else",
+        "text": "Clear the area of broken glass before treating the patient",
         "correct": false
       }
     ],

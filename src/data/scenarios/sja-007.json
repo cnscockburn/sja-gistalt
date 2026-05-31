@@ -3,9 +3,9 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / minor wound care",
   "title": "Minor graze at a park event",
-  "setting": "Park event. 22F fainted briefly, now alert, with a small graze on her arm from falling off a bicycle at low speed. Walking and talking normally.",
-  "correctVerdict": "not-sick",
-  "verdictExplanation": "Alert, fully responsive, stable observations. A minor superficial graze with negligible bleeding and no systemic symptoms. Not sick: simple wound care.",
+  "setting": "Park event. 58F fainted briefly, now alert, with a small graze on her arm from falling off a bicycle at low speed. Walking and talking normally.",
+  "correctVerdict": "sick",
+  "verdictExplanation": "Alert, fully responsive. However, unexplained exertional syncope in a patient with a cardiac history is a major clinical red flag for life-threatening arrhythmias or ischemia. Sick: requires an emergency ambulance.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
@@ -21,7 +21,7 @@
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "98%",
-      "bloodGlucose": "3.9 mmol/L",
+      "bloodGlucose": "4.1 mmol/L",
       "bloodPressure": "102/62 mmHg"
     }
   },
@@ -48,30 +48,62 @@
     "additional": "Had a minor heart attack a year ago but currently completely pain-free and well"
   },
   "followUp": {
-    "question": "What is the correct protocol for managing this minor graze?",
+    "question": "What is the most concerning clinical red flag in this patient's presentation?",
     "options": [
       {
-        "text": "Clean the wound with water or alcohol-free wipes, dry, and apply a plaster",
+        "text": "The unexplained exertional syncope (fainting) while cycling",
         "correct": true
       },
       {
-        "text": "Apply a tourniquet above the elbow to prevent infection",
+        "text": "The minor superficial graze on her left forearm",
         "correct": false
       },
       {
-        "text": "Administer the patient's GTN spray immediately as a precaution",
+        "text": "The normal respiratory rate of 19/min",
         "correct": false
       },
       {
-        "text": "Call 999 due to the patient's cardiac history",
+        "text": "The fact she is walking and talking normally",
         "correct": false
       }
     ],
-    "explanation": "Superficial grazes require simple cleaning and dressing to prevent infection. Tourniquets are for life-threatening haemorrhage. GTN is only for cardiac chest pain. 999 is not indicated as she is stable and symptom-free."
+    "explanation": "Exertional syncope (fainting during exercise) in a patient with a known cardiac history is a major clinical red flag for serious conditions like arrhythmias or ischemia. It mandates an immediate 999 call, even if the patient appears fully recovered and well."
+  },
+  "cfa": {
+    "evolving": {
+      "narrative": "While waiting for the ambulance, the patient suddenly clutches her chest, complains of severe central chest pain, and becomes pale and sweaty.",
+      "vitals": {
+        "avpu": "Alert",
+        "respirationRate": "24/min",
+        "pulseRate": "110 bpm"
+      },
+      "primarySurvey": {
+        "response": "Alert but highly distressed",
+        "breathing": "Fast and shallow",
+        "circulation": "Pale and sweaty skin"
+      }
+    }
+  },
+  "er": {
+    "evolving": {
+      "narrative": "While waiting for the ambulance, the patient suddenly clutches her chest, complains of severe central chest pain radiating to her jaw, and becomes visibly pale and diaphoretic.",
+      "vitals": {
+        "acvpu": "Alert",
+        "respirationRate": "24/min",
+        "pulseRate": "110 bpm",
+        "bloodPressure": "85/50 mmHg",
+        "pulseOximetry": "93%"
+      },
+      "primarySurvey": {
+        "response": "Alert but highly distressed",
+        "breathing": "Fast and shallow",
+        "circulation": "Pale and sweaty skin"
+      }
+    }
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
-    "cfaNotes": "Clean and dress the graze. Ask about tetanus status.",
-    "erNotes": "Reassure, check tetanus status, advise on wound hygiene, and safety-net for signs of infection."
+    "cfaNotes": "Clean and dress the graze. Recognize the red flag of exertional syncope. Prepare for sudden deterioration and potential cardiac arrest.",
+    "erNotes": "Reassure and monitor. Recognize exertional syncope as a red flag. Anticipate cardiac chest pain and have the AED ready."
   }
 }

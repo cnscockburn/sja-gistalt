@@ -48,26 +48,26 @@
     "additional": "Carries adrenaline injector for shellfish allergy but no allergy signs"
   },
   "followUp": {
-    "question": "What is your immediate management?",
+    "question": "Which of the following would be a red flag indicating this is more than a simple sprain?",
     "options": [
       {
-        "text": "Rest, apply a cold compress, support comfortably with a bandage, and elevate the leg",
+        "text": "Inability to bear weight after resting, or visible deformity",
         "correct": true
       },
       {
-        "text": "Call 999 for an emergency ambulance",
+        "text": "A pain score of 7/10 immediately after the fall",
         "correct": false
       },
       {
-        "text": "Strap firmly and encourage her to complete the rest of the walk",
+        "text": "Slight swelling and bruising developing over time",
         "correct": false
       },
       {
-        "text": "Apply a tourniquet above the knee to reduce swelling",
+        "text": "The patient feeling tearful and anxious",
         "correct": false
       }
     ],
-    "explanation": "Soft-tissue sprains are managed using RICE (Rest, Ice, Comfortable support, Elevation) and reassessed. There are no systemic red flags, so 999 is not indicated. Weight-bearing should be avoided, and tourniquets are only for life-threatening limb haemorrhage."
+    "explanation": "While pain, swelling, and anxiety are expected with a sprain, inability to bear weight (Ottawa ankle/knee rules) or visible deformity are red flags that warrant onward assessment for a fracture or severe ligamentous injury."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

@@ -51,7 +51,7 @@
     "question": "What is the priority medical first aid management for this patient?",
     "options": [
       {
-        "text": "Call 999 immediately, sit him in the 'W' position, administer 300mg chewable aspirin, and monitor closely",
+        "text": "Call 999 immediately, sit him in the 'W' position, administer 300mg chewable aspirin (if not allergic), and monitor closely",
         "correct": true
       },
       {

@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / minor wound care",
   "title": "Cut finger at a craft festival",
-  "image": "sja-006.jpg",
+  "image": "sja_006_cut_finger.jpeg",
   "setting": "Craft festival. An adult cut a finger on a craft knife. Small wound bleeding slightly. In some pain but moving the finger and talking normally.",
   "correctVerdict": "not-sick",
   "verdictExplanation": "Alert, stable observations, a minor superficial wound with slight bleeding and preserved function. Not sick: simple wound care and safety-netting on scene.",
@@ -15,13 +15,15 @@
       "painScore": "7/10",
       "temperature": "37.3°C"
     },
-    "cfa": { "avpu": "Alert" },
+    "cfa": {
+      "avpu": "Alert"
+    },
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
       "pulseOximetry": "96%",
       "bloodGlucose": "4.1 mmol/L",
-      "bloodPressure": "95/65 mmHg"
+      "bloodPressure": "128/85 mmHg"
     }
   },
   "primarySurvey": {
@@ -53,9 +55,18 @@
         "text": "Clean the wound, apply a dressing with direct pressure, check movement and circulation",
         "correct": true
       },
-      { "text": "Call 999 for an emergency ambulance", "correct": false },
-      { "text": "Apply a tourniquet to the finger", "correct": false },
-      { "text": "Leave it open and uncovered to air-dry", "correct": false }
+      {
+        "text": "Call 999 for an emergency ambulance",
+        "correct": false
+      },
+      {
+        "text": "Apply a tourniquet to the finger",
+        "correct": false
+      },
+      {
+        "text": "Leave it open and uncovered to air-dry",
+        "correct": false
+      }
     ],
     "explanation": "Minor wounds are cleaned, dressed and managed with brief direct pressure, then check the finger still moves and is well perfused. This is not a 999 situation, and a tourniquet is reserved for life-threatening limb haemorrhage.",
     "levelExplanation": {
@@ -63,7 +74,7 @@
     }
   },
   "levelFlags": {
-    "availableTo": ["er"],
+    "availableTo": ["cfa", "er"],
     "erNotes": "Reassure: high reported pain with a minor wound is common. Treat the wound, not the pain score in isolation."
   }
 }

@@ -3,16 +3,17 @@
   "version": "1.0",
   "guidelineReference": "Resus Council UK Adult Basic Life Support 2021",
   "title": "Unresponsive poisoning at an evening carnival",
+  "image": "sja_028_unresponsive_poisoning.jpeg",
   "setting": "Carnival procession. You find a patient collapsed on the grass. Scattered beer cans/bottles are on the ground, and she has vomited. Responding only with groans.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Unresponsive, groaning only, compromised airway from vomit, hypothermia (35\u00b0C), and respiratory depression. Sick: protect airway and call 999.",
+  "verdictExplanation": "Responding to voice only, groaning, compromised airway from vomit, hypothermia (35°C), and severe respiratory depression (RR 6/min). Sick: protect airway and call 999.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
-      "respirationRate": "25/min",
+      "respirationRate": "6/min",
       "pulseRate": "61 bpm",
-      "painScore": "0/10",
-      "temperature": "35.0\u00b0C"
+      "painScore": "Unable to obtain",
+      "temperature": "35.0°C"
     },
     "cfa": {
       "avpu": "Voice"
@@ -48,26 +49,26 @@
     "additional": "Found lying in a puddle of vomit on the damp ground"
   },
   "followUp": {
-    "question": "What is the priority first aid intervention for this patient?",
+    "question": "Which of the following clinical signs in this patient most strongly indicates a life-threatening depression of the central nervous system requiring immediate intervention?",
     "options": [
       {
-        "text": "Clear the airway of vomit, place in the recovery position, cover with a space blanket, and call 999",
+        "text": "The presence of broken glass and vomit on the floor",
+        "correct": false
+      },
+      {
+        "text": "A breathing rate of 6 breaths per minute combined with a groaning-only response",
         "correct": true
       },
       {
-        "text": "Attempt to induce further vomiting by placing a finger down her throat",
+        "text": "A body temperature of 35.0°C",
         "correct": false
       },
       {
-        "text": "Administer oral glucose gel to treat suspected low blood sugar",
-        "correct": false
-      },
-      {
-        "text": "Force her to sit upright on a chair and keep her moving",
+        "text": "A pulse rate of 61 bpm",
         "correct": false
       }
     ],
-    "explanation": "Positioning in the recovery position is critical to prevent aspiration of vomit. Covering her with a blanket treats her hypothermia (35.0\u00b0C). Inducing vomiting is dangerous and causes airway obstruction. Do not give anything by mouth to an unresponsive patient."
+    "explanation": "A respiratory rate of 6/min indicates profound respiratory depression (often seen in severe poisoning or alcohol overdose). Combined with a severely reduced level of consciousness (responding only to voice with groans), she cannot protect her airway. This is an immediate life-threatening emergency requiring airway management and 999."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

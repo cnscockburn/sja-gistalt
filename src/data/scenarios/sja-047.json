@@ -2,8 +2,8 @@
   "id": "sja-047",
   "version": "1.0",
   "guidelineReference": "SJA First Aid / moving and handling",
-  "title": "Back pain assistance from public toilets",
-  "setting": "Local event. Elderly patient suffered severe back pain lifting grandchild, needs help getting into a wheelchair to go to the toilet.",
+  "title": "Back pain requiring wheelchair assistance",
+  "setting": "Local event. Elderly patient suffered moderate back pain lifting grandchild, needs help getting into a wheelchair to go to the toilet.",
   "correctVerdict": "not-sick",
   "verdictExplanation": "Alert, responsive, stable observations. Safe transfer of an elderly patient with back pain. Not sick: follow safe moving and handling guidelines.",
   "observations": {
@@ -35,7 +35,7 @@
       "circulation": "No bleeding, pale skin"
     },
     "er": {
-      "disability": "Severe back pain, no weakness",
+      "disability": "Moderate back pain, no weakness",
       "exposure": "Indoors, public toilets"
     }
   },
@@ -48,26 +48,26 @@
     "additional": "Needs to use the toilet urgently"
   },
   "followUp": {
-    "question": "What is the correct protocol for transferring this patient into a wheelchair?",
+    "question": "Which of the following symptoms, if reported by this patient, is a 'red flag' that requires immediate escalation?",
     "options": [
       {
-        "text": "Explain the transfer, gain consent, ensure wheelchair brakes are locked, and assist patient to stand and pivot",
+        "text": "Difficulty with bowel or bladder control",
         "correct": true
       },
       {
-        "text": "Lift the patient in a full-body carry without telling them",
+        "text": "Pain that worsens slightly when moving",
         "correct": false
       },
       {
-        "text": "Tell the patient to jump into the wheelchair while it is moving",
+        "text": "Mild muscle spasms in the lower back",
         "correct": false
       },
       {
-        "text": "Move the patient without locking the wheelchair brakes to save time",
+        "text": "Discomfort when sitting down",
         "correct": false
       }
     ],
-    "explanation": "Safe wheelchair transfer. Explain the procedure and gain consent. Position the wheelchair on a flat surface and lock the brakes. Assist the patient to stand and pivot, ensuring footplates are out of the way during transfer."
+    "explanation": "Difficulty with bowel or bladder control is a red flag for serious conditions such as cauda equina syndrome and requires immediate escalation. The other symptoms are typical for mechanical back pain."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

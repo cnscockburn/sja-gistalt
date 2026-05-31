@@ -15,14 +15,14 @@
       "temperature": "37.2\u00b0C"
     },
     "cfa": {
-      "avpu": "Alert"
+      "avpu": "Voice"
     },
     "er": {
       "acvpu": "Alert but confused and irritable",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "91%",
+      "pulseOximetry": "98%",
       "bloodGlucose": "3.2 mmol/L",
-      "bloodPressure": "85/58 mmHg"
+      "bloodPressure": "128/82 mmHg"
     }
   },
   "primarySurvey": {

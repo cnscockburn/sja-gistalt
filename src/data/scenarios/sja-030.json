@@ -69,6 +69,39 @@
     ],
     "explanation": "Mild localized allergies are managed by removing the trigger (move indoors/away from flowers), washing eyes/face with cold water to soothe, and coordinating with parents for their regular antihistamine. 999 and AED are completely inappropriate for hayfever. Adrenaline is only for life-threatening anaphylaxis."
   },
+  "evolvingStage": {
+    "narrative": "After moving indoors for 15 minutes, the child's lips and tongue begin to swell rapidly. He complains that his throat feels tight and he starts to wheeze audibly.",
+    "updatedObservations": {
+      "avpu": "Alert",
+      "acvpu": "Alert",
+      "respirationRate": "28/min",
+      "pulseRate": "115 bpm",
+      "pulseOximetry": "92%",
+      "bloodPressure": "95/60 mmHg"
+    },
+    "followUp": {
+      "question": "The patient's condition has evolved. What is the most likely cause of these new symptoms?",
+      "options": [
+        {
+          "text": "The patient is experiencing a panic attack from the pollen",
+          "correct": false
+        },
+        {
+          "text": "The mild allergy has progressed into anaphylaxis, a life-threatening emergency",
+          "correct": true
+        },
+        {
+          "text": "The patient has developed an acute asthma attack unrelated to the allergy",
+          "correct": false
+        },
+        {
+          "text": "The patient has choked on something they ate",
+          "correct": false
+        }
+      ],
+      "explanation": "Rapid swelling of the lips and tongue, along with a tight throat and wheezing, are red flag signs of anaphylaxis (a severe systemic allergic reaction). This is a life-threatening medical emergency requiring immediate 999 escalation and administration of intramuscular adrenaline if available."
+    }
+  },
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Wash face and eyes. Locate parents so they can administer his antihistamine. Reassure.",

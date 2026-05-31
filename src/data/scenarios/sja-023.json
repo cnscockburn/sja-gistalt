@@ -9,7 +9,7 @@
   "observations": {
     "shared": {
       "fastTest": "Unable to obtain",
-      "respirationRate": "22/min",
+      "respirationRate": "28/min",
       "pulseRate": "120 bpm",
       "painScore": "10/10",
       "temperature": "37.0\u00b0C"
@@ -20,7 +20,7 @@
     "er": {
       "acvpu": "Alert (moving into voice)",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "90%",
+      "pulseOximetry": "94%",
       "bloodGlucose": "5.3 mmol/L",
       "bloodPressure": "87/57 mmHg"
     }
@@ -52,22 +52,22 @@
     "options": [
       {
         "text": "Apply immediate firm direct pressure over a sterile dressing, elevate the hand, and call 999",
-        "correct": true
+        "correct": false
       },
       {
         "text": "Wash the wound thoroughly under warm running water to remove grease",
         "correct": false
       },
       {
-        "text": "Apply a tourniquet above the elbow immediately as the first-line treatment for any bleed",
-        "correct": false
+        "text": "Apply a tourniquet above the elbow immediately to stop catastrophic haemorrhage",
+        "correct": true
       },
       {
         "text": "Lie him flat on his stomach and tell him to rest his hand",
         "correct": false
       }
     ],
-    "explanation": "First-line control for heavy bleeding is firm, direct pressure with a sterile dressing. Tourniquets are indicated if direct pressure fails to control catastrophic limb haemorrhage. Washing the wound increases bleeding and should be avoided. Place him flat on his back (supine) to treat for shock, never on his stomach."
+    "explanation": "Current JRCALC/SJA guidelines state that a tourniquet is the first-line treatment for catastrophic limb haemorrhage. Apply it firmly above the bleeding point. Washing the wound increases bleeding and should be avoided. Place him flat on his back (supine) to treat for shock, never on his stomach."
   },
   "levelFlags": {
     "availableTo": ["cfa", "er"],

@@ -5,7 +5,7 @@
   "title": "Suspected broken ankle at a football stadium",
   "setting": "Football stadium catering area. Fan fell over seats while celebrating, suspected broken ankle, pain 8/10, friends think he is fine.",
   "correctVerdict": "sick",
-  "verdictExplanation": "Suspected broken ankle, pain 8/10, pale/sweating, and hypotension (90/65). Sick: immediate immobilization and 999.",
+  "verdictExplanation": "Suspected broken ankle, pain 8/10, pale/sweating. Sick: immediate immobilization and 999.",
   "observations": {
     "shared": {
       "fastTest": "Negative",
@@ -20,9 +20,9 @@
     "er": {
       "acvpu": "Alert",
       "pupilSize": "Equal and reactive",
-      "pulseOximetry": "88%",
-      "bloodGlucose": "12 mmol/L",
-      "bloodPressure": "90/65 mmHg"
+      "pulseOximetry": "98%",
+      "bloodGlucose": "5.6 mmol/L",
+      "bloodPressure": "125/78 mmHg"
     }
   },
   "primarySurvey": {
@@ -55,7 +55,7 @@
         "correct": true
       },
       {
-        "text": "Encourage him to stand and walk to proof it is not broken",
+        "text": "Encourage him to stand and walk to prove it is not broken",
         "correct": false
       },
       {
@@ -72,6 +72,6 @@
   "levelFlags": {
     "availableTo": ["cfa", "er"],
     "cfaNotes": "Call 999. Support ankle, keep at rest. Reassure patient.",
-    "erNotes": "ACS protocol. Administer oxygen if SpO\u2082 <94%. Splint ankle in position of comfort. Monitor vitals closely, prepare AED in case of arrest."
+    "erNotes": "Splint the ankle in position found. Do not attempt to realign. Assess and manage pain. Check circulation distal to the fracture (pedal pulse, sensation, movement). Arrange hospital transfer."
   }
 }

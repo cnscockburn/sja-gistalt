@@ -76,7 +76,7 @@
       "acvpu": "Voice",
       "respirationRate": "25/min",
       "pulseRate": "115 bpm",
-      "temperature": "39.6\u00b0C",
+      "temperature": "40.1\u00b0C (varies 39-41\u00b0C across multiple readings)",
       "bloodPressure": "90/55 mmHg"
     },
     "followUp": {
