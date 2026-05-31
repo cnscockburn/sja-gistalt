@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'expo-router';
-import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, space, type } from '@/constants/theme';
@@ -8,6 +8,7 @@ import type { Level } from '@/types/level';
 import { LEVEL_SHORT } from '@/types/level';
 import { resolveFollowUp } from '@/types/scenario';
 import { availableMarksForScenario } from '@/utils/scoring';
+import { ConfirmModal } from '@/components/ui/ConfirmModal';
 import { Pill } from '@/components/ui/Pill';
 import { ProgressBar } from '@/components/game/ProgressBar';
 import { SwipeableCard } from '@/components/game/SwipeableCard';
@@ -82,6 +83,7 @@ export default function GameScreen() {
   const recordEvolving = useGame((s) => s.recordEvolving);
   const reset = useGame((s) => s.reset);
   const recallMode = useSettings((s) => s.recallMode);
+  const [leaveModalVisible, setLeaveModalVisible] = useState(false);
 
   const status = session?.status;
 
@@ -100,22 +102,9 @@ export default function GameScreen() {
   const { level } = session;
   const isLast = session.currentIndex === session.deck.length - 1;
 
-  const leave = () => {
-    Alert.alert(
-      'Leave session?',
-      'Your current session will be cleared. Start a new one from the home screen.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Leave',
-          style: 'destructive',
-          onPress: () => {
-            reset();
-            router.replace('/(tabs)');
-          },
-        },
-      ]
-    );
+  const confirmLeave = () => {
+    reset();
+    router.replace('/(tabs)');
   };
 
   const followUp = resolveFollowUp(scenario.followUp, level);
@@ -137,8 +126,23 @@ export default function GameScreen() {
 
   return (
     <View style={[styles.screen, { paddingTop: insets.top + space.sm }]}>
+      <ConfirmModal
+        visible={leaveModalVisible}
+        title="Leave session?"
+        message="Your current session will be cleared. Start a new one from the home screen."
+        confirmLabel="Leave"
+        cancelLabel="Stay"
+        destructive
+        onConfirm={confirmLeave}
+        onCancel={() => setLeaveModalVisible(false)}
+      />
+
       <View style={styles.header}>
-        <Pressable hitSlop={12} onPress={leave} accessibilityLabel="Leave session">
+        <Pressable
+          hitSlop={12}
+          onPress={() => setLeaveModalVisible(true)}
+          accessibilityLabel="Leave session"
+        >
           <Ionicons name="chevron-back" size={26} color={colors.ink} />
         </Pressable>
         <ProgressBar
