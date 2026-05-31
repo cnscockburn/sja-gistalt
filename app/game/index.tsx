@@ -100,17 +100,21 @@ export default function GameScreen() {
   const isLast = session.currentIndex === session.deck.length - 1;
 
   const leave = () => {
-    Alert.alert('Leave session?', 'Your progress will be lost.', [
-      { text: 'Cancel', style: 'cancel' },
-      {
-        text: 'Leave',
-        style: 'destructive',
-        onPress: () => {
-          reset();
-          router.replace('/(tabs)');
+    Alert.alert(
+      'Leave session?',
+      'Your current session will be cleared. Start a new one from the home screen.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Leave',
+          style: 'destructive',
+          onPress: () => {
+            reset();
+            router.replace('/(tabs)');
+          },
         },
-      },
-    ]);
+      ]
+    );
   };
 
   const followUp = resolveFollowUp(scenario.followUp, level);
@@ -226,7 +230,6 @@ const styles = StyleSheet.create({
   },
   obsTitle: {
     ...type.label,
-    fontSize: 11,
     letterSpacing: 0.5,
     textTransform: 'uppercase',
     color: colors.inkFaint,

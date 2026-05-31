@@ -18,7 +18,11 @@ const verdictLabel = (v: Verdict) => (v === 'sick' ? 'Sick' : 'Not sick');
 function Mark({ correct }: { correct: boolean }) {
   return (
     <View style={[styles.mark, { backgroundColor: correct ? colors.correct : colors.wrong }]}>
-      <Ionicons name={correct ? 'checkmark' : 'close'} size={14} color={colors.onBrand} />
+      <Ionicons
+        name={correct ? 'checkmark' : 'close'}
+        size={14}
+        color={correct ? colors.onBrand : colors.onSick}
+      />
     </View>
   );
 }

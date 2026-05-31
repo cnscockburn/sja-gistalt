@@ -69,10 +69,20 @@ export function SwipeableCard({ scenario, level, onVerdict }: SwipeableCardProps
   return (
     <GestureDetector gesture={pan}>
       <Animated.View style={[styles.fill, cardStyle]}>
-        <Animated.View style={[styles.stamp, styles.stampLeft, notSickStamp]}>
+        {/* Stamps are swipe-gesture feedback only; the VerdictButtons below are
+            the accessible path. Hide from the accessibility tree entirely. */}
+        <Animated.View
+          style={[styles.stamp, styles.stampLeft, notSickStamp]}
+          accessibilityElementsHidden
+          importantForAccessibility="no-hide-descendants"
+        >
           <Text style={[styles.stampText, styles.stampNotSick]}>NOT SICK</Text>
         </Animated.View>
-        <Animated.View style={[styles.stamp, styles.stampRight, sickStamp]}>
+        <Animated.View
+          style={[styles.stamp, styles.stampRight, sickStamp]}
+          accessibilityElementsHidden
+          importantForAccessibility="no-hide-descendants"
+        >
           <Text style={[styles.stampText, styles.stampSick]}>SICK</Text>
         </Animated.View>
         <PatientCard scenario={scenario} level={level} />
