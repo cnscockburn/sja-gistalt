@@ -3,7 +3,7 @@
   "version": "1.0",
   "guidelineReference": "SJA First Aid / seizures (epilepsy)",
   "title": "Postictal unresponsive patient at a stadium",
-  "setting": "Stadium corridor. 45M collapsed after a generalized convulsive seizure which ended 2 minutes ago. Lying on his back, unresponsive but breathing normally.",
+  "setting": "Stadium corridor. 45M collapsed, then suffered a 2-minute convulsive seizure which ended 2 minutes ago. Lying on his back, unresponsive but breathing with snoring/noisy sounds.",
   "correctVerdict": "sick",
   "verdictExplanation": "Unresponsive postictal patient who is currently unable to maintain his own airway (snoring breathing and saliva in the mouth). Sick: requires immediate airway protection.",
   "observations": {
@@ -41,7 +41,7 @@
   },
   "history": {
     "complaint": "Seizure and collapse",
-    "history": "Crashed his bike at low speed, then suffered a 2-minute convulsive seizure which has now stopped",
+    "history": "Collapsed while walking down the corridor, then suffered a 2-minute convulsive seizure which has now stopped",
     "pmh": "Known epilepsy",
     "drugs": "Anticonvulsant medication (forgot to take his dose today)",
     "injuries": "Slight bruising on his shoulder, no major visible bleeding",
