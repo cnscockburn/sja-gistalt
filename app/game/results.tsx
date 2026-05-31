@@ -19,10 +19,19 @@ export default function Results() {
   const startSession = useGame((s) => s.startSession);
   const reset = useGame((s) => s.reset);
   const stackSize = useSettings((s) => s.stackSize);
+  const incrementCompletedSessions = useSettings((s) => s.incrementCompletedSessions);
 
   useEffect(() => {
     if (!session) router.replace('/(tabs)');
   }, [session, router]);
+
+  // Count completed sessions so the home screen can collapse the
+  // "How it works" reminder for returning users after the first session.
+  useEffect(() => {
+    incrementCompletedSessions();
+    // Only fire once per results mount, not on re-renders.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const score = useMemo(() => {
     if (!session) return null;

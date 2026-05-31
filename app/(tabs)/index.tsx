@@ -8,6 +8,7 @@ import { LEVEL_LABELS, type Level } from '@/types/level';
 import type { GameMode, GameSession, RecallMode, StackSize } from '@/types/game';
 import { Segmented } from '@/components/ui/Segmented';
 import { Button } from '@/components/ui/Button';
+import { Disclosure } from '@/components/ui/Disclosure';
 import { UnofficialBanner } from '@/components/ui/UnofficialBanner';
 import { useSettings } from '@/store/settingsStore';
 import { useGame } from '@/store/gameStore';
@@ -33,6 +34,7 @@ export default function PracticeHome() {
     gameMode,
     stackSize,
     recallMode,
+    completedSessionCount,
     setLevel,
     setGameMode,
     setStackSize,
@@ -163,13 +165,12 @@ export default function PracticeHome() {
         </View>
       )}
 
-      <View style={styles.reminder}>
-        <Text style={styles.reminderTitle}>How it works</Text>
+      <Disclosure title="How it works" defaultOpen={completedSessionCount < 1}>
         <Text style={styles.reminderText}>
           Swipe left for not-sick, right for sick. Sick patients need escalation, further
           workup or transport. Not-sick patients can be treated on scene.
         </Text>
-      </View>
+      </Disclosure>
 
       <Button label={starting ? 'Preparing…' : 'Start'} onPress={onStart} />
     </ScrollView>
@@ -199,14 +200,5 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   hint: { ...type.caption, color: colors.inkFaint },
-  reminder: {
-    backgroundColor: colors.surfaceRaised,
-    borderWidth: 1,
-    borderColor: colors.line,
-    borderRadius: radius.md,
-    padding: space.lg,
-    gap: space.xs,
-  },
-  reminderTitle: { ...type.title, color: colors.ink },
   reminderText: { ...type.body, color: colors.inkSoft, lineHeight: 22 },
 });

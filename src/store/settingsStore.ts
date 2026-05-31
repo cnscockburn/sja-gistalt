@@ -14,6 +14,8 @@ interface SettingsState {
    * 'accessible' — a "Review case" panel is available during follow-up MCQs
    */
   recallMode: RecallMode;
+  /** Incremented each time a session reaches the results screen. Used to collapse the "How it works" reminder for returning users. */
+  completedSessionCount: number;
   /** True once persisted values have loaded, so routing can wait for them. */
   hydrated: boolean;
   setLevel: (level: Level) => void;
@@ -21,6 +23,7 @@ interface SettingsState {
   setGameMode: (mode: GameMode) => void;
   setStackSize: (size: StackSize) => void;
   setRecallMode: (mode: RecallMode) => void;
+  incrementCompletedSessions: () => void;
 }
 
 export const useSettings = create<SettingsState>()(
@@ -31,22 +34,33 @@ export const useSettings = create<SettingsState>()(
       gameMode: 'normal',
       stackSize: 10,
       recallMode: 'hidden',
+      completedSessionCount: 0,
       hydrated: false,
       setLevel: (level) => set({ level }),
       acknowledgeDisclaimer: () => set({ hasSeenDisclaimer: true }),
       setGameMode: (gameMode) => set({ gameMode }),
       setStackSize: (stackSize) => set({ stackSize }),
       setRecallMode: (recallMode) => set({ recallMode }),
+      incrementCompletedSessions: () =>
+        set((s) => ({ completedSessionCount: s.completedSessionCount + 1 })),
     }),
     {
       name: '@sja_gestalt/settings',
       storage: createJSONStorage(() => AsyncStorage),
-      partialize: ({ level, hasSeenDisclaimer, gameMode, stackSize, recallMode }) => ({
+      partialize: ({
         level,
         hasSeenDisclaimer,
         gameMode,
         stackSize,
         recallMode,
+        completedSessionCount,
+      }) => ({
+        level,
+        hasSeenDisclaimer,
+        gameMode,
+        stackSize,
+        recallMode,
+        completedSessionCount,
       }),
       onRehydrateStorage: () => () => {
         useSettings.setState({ hydrated: true });
