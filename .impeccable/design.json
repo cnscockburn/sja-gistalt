@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-31T00:00:00Z",
+  "title": "Design System: SJA Gestalt",
+  "extensions": {
+    "colorMeta": {
+      "warm-bone-bg": {
+        "role": "neutral",
+        "displayName": "Warm Bone",
+        "canonical": "oklch(97% 0.006 130)",
+        "tonalRamp": ["#3A3A36", "#52524E", "#6E6E68", "#8E8E88", "#AAAAAA", "#CFCEC8", "#E2E1DC", "#F6F5F1"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Cream Parchment",
+        "canonical": "oklch(98.5% 0.004 110)",
+        "tonalRamp": ["#3E3E3A", "#565652", "#727270", "#929290", "#AEAEAD", "#CCCCC8", "#E4E4E0", "#FCFBF8"]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Clean Sheet",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["#3C3C3C", "#555555", "#717171", "#909090", "#ADADAD", "#CCCCCC", "#E5E5E5", "#FFFFFF"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Forest Night",
+        "canonical": "oklch(14% 0.014 155)",
+        "tonalRamp": ["#1A1E1B", "#2E332F", "#3F453F", "#565C56", "#6E756E", "#8E958E", "#B8BEB8", "#DDE0DC"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Aged Moss",
+        "canonical": "oklch(42% 0.012 145)",
+        "tonalRamp": ["#1E231F", "#2E342F", "#3E453F", "#4D554E", "#5A615B", "#7A827C", "#A6ADA8", "#D4D8D5"]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Dusty Sage",
+        "canonical": "oklch(58% 0.010 145)",
+        "tonalRamp": ["#2A302B", "#3A413B", "#4A524B", "#5C635D", "#6E766F", "#8C918B", "#B0B5AF", "#D8DBD7"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Dry Grass",
+        "canonical": "oklch(89% 0.008 100)",
+        "tonalRamp": ["#5A5850", "#7A7870", "#959390", "#ABAAA6", "#BFC0BA", "#D0CFC8", "#D9D8D0", "#E2E0D8"]
+      },
+      "deep-pine": {
+        "role": "primary",
+        "displayName": "Deep Pine",
+        "canonical": "oklch(37% 0.115 155)",
+        "tonalRamp": ["#071E13", "#0A2F1D", "#0B4229", "#0B5E3B", "#1A8A56", "#5AAF85", "#A0D4BC", "#E6F0EA"]
+      },
+      "pine-dark": {
+        "role": "primary",
+        "displayName": "Pine Bark",
+        "canonical": "oklch(30% 0.095 155)",
+        "tonalRamp": ["#051509", "#081E11", "#0A2D1A", "#084A2E", "#0B5E3B", "#2E8A5C", "#80BEA0", "#C8E6D5"]
+      },
+      "pine-soft": {
+        "role": "primary",
+        "displayName": "Pine Mist",
+        "canonical": "oklch(93% 0.025 155)",
+        "tonalRamp": ["#1A5E3B", "#2A7A52", "#4A9E72", "#72BA96", "#A0CEB8", "#C4E0D0", "#D8EDE4", "#E6F0EA"]
+      },
+      "terracotta": {
+        "role": "secondary",
+        "displayName": "Terracotta Alarm",
+        "canonical": "oklch(45% 0.155 25)",
+        "tonalRamp": ["#3A1008", "#5A1C15", "#8A2B22", "#B23A2E", "#D46B5E", "#E99B93", "#F2C5C0", "#F6E6E3"]
+      },
+      "terracotta-soft": {
+        "role": "secondary",
+        "displayName": "Terracotta Wash",
+        "canonical": "oklch(93% 0.025 25)",
+        "tonalRamp": ["#6A2018", "#9A3028", "#C05048", "#D87870", "#E8A09A", "#F2C5C0", "#F6D8D5", "#F6E6E3"]
+      },
+      "saffron": {
+        "role": "tertiary",
+        "displayName": "Warm Saffron",
+        "canonical": "oklch(76% 0.135 75)",
+        "tonalRamp": ["#4A3200", "#6A4800", "#8A6312", "#B28030", "#D4A040", "#E8B23A", "#F2CA78", "#FBF1DE"]
+      },
+      "amber-note": {
+        "role": "tertiary",
+        "displayName": "Amber Parchment",
+        "canonical": "oklch(96% 0.030 82)",
+        "tonalRamp": ["#3A2A00", "#5A4200", "#7A5C0A", "#9E7E28", "#C0A050", "#D8C080", "#ECD8B0", "#FBF1DE"]
+      },
+      "amber-note-text": {
+        "role": "tertiary",
+        "displayName": "Amber Brown",
+        "canonical": "oklch(47% 0.095 70)",
+        "tonalRamp": ["#3A2000", "#5A3800", "#7A5210", "#8A6312", "#A88028", "#C8A050", "#E0C890", "#F5E8C8"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Session score reveal and scenario result totals. One instance per screen maximum." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings and results summary headers." },
+      "subtitle": { "displayName": "Subtitle", "purpose": "Secondary screen headings." },
+      "title": { "displayName": "Title", "purpose": "Card titles, button labels, verdict button labels." },
+      "body": { "displayName": "Body", "purpose": "Scenario setting text, answer option text. Line length naturally limited by mobile viewport." },
+      "label": { "displayName": "Label", "purpose": "Table headers, section labels, disclosure row headers, pill text." },
+      "caption": { "displayName": "Caption", "purpose": "Supporting metadata, timestamps, unofficial disclaimer text." },
+      "mono": { "displayName": "Clinical Mono", "purpose": "Clinical numerals and vital values only. Monospace for tabular scanning alignment." }
+    },
+    "shadows": [
+      {
+        "name": "card",
+        "value": "0 6px 16px rgba(26, 30, 27, 0.08)",
+        "purpose": "Patient card only. Communicates swipe affordance. Diffuse, not decorative. React Native: shadowOpacity 0.08, shadowRadius 16, offset 0/6, elevation 4."
+      },
+      {
+        "name": "segment-lift",
+        "value": "0 2px 6px rgba(26, 30, 27, 0.06)",
+        "purpose": "Active segment of segmented control. Communicates selection state as a subtle float-above-track cue. React Native: shadowOpacity 0.06, shadowRadius 6, offset 0/2, elevation 2."
+      }
+    ],
+    "motion": [
+      {
+        "name": "swipe-commit",
+        "value": "withTiming, easeOut, 200ms",
+        "purpose": "Patient card swipe commits. Card follows finger; release snaps to committed position or springs back."
+      },
+      {
+        "name": "press-feedback",
+        "value": "opacity 0.85, scale 0.99, immediate",
+        "purpose": "Button press state. Fast enough to feel tactile; slow enough to register."
+      },
+      {
+        "name": "verdict-press",
+        "value": "opacity 0.88, scale 0.98, immediate",
+        "purpose": "Verdict button press. Slightly more pronounced than regular button for the high-stakes action."
+      },
+      {
+        "name": "disclosure-expand",
+        "value": "LayoutAnimation.easeInEaseOut",
+        "purpose": "Disclosure row open/close animation. Smooth layout transition, no bounce."
+      },
+      {
+        "name": "image-transition",
+        "value": "fade, 150ms",
+        "purpose": "Scenario image load-in. expo-image transition prop."
+      }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default call-to-action. Deep Pine fill, Moonlit Bone text, 12px radius, 52px height.",
+      "html": "<button class=\"ds-btn-primary\">Start Session</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; background: #0B5E3B; color: #F6F5F1; font-family: -apple-system, sans-serif; font-size: 17px; font-weight: 600; border: none; border-radius: 12px; cursor: pointer; transition: opacity 0.1s, transform 0.1s; } .ds-btn-primary:hover { opacity: 0.92; } .ds-btn-primary:active { opacity: 0.85; transform: scale(0.99); } .ds-btn-primary:focus-visible { outline: 3px solid #0B5E3B; outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Non-primary action on same surface. White fill with 1px Warm Stone border.",
+      "html": "<button class=\"ds-btn-secondary\">Resume</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; background: #FFFFFF; color: #1A1E1B; font-family: -apple-system, sans-serif; font-size: 17px; font-weight: 600; border: 1px solid #CFCCC0; border-radius: 12px; cursor: pointer; transition: opacity 0.1s, transform 0.1s; } .ds-btn-secondary:hover { background: #F6F5F1; } .ds-btn-secondary:active { opacity: 0.85; transform: scale(0.99); } .ds-btn-secondary:focus-visible { outline: 3px solid #0B5E3B; outline-offset: 3px; }"
+    },
+    {
+      "name": "Verdict: Not Sick",
+      "kind": "button",
+      "refersTo": "verdict-not-sick",
+      "description": "Left verdict button. Pine Mist fill, 2px Deep Pine border. Calm, affirming. Fixed bottom, min 64px.",
+      "html": "<button class=\"ds-verdict-not-sick\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B5E3B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"15 18 9 12 15 6\"/></svg>Not sick</button>",
+      "css": ".ds-verdict-not-sick { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 64px; flex: 1; padding: 0 16px; background: #E6F0EA; color: #0B5E3B; font-family: -apple-system, sans-serif; font-size: 18px; font-weight: 600; border: 2px solid #0B5E3B; border-radius: 12px; cursor: pointer; transition: opacity 0.1s, transform 0.1s; } .ds-verdict-not-sick:active { opacity: 0.88; transform: scale(0.98); } .ds-verdict-not-sick:focus-visible { outline: 3px solid #0B5E3B; outline-offset: 3px; }"
+    },
+    {
+      "name": "Verdict: Sick",
+      "kind": "button",
+      "refersTo": "verdict-sick",
+      "description": "Right verdict button. Terracotta Alarm fill, Pale Ash text. Urgent, decisive. Fixed bottom, min 64px.",
+      "html": "<button class=\"ds-verdict-sick\">Sick<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#FBF1EF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"9 18 15 12 9 6\"/></svg></button>",
+      "css": ".ds-verdict-sick { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 64px; flex: 1; padding: 0 16px; background: #B23A2E; color: #FBF1EF; font-family: -apple-system, sans-serif; font-size: 18px; font-weight: 600; border: none; border-radius: 12px; cursor: pointer; transition: opacity 0.1s, transform 0.1s; } .ds-verdict-sick:active { opacity: 0.88; transform: scale(0.98); } .ds-verdict-sick:focus-visible { outline: 3px solid #B23A2E; outline-offset: 3px; }"
+    },
+    {
+      "name": "MCQ Option (Idle)",
+      "kind": "custom",
+      "refersTo": "mcq-option-idle",
+      "description": "Answer row in idle state. Lettered badge, answer text. Transforms on reveal.",
+      "html": "<button class=\"ds-mcq-option\"><span class=\"ds-mcq-badge\">A</span><span class=\"ds-mcq-text\">Apply direct pressure and elevate the limb</span></button>",
+      "css": ".ds-mcq-option { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 60px; padding: 16px; background: #FFFFFF; color: #1A1E1B; font-family: -apple-system, sans-serif; font-size: 15px; font-weight: 400; border: 1px solid #E2E0D8; border-radius: 12px; cursor: pointer; text-align: left; transition: opacity 0.1s, transform 0.1s; } .ds-mcq-option:hover { background: #FCFBF8; } .ds-mcq-option:active { opacity: 0.9; transform: scale(0.995); } .ds-mcq-option:focus-visible { outline: 3px solid #0B5E3B; outline-offset: 2px; } .ds-mcq-badge { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; min-width: 28px; background: #F6F5F1; color: #5A615B; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; border-radius: 999px; } .ds-mcq-text { flex: 1; line-height: 21px; }"
+    },
+    {
+      "name": "MCQ Option (Correct)",
+      "kind": "custom",
+      "refersTo": "mcq-option-correct",
+      "description": "Correct-answer reveal state. Pine Mist background, Deep Pine border, checkmark badge.",
+      "html": "<button class=\"ds-mcq-option ds-mcq-correct\" disabled><span class=\"ds-mcq-badge ds-mcq-badge-correct\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#F6F5F1\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span class=\"ds-mcq-text\">Apply direct pressure and elevate the limb</span></button>",
+      "css": ".ds-mcq-correct { background: #E6F0EA; border-color: #0B5E3B; } .ds-mcq-badge-correct { background: #0B5E3B; }"
+    },
+    {
+      "name": "MCQ Option (Wrong)",
+      "kind": "custom",
+      "refersTo": "mcq-option-wrong",
+      "description": "Wrong-answer reveal state. Terracotta Wash background, Terracotta border, X badge.",
+      "html": "<button class=\"ds-mcq-option ds-mcq-wrong\" disabled><span class=\"ds-mcq-badge ds-mcq-badge-wrong\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#FBF1EF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></span><span class=\"ds-mcq-text\">Call 999 immediately</span></button>",
+      "css": ".ds-mcq-wrong { background: #F6E6E3; border-color: #B23A2E; } .ds-mcq-badge-wrong { background: #B23A2E; }"
+    },
+    {
+      "name": "Pill: Brand",
+      "kind": "chip",
+      "refersTo": "pill-brand",
+      "description": "Clinical level or skill category badge. Pine Mist background, Pine Dark text, pill radius.",
+      "html": "<span class=\"ds-pill ds-pill-brand\">Community First Aider</span>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; padding: 4px 12px; font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; border-radius: 999px; white-space: nowrap; } .ds-pill-brand { background: #E6F0EA; color: #084A2E; }"
+    },
+    {
+      "name": "Pill: Neutral",
+      "kind": "chip",
+      "refersTo": "pill-neutral",
+      "description": "Secondary metadata badge. Dry Grass background, Aged Moss text.",
+      "html": "<span class=\"ds-pill ds-pill-neutral\">12 scenarios</span>",
+      "css": ".ds-pill-neutral { background: #E2E0D8; color: #5A615B; }"
+    },
+    {
+      "name": "Pill: Warn",
+      "kind": "chip",
+      "refersTo": "pill-warn",
+      "description": "Status note or informational flag. Amber Parchment background, Amber Brown text.",
+      "html": "<span class=\"ds-pill ds-pill-warn\">Practice only</span>",
+      "css": ".ds-pill-warn { background: #FBF1DE; color: #8A6312; }"
+    },
+    {
+      "name": "Disclosure Row",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Expandable clinical detail section. Cream Parchment background, hairline border, chevron toggle.",
+      "html": "<div class=\"ds-disclosure\"><button class=\"ds-disclosure-header\" aria-expanded=\"false\"><span class=\"ds-disclosure-title\">History &amp; background</span><svg class=\"ds-disclosure-chevron\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5A615B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></button></div>",
+      "css": ".ds-disclosure { background: #FCFBF8; border: 1px solid #E2E0D8; border-radius: 12px; overflow: hidden; } .ds-disclosure-header { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 48px; padding: 0 16px; background: transparent; border: none; cursor: pointer; } .ds-disclosure-header:hover { background: #F6F5F1; } .ds-disclosure-header:focus-visible { outline: 3px solid #0B5E3B; outline-offset: -3px; } .ds-disclosure-title { font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; color: #1A1E1B; }"
+    },
+    {
+      "name": "Unofficial Banner",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Non-dismissable informational disclaimer. Amber Parchment background, info icon, caption text. Present wherever clinical content is visible.",
+      "html": "<div class=\"ds-unofficial-banner\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#8A6312\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"/><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"/></svg><span class=\"ds-unofficial-text\">Independent practice tool. Not an official St John Ambulance product.</span></div>",
+      "css": ".ds-unofficial-banner { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #FBF1DE; border-radius: 8px; } .ds-unofficial-text { font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 400; color: #8A6312; flex: 1; line-height: 1.4; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Binary/ternary toggle. Dry Grass track, Clean Sheet active segment with lift shadow. Used for CFA/ER level selection.",
+      "html": "<div class=\"ds-segmented\"><button class=\"ds-segment ds-segment-active\">CFA</button><button class=\"ds-segment\">ER</button></div>",
+      "css": ".ds-segmented { display: flex; gap: 4px; padding: 4px; background: #E2E0D8; border-radius: 12px; } .ds-segment { flex: 1; min-height: 44px; padding: 0 8px; background: transparent; color: #5A615B; font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.15s, box-shadow 0.15s, color 0.15s; } .ds-segment:hover { background: rgba(255,255,255,0.4); } .ds-segment-active { background: #FFFFFF; color: #1A1E1B; box-shadow: 0 2px 6px rgba(26, 30, 27, 0.06); } .ds-segment:focus-visible { outline: 3px solid #0B5E3B; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Medic's Notebook",
+    "overview": "This is a clinical training tool used under stress, outdoors, one-handed. The aesthetic reflects a well-thumbed field notebook: warm bone paper, ink that has settled into the page, purposeful structure with no decorative noise. Every design decision exists to accelerate a clinical decision, not to express brand personality.\n\nThe system explicitly rejects clinical white (sterile, generic hospital-app), emergency green (first-reflex SJA-official), and the neon-red or alarm-orange typical of emergency-services interfaces. Alarm color is earned through context. It appears only when the stakes demand it, always paired with an icon and text label so color is never the sole signal.\n\nThe experience is calibrated for sunlight legibility. An SJA volunteer at a crowded outdoor county show, glancing one-handed between patients, should be able to read a primary survey, make a verdict call, and move to the next scenario in under 30 seconds. Density is a virtue here.",
+    "keyCharacteristics": [
+      "Light-only (sunlight legibility; no dark mode at launch)",
+      "Warm bone/cream surfaces, never clinical white or pure black",
+      "Semantic alarm color paired with icon and label (never color alone)",
+      "Touch targets 52px minimum (64px for the verdict decision)",
+      "Monospace numerals for clinical vitals; system sans for all other text",
+      "Tonal-layering depth model; patient card is the only true raised surface",
+      "No decorative shadows, glassmorphism, gradient text, or side-stripe borders",
+      "UnofficialBanner appears wherever clinical content is visible; not dismissable"
+    ],
+    "rules": [
+      {
+        "name": "The Non-Color-Alone Rule",
+        "body": "Every instance of Terracotta or Deep Pine in a semantic context (sick/not-sick, correct/wrong) must be paired with a text label and an icon. Color is reinforcement, not signal.",
+        "section": "colors"
+      },
+      {
+        "name": "The Saffron Ceiling Rule",
+        "body": "Warm Saffron covers under 10% of any given screen. Its rarity is what makes it readable as 'note, not action.' Saffron on a button, input, or segmented control is a design error.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono-Is-Clinical Rule",
+        "body": "Monospace type is for clinical numerals and vital values only. Using it for decoration, branding, or copywriting is prohibited.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight-Over-Size Rule",
+        "body": "Hierarchy is established first through weight contrast (700/600/400), then confirmed by size. Never set two adjacent text elements at the same weight with different sizes to create hierarchy.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Every surface starts flat. A shadow must justify itself by naming the physical affordance it communicates (swipe, selection lift). New shadows without that justification are design errors.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Three-Level Rule",
+        "body": "The depth stack is: ground (Warm Bone), field (Cream Parchment), foreground (Clean Sheet). A surface outside this hierarchy is suspect. Nested cards at the same level violate this rule.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use Deep Pine (#0B5E3B) for primary actions, active states, correct-answer reveals, and the 'not sick' verdict. It is the only green allowed.",
+      "Do pair every semantic color instance with a text label and an icon. Non-color cues are mandatory.",
+      "Do use monospace type exclusively for clinical numerals and vital values.",
+      "Do reserve Clean Sheet (#FFFFFF) for foregrounded interactive surfaces: the patient card and MCQ option rows.",
+      "Do keep verdict buttons at 64px min-height, fixed below the scroll view, always reachable without scrolling.",
+      "Do add haptic feedback to verdict commits (ImpactFeedbackStyle.Medium) and MCQ selections.",
+      "Do include the UnofficialBanner on every screen where clinical content is visible.",
+      "Do cap Warm Saffron (#E8B23A) at under 10% of any screen surface."
+    ],
+    "donts": [
+      "Don't use clinical white, pure #000, or emergency green (#00C853-family) for surface or text.",
+      "Don't use red cross iconography, generic medical clip-art, or bright emergency-service color palettes.",
+      "Don't nest cards within the patient card. The patient card is the only true raised card.",
+      "Don't use color as the sole signal for sick/not-sick or correct/wrong.",
+      "Don't place Warm Saffron on buttons, inputs, segmented controls, or any interactive surface.",
+      "Don't add decorative shadows, glassmorphism, gradient overlays, gradient text, or side-stripe border accents.",
+      "Don't reference St John Ambulance's official brand identity: no SJA cross, no official logo, no 'SJA' wordmark.",
+      "Don't introduce dark-mode UI patterns. Light-only at launch.",
+      "Don't add bounce or elastic motion curves, decorative entrance animations, or scroll-driven choreography."
+    ]
+  }
+}
