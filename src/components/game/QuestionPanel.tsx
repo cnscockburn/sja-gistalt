@@ -3,7 +3,10 @@ import * as Haptics from 'expo-haptics';
 import { StyleSheet, Text, View } from 'react-native';
 import { colors, radius, space, type } from '@/constants/theme';
 import type { Level } from '@/types/level';
-import type { FollowUpQuestion } from '@/types/scenario';
+import type { FollowUpQuestion, Scenario } from '@/types/scenario';
+import type { RecallMode } from '@/types/game';
+import { Disclosure } from '@/components/ui/Disclosure';
+import { HeadlineVitals } from '@/components/card/HeadlineVitals';
 import { Button } from '@/components/ui/Button';
 import { MCQOption, type MCQOptionState } from './MCQOption';
 
@@ -12,6 +15,9 @@ interface QuestionPanelProps {
   level: Level;
   onComplete: (answerIndex: number) => void;
   continueLabel?: string;
+  /** When provided, a "Review case" disclosure renders above the question. */
+  scenario?: Scenario;
+  recallMode?: RecallMode;
 }
 
 export function QuestionPanel({
@@ -19,6 +25,8 @@ export function QuestionPanel({
   level,
   onComplete,
   continueLabel = 'Continue',
+  scenario,
+  recallMode = 'hidden',
 }: QuestionPanelProps) {
   const [selected, setSelected] = useState<number | null>(null);
   const answered = selected !== null;
@@ -47,6 +55,15 @@ export function QuestionPanel({
 
   return (
     <View style={styles.wrap}>
+      {scenario && (
+        <Disclosure title="Review case" defaultOpen={recallMode === 'accessible'}>
+          <View style={styles.caseContext}>
+            <Text style={styles.caseSetting}>{scenario.setting}</Text>
+            <HeadlineVitals scenario={scenario} level={level} />
+          </View>
+        </Disclosure>
+      )}
+
       <Text style={styles.question}>{question.question}</Text>
 
       <View style={styles.options}>
@@ -77,6 +94,8 @@ export function QuestionPanel({
 
 const styles = StyleSheet.create({
   wrap: { gap: space.lg },
+  caseContext: { gap: space.md, paddingBottom: space.xs },
+  caseSetting: { ...type.body, color: colors.inkSoft, lineHeight: 22 },
   question: { ...type.h2, color: colors.ink, lineHeight: 27 },
   options: { gap: space.md },
   explain: {

@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, space, type } from '@/constants/theme';
 import { LEVEL_LABELS, type Level } from '@/types/level';
-import type { GameMode, GameSession, StackSize } from '@/types/game';
+import type { GameMode, GameSession, RecallMode, StackSize } from '@/types/game';
 import { Segmented } from '@/components/ui/Segmented';
 import { Button } from '@/components/ui/Button';
 import { UnofficialBanner } from '@/components/ui/UnofficialBanner';
@@ -19,11 +19,25 @@ const MODE_HINT: Record<GameMode, string> = {
   'swipe-only': 'Just the sick or not-sick call. No follow-up questions.',
 };
 
+const RECALL_HINT: Record<RecallMode, string> = {
+  hidden: 'Patient card disappears after your verdict — tests recall as well as reasoning.',
+  accessible: 'A "Review case" panel is available during follow-up questions.',
+};
+
 export default function PracticeHome() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
 
-  const { level, gameMode, stackSize, setLevel, setGameMode, setStackSize } = useSettings();
+  const {
+    level,
+    gameMode,
+    stackSize,
+    recallMode,
+    setLevel,
+    setGameMode,
+    setStackSize,
+    setRecallMode,
+  } = useSettings();
   const startSession = useGame((s) => s.startSession);
   const resumeSession = useGame((s) => s.resumeSession);
 
@@ -133,6 +147,21 @@ export default function PracticeHome() {
         />
         <Text style={styles.hint}>{MODE_HINT[gameMode]}</Text>
       </View>
+
+      {gameMode === 'normal' && (
+        <View style={styles.section}>
+          <Text style={styles.sectionLabel}>Case recall</Text>
+          <Segmented<RecallMode>
+            options={[
+              { label: 'Hidden', value: 'hidden' },
+              { label: 'Accessible', value: 'accessible' },
+            ]}
+            value={recallMode}
+            onChange={setRecallMode}
+          />
+          <Text style={styles.hint}>{RECALL_HINT[recallMode]}</Text>
+        </View>
+      )}
 
       <View style={styles.reminder}>
         <Text style={styles.reminderTitle}>How it works</Text>

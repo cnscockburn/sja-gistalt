@@ -3,6 +3,8 @@ import type { Scenario, Verdict } from './scenario';
 
 export type GameMode = 'normal' | 'swipe-only';
 export type StackSize = 10 | 20 | 30;
+/** Controls whether the patient card context is hidden (recall challenge) or accessible during follow-up MCQs. */
+export type RecallMode = 'hidden' | 'accessible';
 
 export interface AnswerRecord {
   scenarioId: string;

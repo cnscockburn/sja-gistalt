@@ -14,6 +14,7 @@ import { VerdictButtons } from '@/components/game/VerdictButtons';
 import { QuestionPanel } from '@/components/game/QuestionPanel';
 import { DataRow } from '@/components/card/DataRow';
 import { useGame } from '@/store/gameStore';
+import { useSettings } from '@/store/settingsStore';
 
 const OBS_LABELS: Record<string, string> = {
   fastTest: 'FAST test',
@@ -79,6 +80,7 @@ export default function GameScreen() {
   const recordFollowup = useGame((s) => s.recordFollowup);
   const recordEvolving = useGame((s) => s.recordEvolving);
   const reset = useGame((s) => s.reset);
+  const recallMode = useSettings((s) => s.recallMode);
 
   const status = session?.status;
 
@@ -155,6 +157,8 @@ export default function GameScreen() {
             level={level}
             onComplete={recordFollowup}
             continueLabel={followupContinue}
+            scenario={scenario}
+            recallMode={recallMode}
           />
         </ScrollView>
       )}
@@ -177,6 +181,8 @@ export default function GameScreen() {
             level={level}
             onComplete={recordEvolving}
             continueLabel={evolvingContinue}
+            scenario={scenario}
+            recallMode={recallMode}
           />
         </ScrollView>
       )}

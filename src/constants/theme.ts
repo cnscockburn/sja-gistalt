@@ -11,7 +11,7 @@ export const colors = {
   surfaceRaised: '#FFFFFF',
   ink: '#1A1E1B',
   inkSoft: '#5A615B',
-  inkFaint: '#8C918B',
+  inkFaint: '#686D67', // darkened from #8C918B — passes WCAG AA (~4.85:1 on bg)
   line: '#E2E0D8',
   lineStrong: '#CFCcC0',
 

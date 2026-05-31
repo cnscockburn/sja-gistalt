@@ -8,102 +8,258 @@
         "role": "neutral",
         "displayName": "Warm Bone",
         "canonical": "oklch(97% 0.006 130)",
-        "tonalRamp": ["#3A3A36", "#52524E", "#6E6E68", "#8E8E88", "#AAAAAA", "#CFCEC8", "#E2E1DC", "#F6F5F1"]
+        "tonalRamp": [
+          "#3A3A36",
+          "#52524E",
+          "#6E6E68",
+          "#8E8E88",
+          "#AAAAAA",
+          "#CFCEC8",
+          "#E2E1DC",
+          "#F6F5F1"
+        ]
       },
       "surface": {
         "role": "neutral",
         "displayName": "Cream Parchment",
         "canonical": "oklch(98.5% 0.004 110)",
-        "tonalRamp": ["#3E3E3A", "#565652", "#727270", "#929290", "#AEAEAD", "#CCCCC8", "#E4E4E0", "#FCFBF8"]
+        "tonalRamp": [
+          "#3E3E3A",
+          "#565652",
+          "#727270",
+          "#929290",
+          "#AEAEAD",
+          "#CCCCC8",
+          "#E4E4E0",
+          "#FCFBF8"
+        ]
       },
       "surface-raised": {
         "role": "neutral",
         "displayName": "Clean Sheet",
         "canonical": "oklch(100% 0 0)",
-        "tonalRamp": ["#3C3C3C", "#555555", "#717171", "#909090", "#ADADAD", "#CCCCCC", "#E5E5E5", "#FFFFFF"]
+        "tonalRamp": [
+          "#3C3C3C",
+          "#555555",
+          "#717171",
+          "#909090",
+          "#ADADAD",
+          "#CCCCCC",
+          "#E5E5E5",
+          "#FFFFFF"
+        ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Forest Night",
         "canonical": "oklch(14% 0.014 155)",
-        "tonalRamp": ["#1A1E1B", "#2E332F", "#3F453F", "#565C56", "#6E756E", "#8E958E", "#B8BEB8", "#DDE0DC"]
+        "tonalRamp": [
+          "#1A1E1B",
+          "#2E332F",
+          "#3F453F",
+          "#565C56",
+          "#6E756E",
+          "#8E958E",
+          "#B8BEB8",
+          "#DDE0DC"
+        ]
       },
       "ink-soft": {
         "role": "neutral",
         "displayName": "Aged Moss",
         "canonical": "oklch(42% 0.012 145)",
-        "tonalRamp": ["#1E231F", "#2E342F", "#3E453F", "#4D554E", "#5A615B", "#7A827C", "#A6ADA8", "#D4D8D5"]
+        "tonalRamp": [
+          "#1E231F",
+          "#2E342F",
+          "#3E453F",
+          "#4D554E",
+          "#5A615B",
+          "#7A827C",
+          "#A6ADA8",
+          "#D4D8D5"
+        ]
       },
       "ink-faint": {
         "role": "neutral",
         "displayName": "Dusty Sage",
         "canonical": "oklch(58% 0.010 145)",
-        "tonalRamp": ["#2A302B", "#3A413B", "#4A524B", "#5C635D", "#6E766F", "#8C918B", "#B0B5AF", "#D8DBD7"]
+        "tonalRamp": [
+          "#2A302B",
+          "#3A413B",
+          "#4A524B",
+          "#5C635D",
+          "#6E766F",
+          "#8C918B",
+          "#B0B5AF",
+          "#D8DBD7"
+        ]
       },
       "line": {
         "role": "neutral",
         "displayName": "Dry Grass",
         "canonical": "oklch(89% 0.008 100)",
-        "tonalRamp": ["#5A5850", "#7A7870", "#959390", "#ABAAA6", "#BFC0BA", "#D0CFC8", "#D9D8D0", "#E2E0D8"]
+        "tonalRamp": [
+          "#5A5850",
+          "#7A7870",
+          "#959390",
+          "#ABAAA6",
+          "#BFC0BA",
+          "#D0CFC8",
+          "#D9D8D0",
+          "#E2E0D8"
+        ]
       },
       "deep-pine": {
         "role": "primary",
         "displayName": "Deep Pine",
         "canonical": "oklch(37% 0.115 155)",
-        "tonalRamp": ["#071E13", "#0A2F1D", "#0B4229", "#0B5E3B", "#1A8A56", "#5AAF85", "#A0D4BC", "#E6F0EA"]
+        "tonalRamp": [
+          "#071E13",
+          "#0A2F1D",
+          "#0B4229",
+          "#0B5E3B",
+          "#1A8A56",
+          "#5AAF85",
+          "#A0D4BC",
+          "#E6F0EA"
+        ]
       },
       "pine-dark": {
         "role": "primary",
         "displayName": "Pine Bark",
         "canonical": "oklch(30% 0.095 155)",
-        "tonalRamp": ["#051509", "#081E11", "#0A2D1A", "#084A2E", "#0B5E3B", "#2E8A5C", "#80BEA0", "#C8E6D5"]
+        "tonalRamp": [
+          "#051509",
+          "#081E11",
+          "#0A2D1A",
+          "#084A2E",
+          "#0B5E3B",
+          "#2E8A5C",
+          "#80BEA0",
+          "#C8E6D5"
+        ]
       },
       "pine-soft": {
         "role": "primary",
         "displayName": "Pine Mist",
         "canonical": "oklch(93% 0.025 155)",
-        "tonalRamp": ["#1A5E3B", "#2A7A52", "#4A9E72", "#72BA96", "#A0CEB8", "#C4E0D0", "#D8EDE4", "#E6F0EA"]
+        "tonalRamp": [
+          "#1A5E3B",
+          "#2A7A52",
+          "#4A9E72",
+          "#72BA96",
+          "#A0CEB8",
+          "#C4E0D0",
+          "#D8EDE4",
+          "#E6F0EA"
+        ]
       },
       "terracotta": {
         "role": "secondary",
         "displayName": "Terracotta Alarm",
         "canonical": "oklch(45% 0.155 25)",
-        "tonalRamp": ["#3A1008", "#5A1C15", "#8A2B22", "#B23A2E", "#D46B5E", "#E99B93", "#F2C5C0", "#F6E6E3"]
+        "tonalRamp": [
+          "#3A1008",
+          "#5A1C15",
+          "#8A2B22",
+          "#B23A2E",
+          "#D46B5E",
+          "#E99B93",
+          "#F2C5C0",
+          "#F6E6E3"
+        ]
       },
       "terracotta-soft": {
         "role": "secondary",
         "displayName": "Terracotta Wash",
         "canonical": "oklch(93% 0.025 25)",
-        "tonalRamp": ["#6A2018", "#9A3028", "#C05048", "#D87870", "#E8A09A", "#F2C5C0", "#F6D8D5", "#F6E6E3"]
+        "tonalRamp": [
+          "#6A2018",
+          "#9A3028",
+          "#C05048",
+          "#D87870",
+          "#E8A09A",
+          "#F2C5C0",
+          "#F6D8D5",
+          "#F6E6E3"
+        ]
       },
       "saffron": {
         "role": "tertiary",
         "displayName": "Warm Saffron",
         "canonical": "oklch(76% 0.135 75)",
-        "tonalRamp": ["#4A3200", "#6A4800", "#8A6312", "#B28030", "#D4A040", "#E8B23A", "#F2CA78", "#FBF1DE"]
+        "tonalRamp": [
+          "#4A3200",
+          "#6A4800",
+          "#8A6312",
+          "#B28030",
+          "#D4A040",
+          "#E8B23A",
+          "#F2CA78",
+          "#FBF1DE"
+        ]
       },
       "amber-note": {
         "role": "tertiary",
         "displayName": "Amber Parchment",
         "canonical": "oklch(96% 0.030 82)",
-        "tonalRamp": ["#3A2A00", "#5A4200", "#7A5C0A", "#9E7E28", "#C0A050", "#D8C080", "#ECD8B0", "#FBF1DE"]
+        "tonalRamp": [
+          "#3A2A00",
+          "#5A4200",
+          "#7A5C0A",
+          "#9E7E28",
+          "#C0A050",
+          "#D8C080",
+          "#ECD8B0",
+          "#FBF1DE"
+        ]
       },
       "amber-note-text": {
         "role": "tertiary",
         "displayName": "Amber Brown",
         "canonical": "oklch(47% 0.095 70)",
-        "tonalRamp": ["#3A2000", "#5A3800", "#7A5210", "#8A6312", "#A88028", "#C8A050", "#E0C890", "#F5E8C8"]
+        "tonalRamp": [
+          "#3A2000",
+          "#5A3800",
+          "#7A5210",
+          "#8A6312",
+          "#A88028",
+          "#C8A050",
+          "#E0C890",
+          "#F5E8C8"
+        ]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Session score reveal and scenario result totals. One instance per screen maximum." },
-      "headline": { "displayName": "Headline", "purpose": "Section headings and results summary headers." },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Session score reveal and scenario result totals. One instance per screen maximum."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings and results summary headers."
+      },
       "subtitle": { "displayName": "Subtitle", "purpose": "Secondary screen headings." },
-      "title": { "displayName": "Title", "purpose": "Card titles, button labels, verdict button labels." },
-      "body": { "displayName": "Body", "purpose": "Scenario setting text, answer option text. Line length naturally limited by mobile viewport." },
-      "label": { "displayName": "Label", "purpose": "Table headers, section labels, disclosure row headers, pill text." },
-      "caption": { "displayName": "Caption", "purpose": "Supporting metadata, timestamps, unofficial disclaimer text." },
-      "mono": { "displayName": "Clinical Mono", "purpose": "Clinical numerals and vital values only. Monospace for tabular scanning alignment." }
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles, button labels, verdict button labels."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Scenario setting text, answer option text. Line length naturally limited by mobile viewport."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table headers, section labels, disclosure row headers, pill text."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Supporting metadata, timestamps, unofficial disclaimer text."
+      },
+      "mono": {
+        "displayName": "Clinical Mono",
+        "purpose": "Clinical numerals and vital values only. Monospace for tabular scanning alignment."
+      }
     },
     "shadows": [
       {
