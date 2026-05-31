@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { colors, elevation, radius, space, type } from '@/constants/theme';
 import type { Level } from '@/types/level';
 import type { Scenario } from '@/types/scenario';
+import { getScenarioImage } from '@/assets/scenarioImages';
 import { Disclosure } from '@/components/ui/Disclosure';
 import { HeadlineVitals } from './HeadlineVitals';
 import { HistoryTable } from './HistoryTable';
@@ -16,6 +17,8 @@ interface PatientCardProps {
 }
 
 export function PatientCard({ scenario, level, scrollEnabled = true }: PatientCardProps) {
+  const imageSource = getScenarioImage(scenario.image);
+
   return (
     <View style={styles.card}>
       <ScrollView
@@ -23,9 +26,9 @@ export function PatientCard({ scenario, level, scrollEnabled = true }: PatientCa
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.content}
       >
-        {scenario.image ? (
+        {imageSource ? (
           <Image
-            source={scenario.image}
+            source={imageSource}
             style={styles.image}
             contentFit="cover"
             transition={150}
