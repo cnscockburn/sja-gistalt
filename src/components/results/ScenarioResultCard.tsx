@@ -4,6 +4,7 @@ import { colors, radius, space, type } from '@/constants/theme';
 import type { Level } from '@/types/level';
 import type { AnswerRecord, GameMode } from '@/types/game';
 import { resolveFollowUp, type Scenario, type Verdict } from '@/types/scenario';
+import { scoreScenario } from '@/utils/scoring';
 
 interface Props {
   scenario: Scenario;
@@ -31,8 +32,12 @@ export function ScenarioResultCard({ scenario, answer, level, mode }: Props) {
   const showEvolving = mode === 'normal' && !!evolving;
   const notes = level === 'cfa' ? scenario.levelFlags.cfaNotes : scenario.levelFlags.erNotes;
 
+  const { earned, available } = scoreScenario(scenario, answer, mode, level);
+  const cardTint =
+    earned === available ? styles.cardCorrect : earned === 0 ? styles.cardWrong : null;
+
   return (
-    <View style={styles.card}>
+    <View style={[styles.card, cardTint]}>
       <Text style={styles.title}>{scenario.title}</Text>
 
       <View style={styles.line}>
@@ -79,6 +84,14 @@ const styles = StyleSheet.create({
     borderRadius: radius.md,
     padding: space.lg,
     gap: space.sm,
+  },
+  cardCorrect: {
+    backgroundColor: colors.correctSoft,
+    borderColor: colors.correct,
+  },
+  cardWrong: {
+    backgroundColor: colors.wrongSoft,
+    borderColor: colors.wrong,
   },
   title: { ...type.title, color: colors.ink, marginBottom: space.xs },
   line: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
