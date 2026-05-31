@@ -1,0 +1,16 @@
+title: "Gestalt: Clinical Intuition Development for First Responders"
+description: "Privacy policy for the Gestalt training app."
+theme: minima
+
+minima:
+  skin: classic
+
+header_pages: []
+
+author:
+  name: C N S Cockburn
+
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
