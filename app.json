@@ -8,10 +8,12 @@
     "scheme": "sjagestalt",
     "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon",
+      "icon": "./assets/images/icon.png",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.cnscockburn.gestalt",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F0EA",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
